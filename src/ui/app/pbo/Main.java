@@ -49,11 +49,11 @@ public class Main extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(0, 51, 51));
         jLabel4.setText("GEOMETRY");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(200, 80, 1100, 210);
+        jLabel4.setBounds(220, 80, 1100, 210);
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/startIcon.png"))); // NOI18N
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(530, 520, 310, 230);
+        jLabel6.setBounds(500, 530, 310, 230);
 
         jLabel7.setFont(new java.awt.Font("FREEDOM", 1, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(0, 51, 51));
