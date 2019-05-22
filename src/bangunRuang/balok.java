@@ -34,7 +34,7 @@ public class balok extends javax.swing.JFrame {
 
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(157, 235, 240, 98);
+        jLabel1.setBounds(140, 180, 240, 98);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
