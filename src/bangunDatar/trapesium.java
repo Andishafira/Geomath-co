@@ -12,9 +12,9 @@ package bangunDatar;
 public class trapesium extends javax.swing.JFrame {
 
     /**
-     * Creates new form trapesium
+     * Creates new form trapesium//asdfghjk
      */
-    public trapesium() {
+    public trapesium() {//masyaallah
         initComponents();
     }
 
