@@ -30,13 +30,10 @@ public class belahKetupat extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jPanel7 = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -65,33 +62,6 @@ public class belahKetupat extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 1310, 50);
-
-        jPanel3.setBackground(new java.awt.Color(204, 255, 204));
-
-        jLabel5.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel5.setFont(new java.awt.Font("Eras Light ITC", 1, 24)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 51, 51));
-        jLabel5.setText("DIAGONAL");
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(69, Short.MAX_VALUE)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(63, 63, 63))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(155, Short.MAX_VALUE)
-                .addComponent(jLabel5)
-                .addGap(17, 17, 17))
-        );
-
-        getContentPane().add(jPanel3);
-        jPanel3.setBounds(10, 470, 275, 200);
 
         jPanel6.setBackground(new java.awt.Color(204, 255, 204));
 
@@ -125,40 +95,17 @@ public class belahKetupat extends javax.swing.JFrame {
         getContentPane().add(jPanel2);
         jPanel2.setBounds(300, 450, 990, 330);
 
-        jPanel7.setBackground(new java.awt.Color(204, 255, 204));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Great Ideas Co. (3).png"))); // NOI18N
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(10, 60, 240, 240);
 
-        jLabel6.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel6.setFont(new java.awt.Font("Eras Light ITC", 1, 24)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 51, 51));
-        jLabel6.setText("LATIHAN SOAL");
-
-        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
-        jPanel7.setLayout(jPanel7Layout);
-        jPanel7Layout.setHorizontalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
-                .addContainerGap(54, Short.MAX_VALUE)
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29))
-        );
-        jPanel7Layout.setVerticalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
-                .addContainerGap(32, Short.MAX_VALUE)
-                .addComponent(jLabel6)
-                .addGap(30, 30, 30))
-        );
-
-        getContentPane().add(jPanel7);
-        jPanel7.setBounds(10, 680, 270, 90);
-
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Great Ideas Co. (2).png"))); // NOI18N
-        getContentPane().add(jLabel7);
-        jLabel7.setBounds(10, 60, 270, 260);
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Great Ideas Co. (2).png"))); // NOI18N
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(10, 310, 240, 240);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/abstract-blue-geometric-shapes-background-vector.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(-220, 0, 1530, 850);
+        jLabel1.setBounds(-200, 10, 1530, 850);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -201,13 +148,10 @@ public class belahKetupat extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
     // End of variables declaration//GEN-END:variables
 }
