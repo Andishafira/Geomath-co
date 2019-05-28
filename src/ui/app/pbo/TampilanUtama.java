@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ui.app.pbo;
 
 /**
@@ -28,6 +24,9 @@ public class TampilanUtama extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel4 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
@@ -35,15 +34,25 @@ public class TampilanUtama extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        jLabel4.setFont(new java.awt.Font("Android Nation", 1, 100)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Android Nation", 1, 60)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 51, 51));
         jLabel4.setText("GEOMETRY");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(230, 10, 900, 210);
+        jLabel4.setBounds(30, -10, 580, 210);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Bangun Ruang (1).png"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(710, 390, 350, 350);
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Bangun Ruang (1).png"))); // NOI18N
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(250, 270, 350, 350);
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(0, 230, 60, 0);
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(670, 480, 640, 220);
+        jPanel1.setBounds(0, 160, 1310, 60);
         getContentPane().add(jPanel2);
-        jPanel2.setBounds(0, 260, 670, 220);
+        jPanel2.setBounds(1220, 0, 30, 290);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/abstract-blue-geometric-shapes-background-vector.jpg"))); // NOI18N
         getContentPane().add(jLabel2);
@@ -88,8 +97,11 @@ public class TampilanUtama extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
