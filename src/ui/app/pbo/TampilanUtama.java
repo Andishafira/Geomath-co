@@ -42,11 +42,11 @@ public class TampilanUtama extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Bangun Ruang (1).png"))); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(700, 390, 350, 350);
+        jLabel1.setBounds(700, 380, 350, 350);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Bangun Datar.png"))); // NOI18N
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(340, 390, 350, 350);
+        jLabel5.setBounds(140, 380, 350, 350);
         getContentPane().add(jLabel3);
         jLabel3.setBounds(0, 230, 60, 0);
         getContentPane().add(jPanel1);
