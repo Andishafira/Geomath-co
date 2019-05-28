@@ -46,7 +46,7 @@ public class TampilanUtama extends javax.swing.JFrame {
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Bangun Datar.png"))); // NOI18N
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(240, 280, 350, 350);
+        jLabel5.setBounds(80, 280, 350, 350);
         getContentPane().add(jLabel3);
         jLabel3.setBounds(0, 230, 60, 0);
         getContentPane().add(jPanel1);
