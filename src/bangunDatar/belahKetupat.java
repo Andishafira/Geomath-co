@@ -35,6 +35,13 @@ public class belahKetupat extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -86,7 +93,7 @@ public class belahKetupat extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 980, Short.MAX_VALUE)
+            .addGap(0, 990, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -94,7 +101,7 @@ public class belahKetupat extends javax.swing.JFrame {
         );
 
         getContentPane().add(jPanel2);
-        jPanel2.setBounds(300, 450, 980, 340);
+        jPanel2.setBounds(300, 450, 990, 340);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Great Ideas Co. (3).png"))); // NOI18N
         getContentPane().add(jLabel3);
@@ -107,6 +114,34 @@ public class belahKetupat extends javax.swing.JFrame {
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/diagonal (1).png"))); // NOI18N
         getContentPane().add(jLabel4);
         jLabel4.setBounds(10, 560, 240, 230);
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal.png"))); // NOI18N
+        getContentPane().add(jLabel7);
+        jLabel7.setBounds(820, 60, 470, 170);
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (4).png"))); // NOI18N
+        getContentPane().add(jLabel8);
+        jLabel8.setBounds(1020, 220, 130, 120);
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (1).png"))); // NOI18N
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(880, 220, 130, 120);
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (3).png"))); // NOI18N
+        getContentPane().add(jLabel9);
+        jLabel9.setBounds(1160, 220, 130, 120);
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (2).png"))); // NOI18N
+        getContentPane().add(jLabel10);
+        jLabel10.setBounds(880, 350, 130, 110);
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (5).png"))); // NOI18N
+        getContentPane().add(jLabel11);
+        jLabel11.setBounds(1020, 350, 130, 110);
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (6).png"))); // NOI18N
+        getContentPane().add(jLabel12);
+        jLabel12.setBounds(1160, 350, 130, 110);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/abstract-blue-geometric-shapes-background-vector.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
@@ -152,10 +187,17 @@ public class belahKetupat extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel6;
