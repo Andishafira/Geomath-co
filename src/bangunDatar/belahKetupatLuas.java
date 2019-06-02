@@ -46,9 +46,9 @@ public class belahKetupatLuas extends javax.swing.JPanel {
         jLabel2.setBounds(20, 20, 1030, 30);
 
         jLabel1.setFont(new java.awt.Font("Flame Fetish", 1, 48)); // NOI18N
-        jLabel1.setText("Rumus : 4 x sisi");
+        jLabel1.setText("Rumus : sisi x sisi");
         add(jLabel1);
-        jLabel1.setBounds(320, 70, 341, 70);
+        jLabel1.setBounds(320, 70, 480, 70);
 
         jLabel3.setFont(new java.awt.Font("DialogInput", 0, 24)); // NOI18N
         jLabel3.setText("Contoh Soal:");

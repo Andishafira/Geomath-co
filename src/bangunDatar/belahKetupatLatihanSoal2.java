@@ -38,9 +38,9 @@ public class belahKetupatLatihanSoal2 extends javax.swing.JPanel {
         setLayout(null);
 
         jLabel5.setFont(new java.awt.Font("DialogInput", 0, 24)); // NOI18N
-        jLabel5.setText("Diketahui keliling sebuah belah ketupat ialah 32 cm,");
+        jLabel5.setText("Diketahui 2222keliling sebuah belah ketupat ialah 32 cm,");
         add(jLabel5);
-        jLabel5.setBounds(110, 40, 730, 70);
+        jLabel5.setBounds(110, 40, 830, 70);
 
         jLabel4.setFont(new java.awt.Font("DialogInput", 0, 24)); // NOI18N
         jLabel4.setText("maka berapa panjang masing masing sisi belah ketupat tesebut? ");
