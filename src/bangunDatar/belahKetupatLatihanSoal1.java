@@ -59,7 +59,7 @@ public class belahKetupatLatihanSoal1 extends javax.swing.JPanel {
 
         jButton1.setText("C E K");
         add(jButton1);
-        jButton1.setBounds(820, 150, 73, 23);
+        jButton1.setBounds(820, 150, 73, 32);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/jawaban.png"))); // NOI18N
         add(jLabel3);
