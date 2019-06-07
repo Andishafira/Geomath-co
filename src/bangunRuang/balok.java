@@ -143,75 +143,27 @@ public class balok extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void ButtonLatSoal1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal1MouseClicked
-        pB1.setVisible(false);
-        pB2.setVisible(false);
-        pB3.setVisible(false);
-        pBL1.setVisible(true);
-        pBL2.setVisible(false);
-        pBL3.setVisible(false);
-        pBL4.setVisible(false);
-        pBL5.setVisible(false);
-        pBL6.setVisible(false);
+
     }//GEN-LAST:event_ButtonLatSoal1MouseClicked
 
     private void ButtonLatSoal2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal2MouseClicked
-        pB1.setVisible(false);
-        pB2.setVisible(false);
-        pB3.setVisible(false);
-        pBL1.setVisible(false);
-        pBL2.setVisible(true);
-        pBL3.setVisible(false);
-        pBL4.setVisible(false);
-        pBL5.setVisible(false);
-        pBL6.setVisible(false);
+
     }//GEN-LAST:event_ButtonLatSoal2MouseClicked
 
     private void ButtonLatSoal3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal3MouseClicked
-        pB1.setVisible(false);
-        pB2.setVisible(false);
-        pB3.setVisible(false);
-        pBL1.setVisible(false);
-        pBL2.setVisible(false);
-        pBL3.setVisible(true);
-        pBL4.setVisible(false);
-        pBL5.setVisible(false);
-        pBL6.setVisible(false);
+
     }//GEN-LAST:event_ButtonLatSoal3MouseClicked
 
     private void ButtonLatSoal6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal6MouseClicked
-        pB1.setVisible(false);
-        pB2.setVisible(false);
-        pB3.setVisible(false);
-        pBL1.setVisible(false);
-        pBL2.setVisible(false);
-        pBL3.setVisible(false);
-        pBL4.setVisible(false);
-        pBL5.setVisible(false);
-        pBL6.setVisible(true);
+
     }//GEN-LAST:event_ButtonLatSoal6MouseClicked
 
     private void ButtonLatSoal5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal5MouseClicked
-        pB1.setVisible(false);
-        pB2.setVisible(false);
-        pB3.setVisible(false);
-        pBL1.setVisible(false);
-        pBL2.setVisible(false);
-        pBL3.setVisible(false);
-        pBL4.setVisible(false);
-        pBL5.setVisible(true);
-        pBL6.setVisible(false);
+
     }//GEN-LAST:event_ButtonLatSoal5MouseClicked
 
     private void ButtonLatSoal4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal4MouseClicked
-        pB1.setVisible(false);
-        pB2.setVisible(false);
-        pB3.setVisible(false);
-        pBL1.setVisible(false);
-        pBL2.setVisible(false);
-        pBL3.setVisible(false);
-        pBL4.setVisible(true);
-        pBL5.setVisible(false);
-        pBL6.setVisible(false);
+ 
     }//GEN-LAST:event_ButtonLatSoal4MouseClicked
 
     /**
