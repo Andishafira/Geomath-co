@@ -5,6 +5,8 @@
  */
 package bangunDatar;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Asus
@@ -14,6 +16,8 @@ public class belahKetupatLatihanSoal2 extends javax.swing.JPanel {
     /**
      * Creates new form belahKetupatLatihanSoal2
      */
+    String jawaban;
+    
     public belahKetupatLatihanSoal2() {
         initComponents();
     }
@@ -39,6 +43,11 @@ public class belahKetupatLatihanSoal2 extends javax.swing.JPanel {
         jTextField1.setBounds(790, 90, 130, 40);
 
         jButton1.setText("CEK");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         add(jButton1);
         jButton1.setBounds(820, 160, 77, 23);
 
@@ -57,12 +66,23 @@ public class belahKetupatLatihanSoal2 extends javax.swing.JPanel {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/jawaban.png"))); // NOI18N
         add(jLabel2);
-        jLabel2.setBounds(680, 0, 350, 340);
+        jLabel2.setBounds(680, 0, 310, 340);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        jawaban = jTextField1.getText();
+        
+        if(jawaban.equals("1089")){
+            jTextField2.setText("Jawaban Benar : 1.089 cm persegi");
+        } else {
+            JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
