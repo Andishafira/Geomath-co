@@ -40,7 +40,7 @@ public class belahKetupatLatihanSoal3 extends javax.swing.JPanel {
         setBackground(new java.awt.Color(24, 64, 105));
         setLayout(null);
         add(jTextField1);
-        jTextField1.setBounds(790, 260, 130, 40);
+        jTextField1.setBounds(750, 100, 210, 40);
 
         jButton1.setText("CEK");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -58,7 +58,7 @@ public class belahKetupatLatihanSoal3 extends javax.swing.JPanel {
             }
         });
         add(jTextField2);
-        jTextField2.setBounds(790, 90, 130, 40);
+        jTextField2.setBounds(750, 260, 210, 50);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/LATIHAN SOAL 3.png"))); // NOI18N
         add(jLabel1);
