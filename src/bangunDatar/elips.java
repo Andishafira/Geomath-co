@@ -5,6 +5,8 @@
  */
 package bangunDatar;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Asus
@@ -14,8 +16,49 @@ public class elips extends javax.swing.JFrame {
     /**
      * Creates new form elips
      */
+    elipsKeliling kell;
+    elipsKelilingGambar gbr;
+    elipsLuas luas;
+    elipsLuasGambar gbr2;
+    elipsDiagonal diagon;
+    elipsDiagonalGambar gbr3;
+    elipsLatihanSoal1 lat1;
+    elipsLatihanSoal2 lat2;
+    elipsLatihanSoal3 lat3;
+    elipsLatihanSoal4 lat4;
+    elipsLatihanSoal5 lat5;
+    elipsLatihanSoal6 lat6;
+    
     public elips() {
         initComponents();
+        kell = new elipsKeliling();
+        gbr = new elipsKelilingGambar();
+        luas = new elipsLuas();
+        gbr2 = new elipsLuasGambar();
+        diagon = new elipsDiagonal();
+        gbr3 = new elipsDiagonalGambar();
+        lat1 = new elipsLatihanSoal1();
+        lat2 = new elipsLatihanSoal2();
+        lat3 = new elipsLatihanSoal3();
+        lat4 = new elipsLatihanSoal4();
+        lat5 = new elipsLatihanSoal5();
+        lat6 = new elipsLatihanSoal6();
+        
+        panelUtama.add(kell);
+        panelUtama.add(luas);
+        panelUtama.add(diagon);
+        panelUtama.add(lat1);
+        panelUtama.add(lat2);
+        panelUtama.add(lat3);
+        panelUtama.add(lat4);
+        panelUtama.add(lat5);
+        panelUtama.add(lat6);
+        
+        panelGambar.add(gbr);
+        panelGambar.add(gbr2);
+        panelGambar.add(gbr3);
+        
+        
     }
 
     /**
@@ -28,16 +71,16 @@ public class elips extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jPanel6 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
+        tombolKeluar = new javax.swing.JLabel();
+        panelGambar = new javax.swing.JPanel();
+        panelUtama = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
+        Latihan1 = new javax.swing.JLabel();
+        Latihan2 = new javax.swing.JLabel();
+        Latihan3 = new javax.swing.JLabel();
+        Latihan6 = new javax.swing.JLabel();
+        Latihan5 = new javax.swing.JLabel();
+        Latihan4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -45,8 +88,13 @@ public class elips extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
 
-        jLabel2.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-        jLabel2.setText("X");
+        tombolKeluar.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        tombolKeluar.setText("X");
+        tombolKeluar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tombolKeluarMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -54,78 +102,108 @@ public class elips extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(1261, Short.MAX_VALUE)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tombolKeluar, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jLabel2)
+                .addComponent(tombolKeluar)
                 .addGap(0, 3, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 1310, 50);
 
-        jPanel6.setBackground(new java.awt.Color(8, 80, 116));
+        panelGambar.setBackground(new java.awt.Color(8, 80, 116));
 
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout panelGambarLayout = new javax.swing.GroupLayout(panelGambar);
+        panelGambar.setLayout(panelGambarLayout);
+        panelGambarLayout.setHorizontalGroup(
+            panelGambarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 570, Short.MAX_VALUE)
         );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        panelGambarLayout.setVerticalGroup(
+            panelGambarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 380, Short.MAX_VALUE)
         );
 
-        getContentPane().add(jPanel6);
-        jPanel6.setBounds(300, 60, 570, 380);
+        getContentPane().add(panelGambar);
+        panelGambar.setBounds(300, 60, 570, 380);
 
-        jPanel2.setBackground(new java.awt.Color(24, 64, 105));
+        panelUtama.setBackground(new java.awt.Color(24, 64, 105));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout panelUtamaLayout = new javax.swing.GroupLayout(panelUtama);
+        panelUtama.setLayout(panelUtamaLayout);
+        panelUtamaLayout.setHorizontalGroup(
+            panelUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 990, Short.MAX_VALUE)
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        panelUtamaLayout.setVerticalGroup(
+            panelUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 340, Short.MAX_VALUE)
         );
 
-        getContentPane().add(jPanel2);
-        jPanel2.setBounds(300, 450, 990, 340);
+        getContentPane().add(panelUtama);
+        panelUtama.setBounds(300, 450, 990, 340);
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal.png"))); // NOI18N
         getContentPane().add(jLabel7);
         jLabel7.setBounds(820, 60, 470, 170);
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (7).png"))); // NOI18N
-        getContentPane().add(jLabel6);
-        jLabel6.setBounds(880, 220, 130, 120);
+        Latihan1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (7).png"))); // NOI18N
+        Latihan1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Latihan1MouseClicked(evt);
+            }
+        });
+        getContentPane().add(Latihan1);
+        Latihan1.setBounds(880, 220, 130, 120);
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (8).png"))); // NOI18N
-        getContentPane().add(jLabel8);
-        jLabel8.setBounds(1020, 220, 130, 120);
+        Latihan2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (8).png"))); // NOI18N
+        Latihan2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Latihan2MouseClicked(evt);
+            }
+        });
+        getContentPane().add(Latihan2);
+        Latihan2.setBounds(1020, 220, 130, 120);
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (9).png"))); // NOI18N
-        getContentPane().add(jLabel9);
-        jLabel9.setBounds(1160, 220, 130, 120);
+        Latihan3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (9).png"))); // NOI18N
+        Latihan3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Latihan3MouseClicked(evt);
+            }
+        });
+        getContentPane().add(Latihan3);
+        Latihan3.setBounds(1160, 220, 130, 120);
 
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (12).png"))); // NOI18N
-        getContentPane().add(jLabel12);
-        jLabel12.setBounds(1160, 350, 130, 110);
+        Latihan6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (12).png"))); // NOI18N
+        Latihan6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Latihan6MouseClicked(evt);
+            }
+        });
+        getContentPane().add(Latihan6);
+        Latihan6.setBounds(1160, 350, 130, 110);
 
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (11).png"))); // NOI18N
-        getContentPane().add(jLabel11);
-        jLabel11.setBounds(1020, 350, 130, 110);
+        Latihan5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (11).png"))); // NOI18N
+        Latihan5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Latihan5MouseClicked(evt);
+            }
+        });
+        getContentPane().add(Latihan5);
+        Latihan5.setBounds(1020, 350, 130, 110);
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (10).png"))); // NOI18N
-        getContentPane().add(jLabel10);
-        jLabel10.setBounds(880, 350, 130, 110);
+        Latihan4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (10).png"))); // NOI18N
+        Latihan4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Latihan4MouseClicked(evt);
+            }
+        });
+        getContentPane().add(Latihan4);
+        Latihan4.setBounds(880, 350, 130, 110);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/abstract-blue-geometric-shapes-background-vector.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
@@ -133,6 +211,111 @@ public class elips extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void Latihan1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Latihan1MouseClicked
+        // TODO add your handling code here:
+        kell.setVisible(false);
+        gbr.setVisible(false);
+        luas.setVisible(false);
+        gbr2.setVisible(false);
+        diagon.setVisible(false);
+        gbr3.setVisible(false);
+        lat1.setVisible(true);
+        lat2.setVisible(false);
+        lat3.setVisible(false);
+        lat4.setVisible(false);
+        lat5.setVisible(false);
+        lat6.setVisible(false);
+    }//GEN-LAST:event_Latihan1MouseClicked
+
+    private void Latihan2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Latihan2MouseClicked
+        // TODO add your handling code here:
+        kell.setVisible(false);
+        gbr.setVisible(false);
+        luas.setVisible(false);
+        gbr2.setVisible(false);
+        diagon.setVisible(false);
+        gbr3.setVisible(false);
+        lat1.setVisible(false);
+        lat2.setVisible(true);
+        lat3.setVisible(false);
+        lat4.setVisible(false);
+        lat5.setVisible(false);
+        lat6.setVisible(false);
+    }//GEN-LAST:event_Latihan2MouseClicked
+
+    private void Latihan3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Latihan3MouseClicked
+        // TODO add your handling code here:
+        kell.setVisible(false);
+        gbr.setVisible(false);
+        luas.setVisible(false);
+        gbr2.setVisible(false);
+        diagon.setVisible(false);
+        gbr3.setVisible(false);
+        lat1.setVisible(false);
+        lat2.setVisible(false);
+        lat3.setVisible(true);
+        lat4.setVisible(false);
+        lat5.setVisible(false);
+        lat6.setVisible(false);
+    }//GEN-LAST:event_Latihan3MouseClicked
+
+    private void Latihan4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Latihan4MouseClicked
+        // TODO add your handling code here:
+        kell.setVisible(false);
+        gbr.setVisible(false);
+        luas.setVisible(false);
+        gbr2.setVisible(false);
+        diagon.setVisible(false);
+        gbr3.setVisible(false);
+        lat1.setVisible(false);
+        lat2.setVisible(false);
+        lat3.setVisible(false);
+        lat4.setVisible(true);
+        lat5.setVisible(false);
+        lat6.setVisible(false);
+    }//GEN-LAST:event_Latihan4MouseClicked
+
+    private void Latihan5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Latihan5MouseClicked
+        // TODO add your handling code here:
+        kell.setVisible(false);
+        gbr.setVisible(false);
+        luas.setVisible(false);
+        gbr2.setVisible(false);
+        diagon.setVisible(false);
+        gbr3.setVisible(false);
+        lat1.setVisible(false);
+        lat2.setVisible(false);
+        lat3.setVisible(false);
+        lat4.setVisible(false);
+        lat5.setVisible(true);
+        lat6.setVisible(false);
+    }//GEN-LAST:event_Latihan5MouseClicked
+
+    private void Latihan6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Latihan6MouseClicked
+        // TODO add your handling code here:
+        kell.setVisible(false);
+        gbr.setVisible(false);
+        luas.setVisible(false);
+        gbr2.setVisible(false);
+        diagon.setVisible(false);
+        gbr3.setVisible(false);
+        lat1.setVisible(false);
+        lat2.setVisible(false);
+        lat3.setVisible(false);
+        lat4.setVisible(false);
+        lat5.setVisible(false);
+        lat6.setVisible(true);
+    }//GEN-LAST:event_Latihan6MouseClicked
+
+    private void tombolKeluarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tombolKeluarMouseClicked
+        // TODO add your handling code here:
+        int choose = JOptionPane.showConfirmDialog(null, "Selesai Belajar?", "AMOBA", JOptionPane.YES_NO_OPTION);
+        
+        if(choose == JOptionPane.YES_OPTION){
+            System.exit(0);
+        }
+    }//GEN-LAST:event_tombolKeluarMouseClicked
 
     /**
      * @param args the command line arguments
@@ -170,17 +353,17 @@ public class elips extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Latihan1;
+    private javax.swing.JLabel Latihan2;
+    private javax.swing.JLabel Latihan3;
+    private javax.swing.JLabel Latihan4;
+    private javax.swing.JLabel Latihan5;
+    private javax.swing.JLabel Latihan6;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel panelGambar;
+    private javax.swing.JPanel panelUtama;
+    private javax.swing.JLabel tombolKeluar;
     // End of variables declaration//GEN-END:variables
 }

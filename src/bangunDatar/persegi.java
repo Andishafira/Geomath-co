@@ -1,5 +1,7 @@
 package bangunDatar;
 
+import javax.swing.JOptionPane;
+
 public class persegi extends javax.swing.JFrame {
     persegiKeliling pB1;
     persegiKelilingGambar pA1;
@@ -49,7 +51,7 @@ public class persegi extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
+        tombolKeluar2 = new javax.swing.JLabel();
         panelGambar = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         ButtonLatSoal1 = new javax.swing.JLabel();
@@ -69,8 +71,13 @@ public class persegi extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
 
-        jLabel2.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-        jLabel2.setText("X");
+        tombolKeluar2.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        tombolKeluar2.setText("X");
+        tombolKeluar2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tombolKeluar2MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -78,13 +85,13 @@ public class persegi extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(1261, Short.MAX_VALUE)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tombolKeluar2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jLabel2)
+                .addComponent(tombolKeluar2)
                 .addGap(0, 3, Short.MAX_VALUE))
         );
 
@@ -335,6 +342,15 @@ public class persegi extends javax.swing.JFrame {
         pBL6.setVisible(true);
     }//GEN-LAST:event_ButtonLatSoal6MouseClicked
 
+    private void tombolKeluar2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tombolKeluar2MouseClicked
+        // TODO add your handling code here:
+        int pilih = JOptionPane.showConfirmDialog(null, "Selesai Belajar?", "AMOBA", JOptionPane.YES_NO_OPTION);
+        
+        if(pilih == JOptionPane.YES_OPTION){
+            System.exit(0);
+        }
+    }//GEN-LAST:event_tombolKeluar2MouseClicked
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -378,10 +394,10 @@ public class persegi extends javax.swing.JFrame {
     private javax.swing.JLabel buttonKeliling;
     private javax.swing.JLabel buttonLuas;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel panelGambar;
     private javax.swing.JPanel panelUtama;
+    private javax.swing.JLabel tombolKeluar2;
     // End of variables declaration//GEN-END:variables
 }
