@@ -70,7 +70,7 @@ public class balok extends javax.swing.JFrame {
         panelGambar.setBackground(new java.awt.Color(8, 80, 116));
         panelGambar.setLayout(new java.awt.CardLayout());
         getContentPane().add(panelGambar);
-        panelGambar.setBounds(250, 60, 570, 380);
+        panelGambar.setBounds(300, 60, 570, 380);
 
         panelUtama.setBackground(new java.awt.Color(24, 64, 105));
         panelUtama.setLayout(new java.awt.CardLayout());
