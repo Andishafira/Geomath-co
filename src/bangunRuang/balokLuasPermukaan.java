@@ -27,11 +27,18 @@ public class balokLuasPermukaan extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setBackground(new java.awt.Color(8, 80, 116));
+        jLabel1 = new javax.swing.JLabel();
+
+        setBackground(new java.awt.Color(24, 64, 105));
         setLayout(null);
+
+        jLabel1.setText("luas permuk");
+        add(jLabel1);
+        jLabel1.setBounds(317, 144, 170, 16);
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

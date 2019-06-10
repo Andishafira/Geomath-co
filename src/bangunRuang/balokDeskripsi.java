@@ -9,12 +9,12 @@ package bangunRuang;
  *
  * @author Asus
  */
-public class balokVolume extends javax.swing.JPanel {
+public class balokDeskripsi extends javax.swing.JPanel {
 
     /**
-     * Creates new form balokVolume
+     * Creates new form balokDeskripsi
      */
-    public balokVolume() {
+    public balokDeskripsi() {
         initComponents();
     }
 
@@ -28,17 +28,32 @@ public class balokVolume extends javax.swing.JPanel {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(24, 64, 105));
         setLayout(null);
 
-        jLabel1.setText("vol");
+        jLabel1.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
+        jLabel1.setText("Balok merupakan anggota dari prisma, yaitu prisma segi empat. ");
         add(jLabel1);
-        jLabel1.setBounds(110, 130, 170, 16);
+        jLabel1.setBounds(180, 10, 630, 60);
+
+        jLabel2.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
+        jLabel2.setText("Namun karena memiliki keistimewaan dimana seluruh sudutnya merupakan siku siku, ");
+        add(jLabel2);
+        jLabel2.setBounds(100, 40, 820, 80);
+
+        jLabel3.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
+        jLabel3.setText("maka prisma ini dinamakan balok");
+        add(jLabel3);
+        jLabel3.setBounds(310, 90, 340, 60);
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }
