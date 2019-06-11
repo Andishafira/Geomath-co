@@ -54,7 +54,7 @@ public class balokDeskripsi extends javax.swing.JPanel {
 
         jLabel4.setText("Mempunyai 4 buah bidang diagonal, 12 buah diagonal bidang, 4 diagonal ruang.");
         add(jLabel4);
-        jLabel4.setBounds(20, 190, 420, 40);
+        jLabel4.setBounds(40, 190, 420, 40);
 
         jLabel5.setText("Balok mempunyai 3 pasang bidang sisi berhadapan yang kongruen.");
         add(jLabel5);
