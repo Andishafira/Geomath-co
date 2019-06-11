@@ -30,6 +30,9 @@ public class balokDeskripsi extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(24, 64, 105));
         setLayout(null);
@@ -48,6 +51,18 @@ public class balokDeskripsi extends javax.swing.JPanel {
         jLabel3.setText("maka prisma ini dinamakan balok");
         add(jLabel3);
         jLabel3.setBounds(310, 90, 340, 60);
+
+        jLabel4.setText("Mempunyai 4 buah bidang diagonal, 12 buah diagonal bidang, 4 diagonal ruang.");
+        add(jLabel4);
+        jLabel4.setBounds(20, 190, 420, 40);
+
+        jLabel5.setText("Balok mempunyai 3 pasang bidang sisi berhadapan yang kongruen.");
+        add(jLabel5);
+        jLabel5.setBounds(10, 230, 450, 40);
+
+        jLabel6.setText("memiliki 6 sisi, 12 rusuk dan 8 titik sudut");
+        add(jLabel6);
+        jLabel6.setBounds(10, 150, 310, 40);
     }// </editor-fold>//GEN-END:initComponents
 
 
@@ -55,5 +70,8 @@ public class balokDeskripsi extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     // End of variables declaration//GEN-END:variables
 }

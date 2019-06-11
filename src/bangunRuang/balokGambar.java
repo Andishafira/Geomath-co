@@ -34,7 +34,7 @@ public class balokGambar extends javax.swing.JPanel {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/BRBalok1.png"))); // NOI18N
         add(jLabel1);
-        jLabel1.setBounds(160, 30, 240, 310);
+        jLabel1.setBounds(10, 20, 240, 310);
     }// </editor-fold>//GEN-END:initComponents
 
 
