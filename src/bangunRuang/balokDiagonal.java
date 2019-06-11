@@ -53,7 +53,7 @@ public class balokDiagonal extends javax.swing.JPanel {
         jLabel4.setFont(new java.awt.Font("Flame Fetish", 1, 48)); // NOI18N
         jLabel4.setText("Diagonal Ruang : k  ");
         add(jLabel4);
-        jLabel4.setBounds(20, 50, 670, 70);
+        jLabel4.setBounds(30, 60, 670, 70);
     }// </editor-fold>//GEN-END:initComponents
 
 
