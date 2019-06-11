@@ -129,7 +129,7 @@ public class trapesium extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/abstract-blue-geometric-shapes-background-vector.jpg"))); // NOI18N
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(-220, 0, 1530, 850);
+        jLabel2.setBounds(-220, 0, 1680, 810);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
