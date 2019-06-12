@@ -172,36 +172,36 @@ public class kubus extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel4.setText("Luas Permukan");
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Kubus/Luas Permukaan (3) icon.png"))); // NOI18N
         jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel4MouseClicked(evt);
             }
         });
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(10, 130, 270, 150);
+        jLabel4.setBounds(10, 60, 240, 240);
 
         jLabel5.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel5.setText("volume");
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Kubus/volicon.png"))); // NOI18N
         jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel5MouseClicked(evt);
             }
         });
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(20, 350, 240, 150);
+        jLabel5.setBounds(10, 310, 240, 240);
 
         jLabel3.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel3.setText("diagonal");
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Kubus/dia icon.png"))); // NOI18N
         jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel3MouseClicked(evt);
             }
         });
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(30, 550, 190, 150);
+        jLabel3.setBounds(10, 560, 240, 230);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/bgkecil.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
