@@ -5,6 +5,8 @@
  */
 package bangunDatar;
 
+import gambar.psgPanjangLuas;
+
 /**
  *
  * @author Asus
@@ -14,10 +16,34 @@ public class persegiPanjang extends javax.swing.JFrame {
     /**
      * Creates new form persegiPanjang
      */
-    
+    psgPanjangLuas lsPanjang;
+    psgPanjangDiagonal diagon;
+    psgPanjangLatsol1 latSol1;
+    psgPanjangLatsol2 latSol2;
+    psgPanjangLatsol3 latSol3;
+    psgPanjangLatsol4 latSol4;
+    psgPanjangLatsol5 latSol5;
+    psgPanjangLatsol6 latSol6;
     
     public persegiPanjang() {
         initComponents();
+        lsPanjang = new psgPanjangLuas();
+        diagon = new psgPanjangDiagonal();
+        latSol1 = new psgPanjangLatsol1();
+        latSol2 = new psgPanjangLatsol2();
+        latSol3 = new psgPanjangLatsol3();
+        latSol4 = new psgPanjangLatsol4();
+        latSol5 = new psgPanjangLatsol5();
+        latSol6 = new psgPanjangLatsol6();
+        
+        panelTampil.add(lsPanjang);
+        panelTampil.add(diagon);
+        panelTampil.add(latSol1);
+        panelTampil.add(latSol2);
+        panelTampil.add(latSol3);
+        panelTampil.add(latSol4);
+        panelTampil.add(latSol5);
+        panelTampil.add(latSol6);
        
     }
 
@@ -117,6 +143,11 @@ public class persegiPanjang extends javax.swing.JFrame {
         jLabel12.setBounds(1160, 350, 130, 110);
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/ls persegi pjg.png"))); // NOI18N
+        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel4MouseClicked(evt);
+            }
+        });
         getContentPane().add(jLabel4);
         jLabel4.setBounds(40, 300, 240, 230);
 
@@ -149,6 +180,18 @@ public class persegiPanjang extends javax.swing.JFrame {
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_jLabel3MouseClicked
+
+    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
+        // TODO add your handling code here:
+        lsPanjang.setVisible(true);
+        diagon.setVisible(false);
+        latSol1.setVisible(false);
+        latSol2.setVisible(false);
+        latSol3.setVisible(false);
+        latSol4.setVisible(false);
+        latSol5.setVisible(false);
+        latSol6.setVisible(false);
+    }//GEN-LAST:event_jLabel4MouseClicked
 
     /**
      * @param args the command line arguments

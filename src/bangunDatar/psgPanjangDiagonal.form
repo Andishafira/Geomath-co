@@ -21,12 +21,12 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/gambar/ls pers.png"/>
+          <Image iconType="3" name="/gambar/diagonal persp.png"/>
         </Property>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="2" y="2" width="990" height="340"/>
+          <AbsoluteConstraints x="0" y="0" width="990" height="340"/>
         </Constraint>
       </Constraints>
     </Component>
