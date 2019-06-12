@@ -14,8 +14,11 @@ public class persegiPanjang extends javax.swing.JFrame {
     /**
      * Creates new form persegiPanjang
      */
+    
+    
     public persegiPanjang() {
         initComponents();
+       
     }
 
     /**
@@ -31,13 +34,16 @@ public class persegiPanjang extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
+        panelTampil = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -47,6 +53,11 @@ public class persegiPanjang extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel3.setText("X");
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel3MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -68,18 +79,7 @@ public class persegiPanjang extends javax.swing.JFrame {
         jPanel1.setBounds(0, 0, 1310, 50);
 
         jPanel6.setBackground(new java.awt.Color(8, 80, 116));
-
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 570, Short.MAX_VALUE)
-        );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 380, Short.MAX_VALUE)
-        );
-
+        jPanel6.setLayout(new java.awt.CardLayout());
         getContentPane().add(jPanel6);
         jPanel6.setBounds(300, 60, 570, 380);
 
@@ -87,21 +87,10 @@ public class persegiPanjang extends javax.swing.JFrame {
         getContentPane().add(jLabel7);
         jLabel7.setBounds(820, 60, 470, 170);
 
-        jPanel2.setBackground(new java.awt.Color(24, 64, 105));
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 990, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 340, Short.MAX_VALUE)
-        );
-
-        getContentPane().add(jPanel2);
-        jPanel2.setBounds(300, 450, 990, 340);
+        panelTampil.setBackground(new java.awt.Color(24, 64, 105));
+        panelTampil.setLayout(new java.awt.CardLayout());
+        getContentPane().add(panelTampil);
+        panelTampil.setBounds(300, 450, 990, 340);
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (7).png"))); // NOI18N
         getContentPane().add(jLabel6);
@@ -127,12 +116,39 @@ public class persegiPanjang extends javax.swing.JFrame {
         getContentPane().add(jLabel12);
         jLabel12.setBounds(1160, 350, 130, 110);
 
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/ls persegi pjg.png"))); // NOI18N
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(40, 300, 240, 230);
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/diagonal persegi pjg.png"))); // NOI18N
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(40, 540, 240, 250);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/kell persegi pjg.png"))); // NOI18N
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1MouseClicked(evt);
+            }
+        });
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(40, 60, 240, 230);
+
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/abstract-blue-geometric-shapes-background-vector.jpg"))); // NOI18N
         getContentPane().add(jLabel2);
         jLabel2.setBounds(-220, 0, 1530, 850);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+        // TODO add your handling code here:
+       
+    }//GEN-LAST:event_jLabel1MouseClicked
+
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_jLabel3MouseClicked
 
     /**
      * @param args the command line arguments
@@ -170,17 +186,20 @@ public class persegiPanjang extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel panelTampil;
     // End of variables declaration//GEN-END:variables
 }

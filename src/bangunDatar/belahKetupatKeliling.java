@@ -44,7 +44,7 @@ public class belahKetupatKeliling extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Flame Fetish", 1, 48)); // NOI18N
         jLabel1.setText("Rumus : 4 x sisi");
         add(jLabel1);
-        jLabel1.setBounds(320, 70, 341, 70);
+        jLabel1.setBounds(320, 70, 366, 70);
 
         jLabel2.setFont(new java.awt.Font("Eras Light ITC", 1, 24)); // NOI18N
         jLabel2.setText("Dikarenakan panjang semua sisi belah ketupat sama, sehingga rumus kelilingnya ialah :");
