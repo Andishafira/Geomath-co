@@ -109,7 +109,6 @@ public class balok extends javax.swing.JFrame {
         panelUtama.setBounds(300, 450, 990, 340);
 
         jLabel3.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Balok/diagonal icon.png"))); // NOI18N
         jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -120,7 +119,6 @@ public class balok extends javax.swing.JFrame {
         jLabel3.setBounds(10, 560, 240, 230);
 
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Balok/Luas Permukaan (2).png"))); // NOI18N
         jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -131,7 +129,6 @@ public class balok extends javax.swing.JFrame {
         jLabel4.setBounds(10, 60, 240, 240);
 
         jLabel5.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Balok/volume icon.png"))); // NOI18N
         jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

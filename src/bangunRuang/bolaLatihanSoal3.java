@@ -5,15 +5,19 @@
  */
 package bangunRuang;
 
+import javax.swing.JOptionPane;
+
 /**
  *
- * @author FAZA
+ * @author SONY
  */
-public class bolaLatihanSoal3 extends javax.swing.JFrame {
+public class bolaLatihanSoal3 extends javax.swing.JPanel {
 
     /**
      * Creates new form bolaLatihanSoal3
      */
+    String jawaban;
+    
     public bolaLatihanSoal3() {
         initComponents();
     }
@@ -27,57 +31,47 @@ public class bolaLatihanSoal3 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jTextField2 = new javax.swing.JTextField();
+        jTextField1 = new javax.swing.JTextField();
+        buttonCek = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setLayout(null);
+        add(jTextField2);
+        jTextField2.setBounds(590, 230, 240, 80);
+        add(jTextField1);
+        jTextField1.setBounds(190, 230, 160, 30);
 
-        pack();
-    }// </editor-fold>//GEN-END:initComponents
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(bolaLatihanSoal3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(bolaLatihanSoal3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(bolaLatihanSoal3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(bolaLatihanSoal3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new bolaLatihanSoal3().setVisible(true);
+        buttonCek.setText("CEK KUNCI");
+        buttonCek.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonCekActionPerformed(evt);
             }
         });
-    }
+        add(buttonCek);
+        buttonCek.setBounds(420, 230, 100, 30);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Bola/Latsol Bola 3.png"))); // NOI18N
+        add(jLabel1);
+        jLabel1.setBounds(0, 0, 990, 380);
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void buttonCekActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCekActionPerformed
+        // TODO add your handling code here:
+        jawaban = jTextField1.getText();
+        
+        if(jawaban.equals("9.85") || jawaban.equals("9.84")){
+            jTextField2.setText("Jawaban Benar : 9.85 (PHI = 22/7) atau 9.84 (PHI = 3.14) cm persegi");
+        } else {
+            JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
+        }
+    }//GEN-LAST:event_buttonCekActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton buttonCek;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 }
