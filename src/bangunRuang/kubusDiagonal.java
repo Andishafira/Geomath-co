@@ -31,7 +31,7 @@ public class kubusDiagonal extends javax.swing.JPanel {
 
         setLayout(null);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Kubus/dia.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Kubus/dian.png"))); // NOI18N
         add(jLabel1);
         jLabel1.setBounds(0, -10, 1120, 360);
     }// </editor-fold>//GEN-END:initComponents

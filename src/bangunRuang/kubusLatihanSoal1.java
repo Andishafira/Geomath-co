@@ -27,19 +27,60 @@ public class kubusLatihanSoal1 extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+
+        setLayout(null);
+
+        jLabel2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 51));
+        jLabel2.setText("Berapa rusuk kubus abcdefgh ");
+        add(jLabel2);
+        jLabel2.setBounds(140, 60, 410, 40);
+
+        jLabel3.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 51));
+        jLabel3.setText("jika diketahui HB adalah 103√3?");
+        add(jLabel3);
+        jLabel3.setBounds(140, 100, 440, 80);
+
+        jTextField1.setText("jTextField1");
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        add(jTextField1);
+        jTextField1.setBounds(410, 200, 220, 60);
+
+        jTextField2.setText("jTextField1");
+        add(jTextField2);
+        jTextField2.setBounds(130, 200, 220, 60);
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Kubus/20180417_105603unsur_unsur_kubus.png"))); // NOI18N
+        add(jLabel4);
+        jLabel4.setBounds(660, 60, 230, 220);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Kubus/soal.png"))); // NOI18N
+        add(jLabel1);
+        jLabel1.setBounds(0, 0, 1050, 350);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 }

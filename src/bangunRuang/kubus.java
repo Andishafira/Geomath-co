@@ -172,7 +172,7 @@ public class kubus extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Kubus/Luas Permukaan (3) icon.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Kubus/Luas Permukaan iconn.png"))); // NOI18N
         jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel4MouseClicked(evt);
@@ -183,7 +183,7 @@ public class kubus extends javax.swing.JFrame {
 
         jLabel5.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Kubus/volicon.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Kubus/volume icon.png"))); // NOI18N
         jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel5MouseClicked(evt);
@@ -194,7 +194,7 @@ public class kubus extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Kubus/dia icon.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Kubus/diagonal icon.png"))); // NOI18N
         jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel3MouseClicked(evt);

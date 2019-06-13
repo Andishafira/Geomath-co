@@ -209,7 +209,7 @@
           <Color blue="0" green="0" red="0" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/gambar/Kubus/Luas Permukaan (3) icon.png"/>
+          <Image iconType="3" name="/gambar/Kubus/Luas Permukaan iconn.png"/>
         </Property>
       </Properties>
       <Events>
@@ -230,7 +230,7 @@
           <Color blue="0" green="0" red="0" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/gambar/Kubus/volicon.png"/>
+          <Image iconType="3" name="/gambar/Kubus/volume icon.png"/>
         </Property>
       </Properties>
       <Events>
@@ -251,7 +251,7 @@
           <Color blue="0" green="0" red="0" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/gambar/Kubus/dia icon.png"/>
+          <Image iconType="3" name="/gambar/Kubus/diagonal icon.png"/>
         </Property>
       </Properties>
       <Events>
