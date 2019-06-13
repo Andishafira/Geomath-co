@@ -9,12 +9,12 @@ package bangunDatar;
  *
  * @author Asus
  */
-public class persegiLuas extends javax.swing.JPanel {
+public class lingkaranDeskripsi extends javax.swing.JPanel {
 
     /**
-     * Creates new form persegiLuas
+     * Creates new form lingkaranDeskripsi
      */
-    public persegiLuas() {
+    public lingkaranDeskripsi() {
         initComponents();
     }
 
@@ -29,12 +29,11 @@ public class persegiLuas extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(24, 64, 105));
         setLayout(null);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/persegi/luas.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/lingkaran/deskripsi.png"))); // NOI18N
         add(jLabel1);
-        jLabel1.setBounds(0, 0, 990, 560);
+        jLabel1.setBounds(0, 0, 990, 380);
     }// </editor-fold>//GEN-END:initComponents
 
 
