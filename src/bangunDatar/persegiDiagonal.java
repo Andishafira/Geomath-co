@@ -27,21 +27,52 @@ public class persegiDiagonal extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setBackground(new java.awt.Color(24, 64, 105));
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 990, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 340, Short.MAX_VALUE)
-        );
+        setBackground(new java.awt.Color(24, 64, 105));
+        setLayout(null);
+        add(jLabel2);
+        jLabel2.setBounds(460, 280, 0, 0);
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/persegi/Untitled.png"))); // NOI18N
+        add(jLabel3);
+        jLabel3.setBounds(290, 260, 160, 50);
+
+        jLabel4.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 0, 51));
+        jLabel4.setText("maka dapat disimpulkan menjadi :");
+        add(jLabel4);
+        jLabel4.setBounds(560, 160, 300, 40);
+
+        jLabel5.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 0, 51));
+        jLabel5.setText("sama panjang");
+        add(jLabel5);
+        jLabel5.setBounds(650, 140, 140, 20);
+
+        jLabel6.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 0, 51));
+        jLabel6.setText("Namun karena semua sisinya ");
+        add(jLabel6);
+        jLabel6.setBounds(580, 106, 280, 24);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/persegi/diagonal.png"))); // NOI18N
+        add(jLabel1);
+        jLabel1.setBounds(0, 0, 1000, 570);
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     // End of variables declaration//GEN-END:variables
 }
