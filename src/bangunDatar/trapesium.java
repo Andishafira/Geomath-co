@@ -38,6 +38,9 @@ public class trapesium extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -127,6 +130,19 @@ public class trapesium extends javax.swing.JFrame {
         getContentPane().add(jLabel12);
         jLabel12.setBounds(1160, 350, 130, 110);
 
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambarTrapesium/Keliling Trapesium.png"))); // NOI18N
+        jLabel5.setText("jLabel5");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(20, 60, 240, 240);
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambarTrapesium/Luas Trapesium.png"))); // NOI18N
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(20, 310, 240, 240);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambarTrapesium/Diagonal Trapesium.png"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(20, 560, 240, 240);
+
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/abstract-blue-geometric-shapes-background-vector.jpg"))); // NOI18N
         getContentPane().add(jLabel2);
         jLabel2.setBounds(-220, 0, 1680, 810);
@@ -170,11 +186,14 @@ public class trapesium extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
