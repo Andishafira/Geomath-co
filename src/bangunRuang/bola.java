@@ -1,9 +1,23 @@
 package bangunRuang;
 
 public class bola extends javax.swing.JFrame {
+    bolaDiameter bDiamet;
+    bolaDiameterGambar gbr1;
+    bolaLuasPermukaan bLuas;
+    bolaLuasPermukaanGambar gbr2;
+    
 
     public bola() {
         initComponents();
+        bDiamet = new bolaDiameter();
+        gbr1 = new bolaDiameterGambar();
+        bLuas = new bolaLuasPermukaan();
+        gbr2 = new bolaLuasPermukaanGambar();
+        
+        panelGambar.add(gbr1);
+        panelGambar.add(gbr2);
+        panelUtama.add(bDiamet);
+        panelUtama.add(bLuas);
     }
 
 
@@ -22,6 +36,9 @@ public class bola extends javax.swing.JFrame {
         ButtonLatSoal5 = new javax.swing.JLabel();
         ButtonLatSoal3 = new javax.swing.JLabel();
         ButtonLatSoal6 = new javax.swing.JLabel();
+        buttonDiameter = new javax.swing.JLabel();
+        lsBola = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -61,11 +78,16 @@ public class bola extends javax.swing.JFrame {
         getContentPane().add(panelUtama);
         panelUtama.setBounds(300, 450, 990, 340);
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal.png"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal.png"))); // NOI18N
+        jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel7MouseClicked(evt);
+            }
+        });
         getContentPane().add(jLabel7);
         jLabel7.setBounds(820, 60, 470, 170);
 
-        ButtonLatSoal1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (7).png"))); // NOI18N
+        ButtonLatSoal1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal (7).png"))); // NOI18N
         ButtonLatSoal1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ButtonLatSoal1MouseClicked(evt);
@@ -74,7 +96,7 @@ public class bola extends javax.swing.JFrame {
         getContentPane().add(ButtonLatSoal1);
         ButtonLatSoal1.setBounds(880, 220, 130, 120);
 
-        ButtonLatSoal4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (10).png"))); // NOI18N
+        ButtonLatSoal4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal (10).png"))); // NOI18N
         ButtonLatSoal4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ButtonLatSoal4MouseClicked(evt);
@@ -83,7 +105,7 @@ public class bola extends javax.swing.JFrame {
         getContentPane().add(ButtonLatSoal4);
         ButtonLatSoal4.setBounds(880, 350, 130, 110);
 
-        ButtonLatSoal2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (8).png"))); // NOI18N
+        ButtonLatSoal2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal (8).png"))); // NOI18N
         ButtonLatSoal2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ButtonLatSoal2MouseClicked(evt);
@@ -92,7 +114,7 @@ public class bola extends javax.swing.JFrame {
         getContentPane().add(ButtonLatSoal2);
         ButtonLatSoal2.setBounds(1020, 220, 130, 120);
 
-        ButtonLatSoal5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (11).png"))); // NOI18N
+        ButtonLatSoal5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal (11).png"))); // NOI18N
         ButtonLatSoal5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ButtonLatSoal5MouseClicked(evt);
@@ -101,7 +123,7 @@ public class bola extends javax.swing.JFrame {
         getContentPane().add(ButtonLatSoal5);
         ButtonLatSoal5.setBounds(1020, 350, 130, 110);
 
-        ButtonLatSoal3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (9).png"))); // NOI18N
+        ButtonLatSoal3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal (9).png"))); // NOI18N
         ButtonLatSoal3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ButtonLatSoal3MouseClicked(evt);
@@ -110,7 +132,7 @@ public class bola extends javax.swing.JFrame {
         getContentPane().add(ButtonLatSoal3);
         ButtonLatSoal3.setBounds(1160, 220, 130, 120);
 
-        ButtonLatSoal6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (12).png"))); // NOI18N
+        ButtonLatSoal6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal (12).png"))); // NOI18N
         ButtonLatSoal6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ButtonLatSoal6MouseClicked(evt);
@@ -119,6 +141,28 @@ public class bola extends javax.swing.JFrame {
         getContentPane().add(ButtonLatSoal6);
         ButtonLatSoal6.setBounds(1160, 350, 130, 110);
 
+        buttonDiameter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/bola/diameter jr bola.png"))); // NOI18N
+        buttonDiameter.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                buttonDiameterMouseClicked(evt);
+            }
+        });
+        getContentPane().add(buttonDiameter);
+        buttonDiameter.setBounds(40, 60, 240, 240);
+
+        lsBola.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/bola/luas perm bola .png"))); // NOI18N
+        lsBola.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lsBolaMouseClicked(evt);
+            }
+        });
+        getContentPane().add(lsBola);
+        lsBola.setBounds(40, 310, 240, 230);
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/bola/volume bola.png"))); // NOI18N
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(40, 550, 240, 240);
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/bgkecil.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 0, 1310, 820);
@@ -126,29 +170,49 @@ public class bola extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void ButtonLatSoal1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal1MouseClicked
+    private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel7MouseClicked
 
+    private void ButtonLatSoal1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal1MouseClicked
+        
     }//GEN-LAST:event_ButtonLatSoal1MouseClicked
 
     private void ButtonLatSoal4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal4MouseClicked
-  
+        
     }//GEN-LAST:event_ButtonLatSoal4MouseClicked
 
     private void ButtonLatSoal2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal2MouseClicked
-
+       
     }//GEN-LAST:event_ButtonLatSoal2MouseClicked
 
     private void ButtonLatSoal5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal5MouseClicked
-
+        
     }//GEN-LAST:event_ButtonLatSoal5MouseClicked
 
     private void ButtonLatSoal3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal3MouseClicked
-
+        
     }//GEN-LAST:event_ButtonLatSoal3MouseClicked
 
     private void ButtonLatSoal6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal6MouseClicked
-
+       
     }//GEN-LAST:event_ButtonLatSoal6MouseClicked
+
+    private void buttonDiameterMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonDiameterMouseClicked
+        // TODO add your handling code here:
+        gbr1.setVisible(true);
+        gbr2.setVisible(false);
+        bLuas.setVisible(false);
+        bDiamet.setVisible(true);
+    }//GEN-LAST:event_buttonDiameterMouseClicked
+
+    private void lsBolaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lsBolaMouseClicked
+        // TODO add your handling code here:
+        gbr1.setVisible(false);
+        gbr2.setVisible(true);
+        bLuas.setVisible(true);
+        bDiamet.setVisible(false);
+    }//GEN-LAST:event_lsBolaMouseClicked
 
     /**
      * @param args the command line arguments
@@ -192,10 +256,13 @@ public class bola extends javax.swing.JFrame {
     private javax.swing.JLabel ButtonLatSoal4;
     private javax.swing.JLabel ButtonLatSoal5;
     private javax.swing.JLabel ButtonLatSoal6;
+    private javax.swing.JLabel buttonDiameter;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lsBola;
     private javax.swing.JPanel panelGambar;
     private javax.swing.JPanel panelUtama;
     // End of variables declaration//GEN-END:variables
