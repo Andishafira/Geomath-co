@@ -27,18 +27,11 @@ public class balokDiagonalGambar extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-
         setBackground(new java.awt.Color(8, 80, 116));
         setLayout(null);
-
-        jLabel1.setText("diagonal gambar");
-        add(jLabel1);
-        jLabel1.setBounds(203, 177, 180, 30);
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

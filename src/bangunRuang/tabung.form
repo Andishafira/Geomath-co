@@ -111,7 +111,7 @@
           <Color blue="0" green="0" red="0" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/gambar/Tabung/Luas Permukaan (9).png"/>
+          <Image iconType="3" name="/gambar/Tabung/volume icon.png"/>
         </Property>
       </Properties>
       <Events>
@@ -132,7 +132,7 @@
           <Color blue="0" green="0" red="0" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/gambar/Tabung/Luas Permukaan (10).png"/>
+          <Image iconType="3" name="/gambar/Tabung/doagonal icon.png"/>
         </Property>
       </Properties>
       <Events>

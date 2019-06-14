@@ -28,39 +28,17 @@ public class balokLuasPermukaan extends javax.swing.JPanel {
     private void initComponents() {
 
         jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(24, 64, 105));
         setLayout(null);
 
-        jLabel2.setFont(new java.awt.Font("Eras Light ITC", 1, 24)); // NOI18N
-        jLabel2.setText("Dikarenakan panjang semua sisi belah ketupat sama, sehingga rumus kelilingnya ialah :");
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Balok/luas permukaan (6).png"))); // NOI18N
         add(jLabel2);
-        jLabel2.setBounds(20, 20, 1030, 30);
-
-        jLabel1.setFont(new java.awt.Font("Flame Fetish", 1, 48)); // NOI18N
-        jLabel1.setText("L : 2 x (pxl + p.l + lxt) ");
-        add(jLabel1);
-        jLabel1.setBounds(320, 70, 510, 70);
-
-        jLabel3.setFont(new java.awt.Font("DialogInput", 0, 24)); // NOI18N
-        jLabel3.setText("Contoh Soal:");
-        add(jLabel3);
-        jLabel3.setBounds(20, 110, 190, 40);
-
-        jLabel4.setFont(new java.awt.Font("DialogInput", 0, 24)); // NOI18N
-        jLabel4.setText("maka berapa panjang masing masing sisi belah ketupat tesebut? ");
-        add(jLabel4);
-        jLabel4.setBounds(20, 160, 900, 70);
+        jLabel2.setBounds(0, 0, 990, 340);
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     // End of variables declaration//GEN-END:variables
 }

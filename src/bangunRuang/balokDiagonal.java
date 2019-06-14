@@ -27,11 +27,18 @@ public class balokDiagonal extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel3 = new javax.swing.JLabel();
+
         setBackground(new java.awt.Color(24, 64, 105));
         setLayout(null);
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Balok/diagonal.png"))); // NOI18N
+        add(jLabel3);
+        jLabel3.setBounds(0, 0, 990, 340);
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }

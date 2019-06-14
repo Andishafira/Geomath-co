@@ -27,18 +27,103 @@ public class balokLatihanSoal4 extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel9 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(24, 64, 105));
         setLayout(null);
 
-        jLabel1.setText("lat 4");
+        jLabel9.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("Jawabanmu : ");
+        add(jLabel9);
+        jLabel9.setBounds(40, 220, 140, 24);
+
+        jButton1.setText("Cek");
+        add(jButton1);
+        jButton1.setBounds(80, 260, 52, 32);
+
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
+        add(jTextField2);
+        jTextField2.setBounds(180, 210, 170, 40);
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        add(jTextField1);
+        jTextField1.setBounds(180, 260, 170, 40);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Balok/gambar kubus soal.png"))); // NOI18N
+        add(jLabel2);
+        jLabel2.setBounds(660, 70, 250, 210);
+
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel3.setText("6 cm");
+        add(jLabel3);
+        jLabel3.setBounds(790, 170, 41, 20);
+
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel5.setText("8 cm");
+        add(jLabel5);
+        jLabel5.setBounds(740, 240, 41, 16);
+
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel4.setText("4 cm");
+        add(jLabel4);
+        jLabel4.setBounds(840, 230, 41, 16);
+
+        jLabel11.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setText("Dari soal nomer 1, tentukan panjang kawat");
+        add(jLabel11);
+        jLabel11.setBounds(40, 90, 650, 30);
+
+        jLabel10.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("untuk membuat kerangka balok ABCDEFGH!");
+        add(jLabel10);
+        jLabel10.setBounds(40, 120, 650, 30);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Balok/soal bg.png"))); // NOI18N
         add(jLabel1);
-        jLabel1.setBounds(317, 144, 24, 16);
+        jLabel1.setBounds(-3, -6, 990, 350);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 }
