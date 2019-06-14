@@ -57,8 +57,7 @@ public class psgPanjangLatsol2 extends javax.swing.JPanel {
         add(jButton3);
         jButton3.setBounds(430, 210, 90, 40);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/ls pers (2).png"))); // NOI18N
-        jLabel1.setText("ce");
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/PsgPanjang/ls pers (2).png"))); // NOI18N
         add(jLabel1);
         jLabel1.setBounds(0, 0, 990, 340);
     }// </editor-fold>//GEN-END:initComponents

@@ -29,11 +29,22 @@ public class psgPanjangDiagonal extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
 
-        setLayout(null);
+        jLabel1.setText("Persegi Panjang Diagonal");
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/diagonal persp.png"))); // NOI18N
-        add(jLabel1);
-        jLabel1.setBounds(0, 0, 990, 340);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jLabel1)
+                .addGap(0, 869, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jLabel1)
+                .addGap(0, 326, Short.MAX_VALUE))
+        );
     }// </editor-fold>//GEN-END:initComponents
 
 

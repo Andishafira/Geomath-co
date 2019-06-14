@@ -5,7 +5,6 @@
  */
 package bangunDatar;
 
-import gambar.psgPanjangLuas;
 
 /**
  *
@@ -16,35 +15,47 @@ public class persegiPanjang extends javax.swing.JFrame {
     /**
      * Creates new form persegiPanjang
      */
-    psgPanjangLuas lsPanjang;
-    psgPanjangDiagonal diagon;
-    psgPanjangLatsol1 latSol1;
-    psgPanjangLatsol2 latSol2;
-    psgPanjangLatsol3 latSol3;
-    psgPanjangLatsol4 latSol4;
-    psgPanjangLatsol5 latSol5;
-    psgPanjangLatsol6 latSol6;
+    psgPanjangKeliling pKel;
+    psgPanjangKelilingGambar gbr1;
+    psgPanjangLuas pLuas;
+    psgPanjangLuasGambar gbr2;
+    psgPanjangDiagonal pDiagonal;
+    psgPanjangDiagonalGambar gbr3;
+    psgPanjangLatsol1 pL1;
+    psgPanjangLatsol2 pL2;
+    psgPanjangLatsol3 pL3;
+    psgPanjangLatsol4 pL4;
+    psgPanjangLatsol5 pL5;
+    psgPanjangLatsol6 pL6;
     
     public persegiPanjang() {
         initComponents();
-        lsPanjang = new psgPanjangLuas();
-        diagon = new psgPanjangDiagonal();
-        latSol1 = new psgPanjangLatsol1();
-        latSol2 = new psgPanjangLatsol2();
-        latSol3 = new psgPanjangLatsol3();
-        latSol4 = new psgPanjangLatsol4();
-        latSol5 = new psgPanjangLatsol5();
-        latSol6 = new psgPanjangLatsol6();
+        pKel = new psgPanjangKeliling();
+        gbr1 = new psgPanjangKelilingGambar();
+        pLuas = new psgPanjangLuas();
+        gbr2 = new psgPanjangLuasGambar();
+        pDiagonal = new psgPanjangDiagonal();
+        gbr3 = new psgPanjangDiagonalGambar();
+        pL1 = new psgPanjangLatsol1();
+        pL2 = new psgPanjangLatsol2();
+        pL3 = new psgPanjangLatsol3();
+        pL4 = new psgPanjangLatsol4();
+        pL5 = new psgPanjangLatsol5();
+        pL6 = new psgPanjangLatsol6();
+
+        panelGambar.add(gbr1);
+        panelUtama.add(pKel);
+        panelGambar.add(gbr2);
+        panelUtama.add(pLuas);
+        panelGambar.add(gbr3);
+        panelUtama.add(pDiagonal);
+        panelUtama.add(pL1);
+        panelUtama.add(pL2);
+        panelUtama.add(pL3);
+        panelUtama.add(pL4);
+        panelUtama.add(pL5);
+        panelUtama.add(pL6);
         
-        panelTampil.add(lsPanjang);
-        panelTampil.add(diagon);
-        panelTampil.add(latSol1);
-        panelTampil.add(latSol2);
-        panelTampil.add(latSol3);
-        panelTampil.add(latSol4);
-        panelTampil.add(latSol5);
-        panelTampil.add(latSol6);
-       
     }
 
     /**
@@ -58,18 +69,18 @@ public class persegiPanjang extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        jPanel6 = new javax.swing.JPanel();
+        panelGambar = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
-        panelTampil = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        panelUtama = new javax.swing.JPanel();
+        Latsol1 = new javax.swing.JLabel();
+        Latsol2 = new javax.swing.JLabel();
+        Latsol3 = new javax.swing.JLabel();
+        Latsol4 = new javax.swing.JLabel();
+        Latsol5 = new javax.swing.JLabel();
+        Latsol6 = new javax.swing.JLabel();
+        diagonPers = new javax.swing.JLabel();
+        pKeliling = new javax.swing.JLabel();
+        lsPers = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -104,65 +115,100 @@ public class persegiPanjang extends javax.swing.JFrame {
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 1310, 50);
 
-        jPanel6.setBackground(new java.awt.Color(8, 80, 116));
-        jPanel6.setLayout(new java.awt.CardLayout());
-        getContentPane().add(jPanel6);
-        jPanel6.setBounds(300, 60, 570, 380);
+        panelGambar.setBackground(new java.awt.Color(8, 80, 116));
+        panelGambar.setLayout(new java.awt.CardLayout());
+        getContentPane().add(panelGambar);
+        panelGambar.setBounds(300, 60, 570, 380);
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal.png"))); // NOI18N
         getContentPane().add(jLabel7);
         jLabel7.setBounds(820, 60, 470, 170);
 
-        panelTampil.setBackground(new java.awt.Color(24, 64, 105));
-        panelTampil.setLayout(new java.awt.CardLayout());
-        getContentPane().add(panelTampil);
-        panelTampil.setBounds(300, 450, 990, 340);
+        panelUtama.setBackground(new java.awt.Color(24, 64, 105));
+        panelUtama.setLayout(new java.awt.CardLayout());
+        getContentPane().add(panelUtama);
+        panelUtama.setBounds(300, 450, 990, 340);
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (7).png"))); // NOI18N
-        getContentPane().add(jLabel6);
-        jLabel6.setBounds(880, 220, 130, 120);
-
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (8).png"))); // NOI18N
-        getContentPane().add(jLabel8);
-        jLabel8.setBounds(1020, 220, 130, 120);
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (9).png"))); // NOI18N
-        getContentPane().add(jLabel9);
-        jLabel9.setBounds(1160, 220, 130, 120);
-
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (10).png"))); // NOI18N
-        getContentPane().add(jLabel10);
-        jLabel10.setBounds(880, 350, 130, 110);
-
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (11).png"))); // NOI18N
-        getContentPane().add(jLabel11);
-        jLabel11.setBounds(1020, 350, 130, 110);
-
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (12).png"))); // NOI18N
-        getContentPane().add(jLabel12);
-        jLabel12.setBounds(1160, 350, 130, 110);
-
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/ls persegi pjg.png"))); // NOI18N
-        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
+        Latsol1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (7).png"))); // NOI18N
+        Latsol1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel4MouseClicked(evt);
+                Latsol1MouseClicked(evt);
             }
         });
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(40, 300, 240, 230);
+        getContentPane().add(Latsol1);
+        Latsol1.setBounds(880, 220, 130, 120);
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/diagonal persegi pjg.png"))); // NOI18N
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(40, 540, 240, 250);
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/kell persegi pjg.png"))); // NOI18N
-        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+        Latsol2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (8).png"))); // NOI18N
+        Latsol2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel1MouseClicked(evt);
+                Latsol2MouseClicked(evt);
             }
         });
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(40, 60, 240, 230);
+        getContentPane().add(Latsol2);
+        Latsol2.setBounds(1020, 220, 130, 120);
+
+        Latsol3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (9).png"))); // NOI18N
+        Latsol3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Latsol3MouseClicked(evt);
+            }
+        });
+        getContentPane().add(Latsol3);
+        Latsol3.setBounds(1160, 220, 130, 120);
+
+        Latsol4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (10).png"))); // NOI18N
+        Latsol4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Latsol4MouseClicked(evt);
+            }
+        });
+        getContentPane().add(Latsol4);
+        Latsol4.setBounds(880, 350, 130, 110);
+
+        Latsol5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (11).png"))); // NOI18N
+        Latsol5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Latsol5MouseClicked(evt);
+            }
+        });
+        getContentPane().add(Latsol5);
+        Latsol5.setBounds(1020, 350, 130, 110);
+
+        Latsol6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (12).png"))); // NOI18N
+        Latsol6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Latsol6MouseClicked(evt);
+            }
+        });
+        getContentPane().add(Latsol6);
+        Latsol6.setBounds(1160, 350, 130, 110);
+
+        diagonPers.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/PsgPanjang/diagonal persegi pjg.png"))); // NOI18N
+        diagonPers.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                diagonPersMouseClicked(evt);
+            }
+        });
+        getContentPane().add(diagonPers);
+        diagonPers.setBounds(40, 540, 240, 250);
+
+        pKeliling.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/PsgPanjang/kell persegi pjg.png"))); // NOI18N
+        pKeliling.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                pKelilingMouseClicked(evt);
+            }
+        });
+        getContentPane().add(pKeliling);
+        pKeliling.setBounds(40, 60, 240, 230);
+
+        lsPers.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/PsgPanjang/ls persegi pjg.png"))); // NOI18N
+        lsPers.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lsPersMouseClicked(evt);
+            }
+        });
+        getContentPane().add(lsPers);
+        lsPers.setBounds(40, 300, 240, 230);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/abstract-blue-geometric-shapes-background-vector.jpg"))); // NOI18N
         getContentPane().add(jLabel2);
@@ -171,27 +217,154 @@ public class persegiPanjang extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+    private void pKelilingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pKelilingMouseClicked
         // TODO add your handling code here:
-       
-    }//GEN-LAST:event_jLabel1MouseClicked
+        pKel.setVisible(true);
+        gbr1.setVisible(true);
+        pLuas.setVisible(false);
+        gbr2.setVisible(false);
+        pDiagonal.setVisible(false);
+        gbr3.setVisible(false);
+        pL1.setVisible(false);
+        pL2.setVisible(false);
+        pL3.setVisible(false);
+        pL4.setVisible(false);
+        pL5.setVisible(false);
+        pL6.setVisible(false);
+    }//GEN-LAST:event_pKelilingMouseClicked
 
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_jLabel3MouseClicked
 
-    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
+    private void lsPersMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lsPersMouseClicked
         // TODO add your handling code here:
-        lsPanjang.setVisible(true);
-        diagon.setVisible(false);
-        latSol1.setVisible(false);
-        latSol2.setVisible(false);
-        latSol3.setVisible(false);
-        latSol4.setVisible(false);
-        latSol5.setVisible(false);
-        latSol6.setVisible(false);
-    }//GEN-LAST:event_jLabel4MouseClicked
+        pKel.setVisible(false);
+        gbr1.setVisible(false);
+        pLuas.setVisible(true);
+        gbr2.setVisible(true);
+        pDiagonal.setVisible(false);
+        gbr3.setVisible(false);
+        pL1.setVisible(false);
+        pL2.setVisible(false);
+        pL3.setVisible(false);
+        pL4.setVisible(false);
+        pL5.setVisible(false);
+        pL6.setVisible(false);
+    }//GEN-LAST:event_lsPersMouseClicked
+
+    private void diagonPersMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_diagonPersMouseClicked
+        // TODO add your handling code here:
+        pKel.setVisible(false);
+        gbr1.setVisible(false);
+        pLuas.setVisible(false);
+        gbr2.setVisible(false);
+        pDiagonal.setVisible(true);
+        gbr3.setVisible(true);
+        pL1.setVisible(false);
+        pL2.setVisible(false);
+        pL3.setVisible(false);
+        pL4.setVisible(false);
+        pL5.setVisible(false);
+        pL6.setVisible(false);
+    }//GEN-LAST:event_diagonPersMouseClicked
+
+    private void Latsol1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Latsol1MouseClicked
+        // TODO add your handling code here:
+        pKel.setVisible(false);
+        gbr1.setVisible(false);
+        pLuas.setVisible(false);
+        gbr2.setVisible(false);
+        pDiagonal.setVisible(false);
+        gbr3.setVisible(false);
+        pL1.setVisible(true);
+        pL2.setVisible(false);
+        pL3.setVisible(false);
+        pL4.setVisible(false);
+        pL5.setVisible(false);
+        pL6.setVisible(false);
+    }//GEN-LAST:event_Latsol1MouseClicked
+
+    private void Latsol2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Latsol2MouseClicked
+        // TODO add your handling code here:
+        pKel.setVisible(false);
+        gbr1.setVisible(false);
+        pLuas.setVisible(false);
+        gbr2.setVisible(false);
+        pDiagonal.setVisible(false);
+        gbr3.setVisible(false);
+        pL1.setVisible(false);
+        pL2.setVisible(true);
+        pL3.setVisible(false);
+        pL4.setVisible(false);
+        pL5.setVisible(false);
+        pL6.setVisible(false);
+    }//GEN-LAST:event_Latsol2MouseClicked
+
+    private void Latsol3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Latsol3MouseClicked
+        // TODO add your handling code here:
+        pKel.setVisible(false);
+        gbr1.setVisible(false);
+        pLuas.setVisible(false);
+        gbr2.setVisible(false);
+        pDiagonal.setVisible(false);
+        gbr3.setVisible(false);
+        pL1.setVisible(false);
+        pL2.setVisible(false);
+        pL3.setVisible(true);
+        pL4.setVisible(false);
+        pL5.setVisible(false);
+        pL6.setVisible(false);
+    }//GEN-LAST:event_Latsol3MouseClicked
+
+    private void Latsol4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Latsol4MouseClicked
+        // TODO add your handling code here:
+        pKel.setVisible(false);
+        gbr1.setVisible(false);
+        pLuas.setVisible(false);
+        gbr2.setVisible(false);
+        pDiagonal.setVisible(false);
+        gbr3.setVisible(false);
+        pL1.setVisible(false);
+        pL2.setVisible(false);
+        pL3.setVisible(false);
+        pL4.setVisible(true);
+        pL5.setVisible(false);
+        pL6.setVisible(false);
+    }//GEN-LAST:event_Latsol4MouseClicked
+
+    private void Latsol5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Latsol5MouseClicked
+        // TODO add your handling code here:
+        pKel.setVisible(false);
+        gbr1.setVisible(false);
+        pLuas.setVisible(false);
+        gbr2.setVisible(false);
+        pDiagonal.setVisible(false);
+        gbr3.setVisible(false);
+        pL1.setVisible(false);
+        pL2.setVisible(false);
+        pL3.setVisible(false);
+        pL4.setVisible(false);
+        pL5.setVisible(true);
+        pL6.setVisible(false);
+    }//GEN-LAST:event_Latsol5MouseClicked
+
+    private void Latsol6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Latsol6MouseClicked
+        // TODO add your handling code here:
+        pKel.setVisible(false);
+        gbr1.setVisible(false);
+        pLuas.setVisible(false);
+        gbr2.setVisible(false);
+        pDiagonal.setVisible(false);
+        gbr3.setVisible(false);
+        pL1.setVisible(false);
+        pL2.setVisible(false);
+        pL3.setVisible(false);
+        pL4.setVisible(false);
+        pL5.setVisible(false);
+        pL6.setVisible(true);
+    }//GEN-LAST:event_Latsol6MouseClicked
 
     /**
      * @param args the command line arguments
@@ -229,20 +402,20 @@ public class persegiPanjang extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel Latsol1;
+    private javax.swing.JLabel Latsol2;
+    private javax.swing.JLabel Latsol3;
+    private javax.swing.JLabel Latsol4;
+    private javax.swing.JLabel Latsol5;
+    private javax.swing.JLabel Latsol6;
+    private javax.swing.JLabel diagonPers;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel panelTampil;
+    private javax.swing.JLabel lsPers;
+    private javax.swing.JLabel pKeliling;
+    private javax.swing.JPanel panelGambar;
+    private javax.swing.JPanel panelUtama;
     // End of variables declaration//GEN-END:variables
 }

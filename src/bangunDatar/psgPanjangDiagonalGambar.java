@@ -9,12 +9,12 @@ package bangunDatar;
  *
  * @author SONY
  */
-public class psgPanjangLatsol4 extends javax.swing.JPanel {
+public class psgPanjangDiagonalGambar extends javax.swing.JPanel {
 
     /**
-     * Creates new form psgPanjangLatsol4
+     * Creates new form psgPanjangDiagonalGambar
      */
-    public psgPanjangLatsol4() {
+    public psgPanjangDiagonalGambar() {
         initComponents();
     }
 
@@ -27,31 +27,28 @@ public class psgPanjangLatsol4 extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jTextField1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jTextField3 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
 
-        setLayout(null);
-        add(jTextField1);
-        jTextField1.setBounds(200, 210, 150, 40);
+        jLabel1.setText("Persegi Panjang Diagonal Gambar");
 
-        jButton1.setText("CEK KUNCI");
-        add(jButton1);
-        jButton1.setBounds(430, 210, 90, 23);
-        add(jTextField3);
-        jTextField3.setBounds(590, 210, 200, 40);
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/PsgPanjang/ls pers (4).png"))); // NOI18N
-        add(jLabel1);
-        jLabel1.setBounds(-6, 0, 1000, 340);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jLabel1)
+                .addGap(0, 409, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jLabel1)
+                .addGap(0, 366, Short.MAX_VALUE))
+        );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField3;
     // End of variables declaration//GEN-END:variables
 }
