@@ -5,6 +5,8 @@
  */
 package bangunDatar;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author SONY
@@ -14,6 +16,8 @@ public class psgPanjangLatsol2 extends javax.swing.JPanel {
     /**
      * Creates new form psgPanjangLatsol2
      */
+    String jawaban;
+    
     public psgPanjangLatsol2() {
         initComponents();
     }
@@ -55,7 +59,7 @@ public class psgPanjangLatsol2 extends javax.swing.JPanel {
             }
         });
         add(jButton3);
-        jButton3.setBounds(430, 210, 90, 40);
+        jButton3.setBounds(420, 210, 100, 40);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/PsgPanjang/ls pers (2).png"))); // NOI18N
         add(jLabel1);
@@ -64,6 +68,13 @@ public class psgPanjangLatsol2 extends javax.swing.JPanel {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        jawaban = jTextField5.getText();
+        
+        if(jawaban.equals("108")){
+            jTextField6.setText("Jawaban Benar : 108 cm");
+        } else {
+            JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
+        }
     }//GEN-LAST:event_jButton3ActionPerformed
 
 

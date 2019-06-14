@@ -5,6 +5,8 @@
  */
 package bangunDatar;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author SONY
@@ -14,6 +16,8 @@ public class psgPanjangLatsol1 extends javax.swing.JPanel {
     /**
      * Creates new form psgPanjangLatsol1
      */
+    String jawaban;
+    
     public psgPanjangLatsol1() {
         initComponents();
     }
@@ -30,7 +34,7 @@ public class psgPanjangLatsol1 extends javax.swing.JPanel {
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        cekKunci = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setLayout(null);
@@ -41,18 +45,34 @@ public class psgPanjangLatsol1 extends javax.swing.JPanel {
         add(jTextField3);
         jTextField3.setBounds(590, 210, 200, 40);
 
-        jButton1.setText("CEK KUNCI");
-        add(jButton1);
-        jButton1.setBounds(430, 210, 90, 23);
+        cekKunci.setText("CEK KUNCI");
+        cekKunci.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cekKunciActionPerformed(evt);
+            }
+        });
+        add(cekKunci);
+        cekKunci.setBounds(420, 210, 110, 40);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/PsgPanjang/ls pers (1).png"))); // NOI18N
         add(jLabel1);
         jLabel1.setBounds(0, 0, 990, 340);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void cekKunciActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cekKunciActionPerformed
+        // TODO add your handling code here:
+        jawaban = jTextField1.getText();
+        
+        if(jawaban.equals("1350")){
+            jTextField2.setText("Jawaban Benar : 1350 cm");
+        } else {
+            JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
+        }
+    }//GEN-LAST:event_cekKunciActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton cekKunci;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
