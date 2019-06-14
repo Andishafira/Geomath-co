@@ -60,8 +60,8 @@ public class psgPanjangLatsol3 extends javax.swing.JPanel {
         // TODO add your handling code here:
         jawaban = jTextField1.getText();
         
-        if(jawaban.equals("8")){
-            jTextField3.setText("Jawaban Benar : 8 cm");
+        if(jawaban.equals("10")){
+            jTextField3.setText("Jawaban Benar : 10 cm");
         } else {
             JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
         }
