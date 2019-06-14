@@ -9,12 +9,12 @@ package bangunDatar;
  *
  * @author FAZA
  */
-public class segiTigaLuas extends javax.swing.JFrame {
+public class layanglayangDiagonal extends javax.swing.JFrame {
 
     /**
-     * Creates new form segiTigaLuas
+     * Creates new form layanglayangDiagonal
      */
-    public segiTigaLuas() {
+    public layanglayangDiagonal() {
         initComponents();
     }
 

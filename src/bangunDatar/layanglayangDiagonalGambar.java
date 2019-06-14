@@ -9,12 +9,12 @@ package bangunDatar;
  *
  * @author FAZA
  */
-public class segiTigaLuas extends javax.swing.JFrame {
+public class layanglayangDiagonalGambar extends javax.swing.JFrame {
 
     /**
-     * Creates new form segiTigaLuas
+     * Creates new form layanglayangDiagonalGambar
      */
-    public segiTigaLuas() {
+    public layanglayangDiagonalGambar() {
         initComponents();
     }
 
@@ -46,8 +46,7 @@ public class segiTigaLuas extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    
-
+   
     // Variables declaration - do not modify//GEN-BEGIN:variables
     // End of variables declaration//GEN-END:variables
 }
