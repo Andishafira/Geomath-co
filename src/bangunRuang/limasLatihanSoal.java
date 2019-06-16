@@ -27,19 +27,213 @@ public class limasLatihanSoal extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+        jPanel1 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        ButtonLatSoal1 = new javax.swing.JLabel();
+        ButtonLatSoal2 = new javax.swing.JLabel();
+        ButtonLatSoal3 = new javax.swing.JLabel();
+        panelUtama2 = new javax.swing.JPanel();
+        ButtonLatSoal6 = new javax.swing.JLabel();
+        ButtonLatSoal5 = new javax.swing.JLabel();
+        ButtonLatSoal4 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+
+        setLayout(null);
+
+        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
+
+        jLabel2.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("X");
+
+        jLabel6.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("O");
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/home icon kecil.png"))); // NOI18N
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1171, Short.MAX_VALUE)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(21, 21, 21))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel2)
+                        .addComponent(jLabel6)))
+                .addGap(0, 3, Short.MAX_VALUE))
         );
+
+        add(jPanel1);
+        jPanel1.setBounds(0, 0, 1310, 50);
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal.png"))); // NOI18N
+        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel11MouseClicked(evt);
+            }
+        });
+        add(jLabel11);
+        jLabel11.setBounds(430, 50, 470, 170);
+
+        ButtonLatSoal1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal (7).png"))); // NOI18N
+        ButtonLatSoal1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ButtonLatSoal1MouseClicked(evt);
+            }
+        });
+        add(ButtonLatSoal1);
+        ButtonLatSoal1.setBounds(460, 210, 130, 120);
+
+        ButtonLatSoal2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal (8).png"))); // NOI18N
+        ButtonLatSoal2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ButtonLatSoal2MouseClicked(evt);
+            }
+        });
+        add(ButtonLatSoal2);
+        ButtonLatSoal2.setBounds(600, 210, 130, 120);
+
+        ButtonLatSoal3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal (9).png"))); // NOI18N
+        ButtonLatSoal3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ButtonLatSoal3MouseClicked(evt);
+            }
+        });
+        add(ButtonLatSoal3);
+        ButtonLatSoal3.setBounds(740, 210, 130, 120);
+
+        panelUtama2.setBackground(new java.awt.Color(24, 64, 105));
+        panelUtama2.setLayout(new java.awt.CardLayout());
+        add(panelUtama2);
+        panelUtama2.setBounds(160, 440, 990, 340);
+
+        ButtonLatSoal6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal (12).png"))); // NOI18N
+        ButtonLatSoal6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ButtonLatSoal6MouseClicked(evt);
+            }
+        });
+        add(ButtonLatSoal6);
+        ButtonLatSoal6.setBounds(740, 340, 130, 110);
+
+        ButtonLatSoal5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal (11).png"))); // NOI18N
+        ButtonLatSoal5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ButtonLatSoal5MouseClicked(evt);
+            }
+        });
+        add(ButtonLatSoal5);
+        ButtonLatSoal5.setBounds(600, 340, 130, 110);
+
+        ButtonLatSoal4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal (10).png"))); // NOI18N
+        ButtonLatSoal4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ButtonLatSoal4MouseClicked(evt);
+            }
+        });
+        add(ButtonLatSoal4);
+        ButtonLatSoal4.setBounds(460, 340, 130, 110);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/bgkecil.jpg"))); // NOI18N
+        add(jLabel1);
+        jLabel1.setBounds(0, 0, 1310, 820);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel11MouseClicked
+
+    private void ButtonLatSoal1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal1MouseClicked
+        pBL0.setVisible(false);
+        pBL1.setVisible(true);
+        pBL2.setVisible(false);
+        pBL3.setVisible(false);
+        pBL4.setVisible(false);
+        pBL5.setVisible(false);
+        pBL6.setVisible(false);
+    }//GEN-LAST:event_ButtonLatSoal1MouseClicked
+
+    private void ButtonLatSoal2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal2MouseClicked
+
+        pBL1.setVisible(false);
+        pBL2.setVisible(true);
+        pBL3.setVisible(false);
+        pBL4.setVisible(false);
+        pBL5.setVisible(false);
+        pBL6.setVisible(false);
+    }//GEN-LAST:event_ButtonLatSoal2MouseClicked
+
+    private void ButtonLatSoal3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal3MouseClicked
+
+        pBL1.setVisible(false);
+        pBL2.setVisible(false);
+        pBL3.setVisible(true);
+        pBL4.setVisible(false);
+        pBL5.setVisible(false);
+        pBL6.setVisible(false);
+    }//GEN-LAST:event_ButtonLatSoal3MouseClicked
+
+    private void ButtonLatSoal6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal6MouseClicked
+
+        pBL1.setVisible(false);
+        pBL2.setVisible(false);
+        pBL3.setVisible(false);
+        pBL4.setVisible(false);
+        pBL5.setVisible(false);
+        pBL6.setVisible(true);
+    }//GEN-LAST:event_ButtonLatSoal6MouseClicked
+
+    private void ButtonLatSoal5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal5MouseClicked
+
+        pBL1.setVisible(false);
+        pBL2.setVisible(false);
+        pBL3.setVisible(false);
+        pBL4.setVisible(false);
+        pBL5.setVisible(true);
+        pBL6.setVisible(false);
+    }//GEN-LAST:event_ButtonLatSoal5MouseClicked
+
+    private void ButtonLatSoal4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal4MouseClicked
+
+        pBL1.setVisible(false);
+        pBL2.setVisible(false);
+        pBL3.setVisible(false);
+        pBL4.setVisible(true);
+        pBL5.setVisible(false);
+        pBL6.setVisible(false);
+
+    }//GEN-LAST:event_ButtonLatSoal4MouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel ButtonLatSoal1;
+    private javax.swing.JLabel ButtonLatSoal2;
+    private javax.swing.JLabel ButtonLatSoal3;
+    private javax.swing.JLabel ButtonLatSoal4;
+    private javax.swing.JLabel ButtonLatSoal5;
+    private javax.swing.JLabel ButtonLatSoal6;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel panelUtama2;
     // End of variables declaration//GEN-END:variables
 }

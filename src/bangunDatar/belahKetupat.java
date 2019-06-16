@@ -20,6 +20,8 @@ public class belahKetupat extends javax.swing.JFrame {
     
     public belahKetupat() {
         initComponents();
+        pB0 = new belahKetupatDeskripsi();
+        pA0 = new belahKetupatGambar();
         pB1 = new belahKetupatKeliling();
         pA1 = new belahKetupatKelilingGambar();
         pB2 = new belahKetupatLuas();
@@ -33,6 +35,7 @@ public class belahKetupat extends javax.swing.JFrame {
         pBL5 = new belahKetupatLatihanSoal5();
         pBL6 = new belahKetupatLatihanSoal6();
         
+        panelUtama.add(pB0);
         panelUtama.add(pB1);
         panelUtama.add(pB2);
         panelUtama.add(pB3);
@@ -44,6 +47,7 @@ public class belahKetupat extends javax.swing.JFrame {
         panelUtama.add(pBL6);
         
         panelGambar.add(pA1);
+        panelUtama.add(pA0);
         panelGambar.add(pA2);
         panelGambar.add(pA3);
         
@@ -204,6 +208,7 @@ public class belahKetupat extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void buttonKelilingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonKelilingMouseClicked
+        pB0.setVisible(false);
         pB1.setVisible(true);
         pB2.setVisible(false);
         pB3.setVisible(false);
@@ -214,6 +219,7 @@ public class belahKetupat extends javax.swing.JFrame {
         pBL5.setVisible(false);
         pBL6.setVisible(false);
         
+        pA0.setVisible(false);
         pA1.setVisible(true);
         pA2.setVisible(false);
         pA3.setVisible(false);

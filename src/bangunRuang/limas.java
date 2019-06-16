@@ -2,18 +2,44 @@
 package bangunRuang;
 
 public class limas extends javax.swing.JFrame {
-
+    limasLuasPermukaan pB1;
+    limasLuasPermukaanGambar pA1;
+    limasVolume pB2;
+    limasVolumeGambar pA2;
+    limasDiagonal pB3;
+    limasDiagonalGambar pA3;
+    limasDeskripsi pB0;
+    limasGambar pA0;
+    
     public limas() {
         initComponents();
+        pB1 = new limasLuasPermukaan();
+        pA1 = new limasLuasPermukaanGambar();
+        pB2 = new limasVolume();
+        pA2 = new limasVolumeGambar();
+        pB3 = new limasDiagonal();
+        pA3 = new limasDiagonalGambar();
+        pB0 = new limasDeskripsi();
+        pA0 = new limasGambar();
+        
+        panelUtama.add(pB0);
+        panelUtama.add(pB1);
+        panelUtama.add(pB2);
+        panelUtama.add(pB3);
+        
+        panelGambar.add(pA0);
+        panelGambar.add(pA1);
+        panelGambar.add(pA2);
+        panelGambar.add(pA3);
     }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel2 = new javax.swing.JPanel();
+        panelGambar = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
+        panelUtama = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -22,21 +48,10 @@ public class limas extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        jPanel2.setBackground(new java.awt.Color(8, 80, 116));
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 990, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 380, Short.MAX_VALUE)
-        );
-
-        getContentPane().add(jPanel2);
-        jPanel2.setBounds(301, 62, 990, 380);
+        panelGambar.setBackground(new java.awt.Color(8, 80, 116));
+        panelGambar.setLayout(new java.awt.CardLayout());
+        getContentPane().add(panelGambar);
+        panelGambar.setBounds(301, 62, 990, 380);
 
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
 
@@ -54,21 +69,10 @@ public class limas extends javax.swing.JFrame {
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 1310, 50);
 
-        jPanel3.setBackground(new java.awt.Color(24, 64, 105));
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 990, Short.MAX_VALUE)
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 340, Short.MAX_VALUE)
-        );
-
-        getContentPane().add(jPanel3);
-        jPanel3.setBounds(301, 454, 990, 340);
+        panelUtama.setBackground(new java.awt.Color(24, 64, 105));
+        panelUtama.setLayout(new java.awt.CardLayout());
+        getContentPane().add(panelUtama);
+        panelUtama.setBounds(301, 454, 990, 340);
 
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 0, 0));
@@ -115,12 +119,7 @@ public class limas extends javax.swing.JFrame {
         pB1.setVisible(true);
         pB2.setVisible(false);
         pB3.setVisible(false);
-        pBL1.setVisible(false);
-        pBL2.setVisible(false);
-        pBL3.setVisible(false);
-        pBL4.setVisible(false);
-        pBL5.setVisible(false);
-        pBL6.setVisible(false);
+        
 
         pA0.setVisible(false);
         pA1.setVisible(true);
@@ -133,13 +132,7 @@ public class limas extends javax.swing.JFrame {
         pB1.setVisible(false);
         pB2.setVisible(true);
         pB3.setVisible(false);
-        pBL1.setVisible(false);
-        pBL2.setVisible(false);
-        pBL3.setVisible(false);
-        pBL4.setVisible(false);
-        pBL5.setVisible(false);
-        pBL6.setVisible(false);
-
+        
         pA0.setVisible(false);
         pA1.setVisible(false);
         pA2.setVisible(true);
@@ -151,12 +144,7 @@ public class limas extends javax.swing.JFrame {
         pB1.setVisible(false);
         pB2.setVisible(false);
         pB3.setVisible(true);
-        pBL1.setVisible(false);
-        pBL2.setVisible(false);
-        pBL3.setVisible(false);
-        pBL4.setVisible(false);
-        pBL5.setVisible(false);
-        pBL6.setVisible(false);
+       
 
         pA0.setVisible(false);
         pA1.setVisible(false);
@@ -200,7 +188,7 @@ public class limas extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel panelGambar;
+    private javax.swing.JPanel panelUtama;
     // End of variables declaration//GEN-END:variables
 }
