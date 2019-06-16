@@ -42,7 +42,7 @@ public class lingkaranLatihanSoal5 extends javax.swing.JPanel {
         jLabel7.setBackground(new java.awt.Color(255, 255, 255));
         jLabel7.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(153, 255, 255));
-        jLabel7.setText("Diketahui lingkaran dengan jari jari 14 cm");
+        jLabel7.setText("Diketahui lingkaran dengan keliling 31,4 cm");
         add(jLabel7);
         jLabel7.setBounds(30, 30, 510, 50);
 
@@ -79,7 +79,7 @@ public class lingkaranLatihanSoal5 extends javax.swing.JPanel {
         add(jTextField1);
         jTextField1.setBounds(170, 240, 170, 40);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/lingkaran/soal gambar kososng2.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/lingkaran/soal gambar kososng4.png"))); // NOI18N
         add(jLabel4);
         jLabel4.setBounds(680, 40, 250, 270);
 

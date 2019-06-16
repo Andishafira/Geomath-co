@@ -33,8 +33,9 @@ public class lingkaranLatihanSoal4 extends javax.swing.JPanel {
         jButton1 = new javax.swing.JButton();
         jTextField2 = new javax.swing.JTextField();
         jTextField1 = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setLayout(null);
@@ -42,14 +43,14 @@ public class lingkaranLatihanSoal4 extends javax.swing.JPanel {
         jLabel7.setBackground(new java.awt.Color(255, 255, 255));
         jLabel7.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(153, 255, 255));
-        jLabel7.setText("Diketahui lingkaran dengan jari jari 14 cm");
+        jLabel7.setText("Diketahui lingkaran dengan jari jari 10 cm");
         add(jLabel7);
         jLabel7.setBounds(30, 30, 510, 50);
 
         jLabel8.setBackground(new java.awt.Color(255, 255, 255));
         jLabel8.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(153, 255, 255));
-        jLabel8.setText("Hitungkah luasnya!");
+        jLabel8.setText("Hitungkah kelilingnya!");
         add(jLabel8);
         jLabel8.setBounds(30, 80, 510, 50);
 
@@ -79,14 +80,19 @@ public class lingkaranLatihanSoal4 extends javax.swing.JPanel {
         add(jTextField1);
         jTextField1.setBounds(170, 240, 170, 40);
 
+        jLabel2.setForeground(new java.awt.Color(255, 0, 51));
+        jLabel2.setText("10 cm");
+        add(jLabel2);
+        jLabel2.setBounds(840, 150, 41, 16);
+
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/lingkaran/soal gambar kososng2.png"))); // NOI18N
         add(jLabel4);
         jLabel4.setBounds(680, 40, 250, 270);
 
-        jLabel2.setForeground(new java.awt.Color(255, 0, 51));
-        jLabel2.setText("14 cm");
-        add(jLabel2);
-        jLabel2.setBounds(840, 150, 41, 16);
+        jLabel3.setForeground(new java.awt.Color(255, 0, 51));
+        jLabel3.setText("14 cm");
+        add(jLabel3);
+        jLabel3.setBounds(840, 150, 41, 16);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/lingkaran/soal.png"))); // NOI18N
         add(jLabel1);
@@ -106,6 +112,7 @@ public class lingkaranLatihanSoal4 extends javax.swing.JPanel {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;

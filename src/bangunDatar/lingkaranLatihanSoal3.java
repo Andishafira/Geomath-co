@@ -36,6 +36,7 @@ public class lingkaranLatihanSoal3 extends javax.swing.JPanel {
         jLabel4 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setLayout(null);
@@ -54,11 +55,10 @@ public class lingkaranLatihanSoal3 extends javax.swing.JPanel {
         add(jLabel8);
         jLabel8.setBounds(30, 130, 510, 50);
 
-        jLabel9.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(153, 255, 255));
-        jLabel9.setText("Jawabanmu : ");
+        jLabel9.setText("2");
         add(jLabel9);
-        jLabel9.setBounds(30, 200, 140, 24);
+        jLabel9.setBounds(530, 80, 140, 24);
 
         jButton1.setText("Cek");
         add(jButton1);
@@ -96,6 +96,12 @@ public class lingkaranLatihanSoal3 extends javax.swing.JPanel {
         add(jLabel10);
         jLabel10.setBounds(30, 80, 510, 50);
 
+        jLabel11.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(153, 255, 255));
+        jLabel11.setText("Jawabanmu : ");
+        add(jLabel11);
+        jLabel11.setBounds(30, 200, 140, 24);
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/lingkaran/soal.png"))); // NOI18N
         add(jLabel1);
         jLabel1.setBounds(0, 0, 990, 340);
@@ -114,6 +120,7 @@ public class lingkaranLatihanSoal3 extends javax.swing.JPanel {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel7;
