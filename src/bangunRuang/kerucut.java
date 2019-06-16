@@ -188,32 +188,32 @@ public class kerucut extends javax.swing.JFrame {
         getContentPane().add(ButtonLatSoal6);
         ButtonLatSoal6.setBounds(1160, 350, 130, 110);
 
-        jLabel3.setText("Selimut dan Garis Pelukis Kerucut");
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Kerucut/selimut dan garis pelukis.png"))); // NOI18N
         jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel3MouseClicked(evt);
             }
         });
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(20, 60, 260, 230);
+        jLabel3.setBounds(30, 60, 250, 240);
 
-        jLabel4.setText("Luas Permukaan Kerucut");
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Kerucut/luas permukaan kerucut.png"))); // NOI18N
         jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel4MouseClicked(evt);
             }
         });
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(20, 310, 260, 240);
+        jLabel4.setBounds(30, 310, 250, 240);
 
-        jLabel5.setText("Volume Kerucut");
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Kerucut/volume kerucut.png"))); // NOI18N
         jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel5MouseClicked(evt);
             }
         });
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(20, 560, 260, 230);
+        jLabel5.setBounds(30, 560, 250, 230);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/bgkecil.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
@@ -230,7 +230,7 @@ public class kerucut extends javax.swing.JFrame {
         kSel.setVisible(false);
         gbr1.setVisible(false);
         kLuas.setVisible(false);
-        gbr2.setVisible(false);
+        gbr2.setVisible(true);
         kVolume.setVisible(false);
         gbr3.setVisible(false);
         kL1.setVisible(true);
@@ -243,7 +243,7 @@ public class kerucut extends javax.swing.JFrame {
 
     private void ButtonLatSoal2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal2MouseClicked
         kSel.setVisible(false);
-        gbr1.setVisible(false);
+        gbr1.setVisible(true);
         kLuas.setVisible(false);
         gbr2.setVisible(false);
         kVolume.setVisible(false);
@@ -258,7 +258,7 @@ public class kerucut extends javax.swing.JFrame {
 
     private void ButtonLatSoal3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal3MouseClicked
         kSel.setVisible(false);
-        gbr1.setVisible(false);
+        gbr1.setVisible(true);
         kLuas.setVisible(false);
         gbr2.setVisible(false);
         kVolume.setVisible(false);
@@ -277,7 +277,7 @@ public class kerucut extends javax.swing.JFrame {
         kLuas.setVisible(false);
         gbr2.setVisible(false);
         kVolume.setVisible(false);
-        gbr3.setVisible(false);
+        gbr3.setVisible(true);
         kL1.setVisible(false);
         kL2.setVisible(false);
         kL3.setVisible(false);
@@ -288,7 +288,7 @@ public class kerucut extends javax.swing.JFrame {
 
     private void ButtonLatSoal5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal5MouseClicked
         kSel.setVisible(false);
-        gbr1.setVisible(false);
+        gbr1.setVisible(true);
         kLuas.setVisible(false);
         gbr2.setVisible(false);
         kVolume.setVisible(false);
@@ -305,7 +305,7 @@ public class kerucut extends javax.swing.JFrame {
         kSel.setVisible(false);
         gbr1.setVisible(false);
         kLuas.setVisible(false);
-        gbr2.setVisible(false);
+        gbr2.setVisible(true);
         kVolume.setVisible(false);
         gbr3.setVisible(false);
         kL1.setVisible(false);
