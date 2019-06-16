@@ -15,6 +15,8 @@ public class belahKetupat extends javax.swing.JFrame {
     belahKetupatLatihanSoal4 pBL4;
     belahKetupatLatihanSoal5 pBL5;
     belahKetupatLatihanSoal6 pBL6;
+    belahKetupatDeskripsi pB0;
+    belahKetupatGambar pA0;
     
     public belahKetupat() {
         initComponents();

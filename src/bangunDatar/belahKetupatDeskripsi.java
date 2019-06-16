@@ -9,12 +9,12 @@ package bangunDatar;
  *
  * @author Asus
  */
-public class belahKetupatKeliling extends javax.swing.JPanel {
+public class belahKetupatDeskripsi extends javax.swing.JPanel {
 
     /**
-     * Creates new form belahKetupatKeliling
+     * Creates new form belahKetupatDeskripsi
      */
-    public belahKetupatKeliling() {
+    public belahKetupatDeskripsi() {
         initComponents();
     }
 
@@ -29,10 +29,9 @@ public class belahKetupatKeliling extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(24, 64, 105));
         setLayout(null);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/BelahKetupat/kelilis.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/BelahKetupat/desk.png"))); // NOI18N
         add(jLabel1);
         jLabel1.setBounds(0, 0, 1000, 540);
     }// </editor-fold>//GEN-END:initComponents

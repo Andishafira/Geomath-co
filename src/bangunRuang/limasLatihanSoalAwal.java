@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package bangunDatar;
+package bangunRuang;
 
 /**
  *
  * @author Asus
  */
-public class belahKetupatKeliling extends javax.swing.JPanel {
+public class limasLatihanSoalAwal extends javax.swing.JPanel {
 
     /**
-     * Creates new form belahKetupatKeliling
+     * Creates new form limasLatihanSoalAwal
      */
-    public belahKetupatKeliling() {
+    public limasLatihanSoalAwal() {
         initComponents();
     }
 
@@ -27,18 +27,19 @@ public class belahKetupatKeliling extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-
-        setBackground(new java.awt.Color(24, 64, 105));
-        setLayout(null);
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/BelahKetupat/kelilis.png"))); // NOI18N
-        add(jLabel1);
-        jLabel1.setBounds(0, 0, 1000, 540);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
