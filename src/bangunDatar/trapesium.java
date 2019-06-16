@@ -3,47 +3,14 @@ package bangunDatar;
 import javax.swing.JOptionPane;
 
 public class trapesium extends javax.swing.JFrame {
-    trapesiumKeliling traKel;
-    trapesiumKelilingGambar traKelGa;
-    trapesiumLuas traLu;
-    trapesiumLuasGambar traLuGa;
-    trapesiumDiagonal traDi;
-    trapesiumDiagonalGambar traDiGa;
-    trapesiumLatihanSoal1 traLat1;
-    trapesiumLatihanSoal2 traLat2;
-    trapesiumLatihanSoal3 traLat3;
-    trapesiumLatihanSoal4 traLat4;
-    trapesiumLatihanSoal5 traLat5;
-    trapesiumLatihanSoal6 traLat6;
+    
     
    
     public trapesium() {
         initComponents();
-        traKel = new trapesiumKeliling();
-        traLu = new trapesiumLuas();
-        traDi = new trapesiumDiagonal();
-        traKelGa = new trapesiumKelilingGambar();
-        traLuGa = new trapesiumLuasGambar();
-        traDiGa = new trapesiumDiagonalGambar();
-        traLat1 = new trapesiumLatihanSoal1();
-        traLat2 = new trapesiumLatihanSoal2();
-        traLat3 = new trapesiumLatihanSoal3();
-        traLat4 = new trapesiumLatihanSoal4();
-        traLat5 = new trapesiumLatihanSoal5();
-        traLat6 = new trapesiumLatihanSoal6();
         
-        panelUtama.add(traKel);
-        panelUtama.add(traLu);
-        panelUtama.add(traDi);
-        panelGambar.add(traKelGa);
-        panelGambar.add(traLuGa);
-        panelGambar.add(traDiGa);
-        panelUtama.add(traLat1);
-        panelUtama.add(traLat2);
-        panelUtama.add(traLat3);
-        panelUtama.add(traLat4);
-        panelUtama.add(traLat5);
-        panelUtama.add(traLat6);
+        
+        
     }
 
     
@@ -225,141 +192,40 @@ public class trapesium extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void buttonKelilingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonKelilingMouseClicked
-     traKel.setVisible(true);
-     traLu.setVisible(false);
-     traDi.setVisible(false);
-     traLat1.setVisible(false);
-     traLat2.setVisible(false);
-     traLat3.setVisible(false);
-     traLat4.setVisible(false);
-     traLat5.setVisible(false);
-     traLat6.setVisible(false);
      
-     traKelGa.setVisible(true);
-     traLuGa.setVisible(false);
-     traDiGa.setVisible(false);
+     
     }//GEN-LAST:event_buttonKelilingMouseClicked
 
     private void buttonLuasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLuasMouseClicked
-     traKel.setVisible(false);
-     traLu.setVisible(true);
-     traDi.setVisible(false);
-     traLat1.setVisible(false);
-     traLat2.setVisible(false);
-     traLat3.setVisible(false);
-     traLat4.setVisible(false);
-     traLat5.setVisible(false);
-     traLat6.setVisible(false);
      
-     traKelGa.setVisible(false);
-     traLuGa.setVisible(true);
-     traDiGa.setVisible(false);
     }//GEN-LAST:event_buttonLuasMouseClicked
 
     private void buttonDiagonalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonDiagonalMouseClicked
-    traKel.setVisible(false);
-     traLu.setVisible(false);
-     traDi.setVisible(true);
-     traLat1.setVisible(false);
-     traLat2.setVisible(false);
-     traLat3.setVisible(false);
-     traLat4.setVisible(false);
-     traLat5.setVisible(false);
-     traLat6.setVisible(false);
-     
-     traKelGa.setVisible(false);
-     traLuGa.setVisible(false);
-     traDiGa.setVisible(true);
+    
     }//GEN-LAST:event_buttonDiagonalMouseClicked
 
     private void buttonLatSoal1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSoal1MouseClicked
-       traKel.setVisible(false);
-       traKelGa.setVisible(true);
-       traLu.setVisible(false);
-       traLuGa.setVisible(false);
-       traDi.setVisible(false);
-       traDiGa.setVisible(false);
-       traLat1.setVisible(true);
-       traLat2.setVisible(false);
-       traLat3.setVisible(false);
-       traLat4.setVisible(false);
-       traLat5.setVisible(false);
-       traLat6.setVisible(false);
+       
     }//GEN-LAST:event_buttonLatSoal1MouseClicked
 
     private void buttonLatSoal2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSoal2MouseClicked
-       traKel.setVisible(false);
-       traKelGa.setVisible(true);
-       traLu.setVisible(false);
-       traLuGa.setVisible(false);
-       traDi.setVisible(false);
-       traDiGa.setVisible(false);
-       traLat1.setVisible(false);
-       traLat2.setVisible(true);
-       traLat3.setVisible(false);
-       traLat4.setVisible(false);
-       traLat5.setVisible(false);
-       traLat6.setVisible(false);
+       
     }//GEN-LAST:event_buttonLatSoal2MouseClicked
 
     private void buttonLatSoal3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSoal3MouseClicked
-       traKel.setVisible(false);
-       traKelGa.setVisible(false);
-       traLu.setVisible(false);
-       traLuGa.setVisible(true);
-       traDi.setVisible(false);
-       traDiGa.setVisible(false);
-       traLat1.setVisible(false);
-       traLat2.setVisible(false);
-       traLat3.setVisible(true);
-       traLat4.setVisible(false);
-       traLat5.setVisible(false);
-       traLat6.setVisible(false);
+       
     }//GEN-LAST:event_buttonLatSoal3MouseClicked
 
     private void buttonLatSoal4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSoal4MouseClicked
-        traKel.setVisible(false);
-       traKelGa.setVisible(false);
-       traLu.setVisible(false);
-       traLuGa.setVisible(true);
-       traDi.setVisible(false);
-       traDiGa.setVisible(false);
-       traLat1.setVisible(false);
-       traLat2.setVisible(false);
-       traLat3.setVisible(false);
-       traLat4.setVisible(true);
-       traLat5.setVisible(false);
-       traLat6.setVisible(false);
+       
     }//GEN-LAST:event_buttonLatSoal4MouseClicked
 
     private void buttonLatSoal5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSoal5MouseClicked
-       traKel.setVisible(false);
-       traKelGa.setVisible(false);
-       traLu.setVisible(false);
-       traLuGa.setVisible(false);
-       traDi.setVisible(false);
-       traDiGa.setVisible(true);
-       traLat1.setVisible(false);
-       traLat2.setVisible(false);
-       traLat3.setVisible(false);
-       traLat4.setVisible(false);
-       traLat5.setVisible(true);
-       traLat6.setVisible(false);
+       
     }//GEN-LAST:event_buttonLatSoal5MouseClicked
 
     private void buttonLatSoal6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSoal6MouseClicked
-       traKel.setVisible(false);
-       traKelGa.setVisible(false);
-       traLu.setVisible(false);
-       traLuGa.setVisible(false);
-       traDi.setVisible(false);
-       traDiGa.setVisible(true);
-       traLat1.setVisible(false);
-       traLat2.setVisible(false);
-       traLat3.setVisible(false);
-       traLat4.setVisible(false);
-       traLat5.setVisible(false);
-       traLat6.setVisible(true);
+       
     }//GEN-LAST:event_buttonLatSoal6MouseClicked
 
     private void tombolKeluarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tombolKeluarMouseClicked

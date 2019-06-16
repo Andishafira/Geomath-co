@@ -62,7 +62,7 @@ public class belahKetupatLatihanSoal2 extends javax.swing.JPanel {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/LATIHAN SOAL 2.png"))); // NOI18N
         add(jLabel1);
-        jLabel1.setBounds(0, 0, 720, 340);
+        jLabel1.setBounds(0, 0, 740, 340);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/jawaban.png"))); // NOI18N
         add(jLabel2);

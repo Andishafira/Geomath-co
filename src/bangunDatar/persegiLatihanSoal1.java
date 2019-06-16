@@ -54,7 +54,7 @@ public class persegiLatihanSoal1 extends javax.swing.JPanel {
         jLabel2.setForeground(new java.awt.Color(51, 51, 51));
         jLabel2.setText("12 cm");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(90, 170, 35, 16);
+        jLabel2.setBounds(90, 170, 28, 14);
 
         add(jPanel1);
         jPanel1.setBounds(640, 60, 220, 210);
@@ -79,7 +79,7 @@ public class persegiLatihanSoal1 extends javax.swing.JPanel {
 
         jButton1.setText("Cek");
         add(jButton1);
-        jButton1.setBounds(210, 230, 52, 32);
+        jButton1.setBounds(210, 230, 51, 23);
 
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
