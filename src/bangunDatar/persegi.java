@@ -62,8 +62,8 @@ public class persegi extends javax.swing.JFrame {
         ButtonLatSoal5 = new javax.swing.JLabel();
         ButtonLatSoal6 = new javax.swing.JLabel();
         buttonKeliling = new javax.swing.JLabel();
-        buttonLuas = new javax.swing.JLabel();
         buttonDiagonal = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -197,15 +197,6 @@ public class persegi extends javax.swing.JFrame {
         getContentPane().add(buttonKeliling);
         buttonKeliling.setBounds(10, 60, 250, 240);
 
-        buttonLuas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/ls persegi.png"))); // NOI18N
-        buttonLuas.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                buttonLuasMouseClicked(evt);
-            }
-        });
-        getContentPane().add(buttonLuas);
-        buttonLuas.setBounds(10, 310, 250, 230);
-
         buttonDiagonal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/luas persegi (1).png"))); // NOI18N
         buttonDiagonal.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -214,6 +205,10 @@ public class persegi extends javax.swing.JFrame {
         });
         getContentPane().add(buttonDiagonal);
         buttonDiagonal.setBounds(10, 550, 250, 240);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/ls persegi.png"))); // NOI18N
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(10, 310, 250, 230);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/abstract-blue-geometric-shapes-background-vector.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
@@ -237,22 +232,6 @@ public class persegi extends javax.swing.JFrame {
         pA2.setVisible(false);
         pA3.setVisible(false);
     }//GEN-LAST:event_buttonKelilingMouseClicked
-
-    private void buttonLuasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLuasMouseClicked
-        pB1.setVisible(false);
-        pB2.setVisible(true);
-        pB3.setVisible(false);
-        pBL1.setVisible(false);
-        pBL2.setVisible(false);
-        pBL3.setVisible(false);
-        pBL4.setVisible(false);
-        pBL5.setVisible(false);
-        pBL6.setVisible(false);
-        
-        pA1.setVisible(false);
-        pA2.setVisible(true);
-        pA3.setVisible(false);
-    }//GEN-LAST:event_buttonLuasMouseClicked
 
     private void buttonDiagonalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonDiagonalMouseClicked
         pB1.setVisible(false);
@@ -392,8 +371,8 @@ public class persegi extends javax.swing.JFrame {
     private javax.swing.JLabel ButtonLatSoal6;
     private javax.swing.JLabel buttonDiagonal;
     private javax.swing.JLabel buttonKeliling;
-    private javax.swing.JLabel buttonLuas;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel panelGambar;

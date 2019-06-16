@@ -11,51 +11,51 @@ import javax.swing.JOptionPane;
  *
  * @author SONY
  */
-public class bolaa extends javax.swing.JFrame {
+public class kerucut extends javax.swing.JFrame {
 
     /**
-     * Creates new form bolaa
+     * Creates new form kerucut
      */
-    bolaDiameter bDiamet;
-    bolaDiameterGambar gbr1;
-    bolaLuasPermukaan bLuas;
-    bolaLuasPermukaanGambar gbr2;
-    bolaVolume bVolume;
-    bolaVolumeGambar gbr3;
-    bolaLatihanSoal1 bLatsol1;
-    bolaLatihanSoal2 bLatsol2;
-    bolaLatihanSoal3 bLatsol3;
-    bolaLatihanSoal4 bLatsol4;
-    bolaLatihanSoal5 bLatsol5;
-    bolaLatihanSoal6 bLatsol6;
+    kerucutPelukisSelimut kSel;
+    kerucutSelimutPelukisGambar gbr1;
+    kerucutLuasPermukaan kLuas;
+    kerucutLuasPermukaanGambar gbr2;
+    kerucutVolume kVolume;
+    kerucutVolumeGambar gbr3;
+    kerucutLatihanSoal1 kL1;
+    kerucutLatihanSoal2 kL2;
+    kerucutLatihanSoal3 kL3;
+    kerucutLatihanSoal4 kL4;
+    kerucutLatihanSoal5 kL5;
+    kerucutLatihanSoal6 kL6;
     
-    public bolaa() {
+    public kerucut() {
         initComponents();
-        bDiamet = new bolaDiameter();
-        bLuas = new bolaLuasPermukaan();
-        bVolume = new bolaVolume();
-        bLatsol1 = new bolaLatihanSoal1();
-        bLatsol2 = new bolaLatihanSoal2();
-        bLatsol3 = new bolaLatihanSoal3();
-        bLatsol4 = new bolaLatihanSoal4();
-        bLatsol5 = new bolaLatihanSoal5();
-        bLatsol6 = new bolaLatihanSoal6();
-        gbr1 = new bolaDiameterGambar();
-        gbr2 = new bolaLuasPermukaanGambar();
-        gbr3 = new bolaVolumeGambar();
+        kSel = new kerucutPelukisSelimut();
+        gbr1 = new kerucutSelimutPelukisGambar();
+        kLuas = new kerucutLuasPermukaan();
+        gbr2 = new kerucutLuasPermukaanGambar();
+        kVolume = new kerucutVolume();
+        gbr3 = new kerucutVolumeGambar();
+        kL1 = new kerucutLatihanSoal1();
+        kL2 = new kerucutLatihanSoal2();
+        kL3 = new kerucutLatihanSoal3();
+        kL4 = new kerucutLatihanSoal4();
+        kL5 = new kerucutLatihanSoal5();
+        kL6 = new kerucutLatihanSoal6();
         
         panelGambar.add(gbr1);
+        panelUtama.add(kSel);
         panelGambar.add(gbr2);
+        panelUtama.add(kLuas);
         panelGambar.add(gbr3);
-        panelUtama.add(bDiamet);
-        panelUtama.add(bLuas);
-        panelUtama.add(bVolume);
-        panelUtama.add(bLatsol1);
-        panelUtama.add(bLatsol2);
-        panelUtama.add(bLatsol3);
-        panelUtama.add(bLatsol4);
-        panelUtama.add(bLatsol5);
-        panelUtama.add(bLatsol6);
+        panelUtama.add(kVolume);
+        panelUtama.add(kL1);
+        panelUtama.add(kL2);
+        panelUtama.add(kL3);
+        panelUtama.add(kL4);
+        panelUtama.add(kL5);
+        panelUtama.add(kL6);
     }
 
     /**
@@ -71,16 +71,16 @@ public class bolaa extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         panelGambar = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
+        panelUtama = new javax.swing.JPanel();
         ButtonLatSoal1 = new javax.swing.JLabel();
         ButtonLatSoal2 = new javax.swing.JLabel();
         ButtonLatSoal3 = new javax.swing.JLabel();
-        panelUtama = new javax.swing.JPanel();
         ButtonLatSoal4 = new javax.swing.JLabel();
         ButtonLatSoal5 = new javax.swing.JLabel();
         ButtonLatSoal6 = new javax.swing.JLabel();
-        diameterJari = new javax.swing.JLabel();
-        lsPermukaan = new javax.swing.JLabel();
-        volumeBola = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -129,6 +129,11 @@ public class bolaa extends javax.swing.JFrame {
         getContentPane().add(jLabel7);
         jLabel7.setBounds(820, 60, 470, 170);
 
+        panelUtama.setBackground(new java.awt.Color(24, 64, 105));
+        panelUtama.setLayout(new java.awt.CardLayout());
+        getContentPane().add(panelUtama);
+        panelUtama.setBounds(300, 450, 990, 340);
+
         ButtonLatSoal1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal (7).png"))); // NOI18N
         ButtonLatSoal1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -155,11 +160,6 @@ public class bolaa extends javax.swing.JFrame {
         });
         getContentPane().add(ButtonLatSoal3);
         ButtonLatSoal3.setBounds(1160, 220, 130, 120);
-
-        panelUtama.setBackground(new java.awt.Color(24, 64, 105));
-        panelUtama.setLayout(new java.awt.CardLayout());
-        getContentPane().add(panelUtama);
-        panelUtama.setBounds(300, 450, 990, 340);
 
         ButtonLatSoal4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal (10).png"))); // NOI18N
         ButtonLatSoal4.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -188,32 +188,32 @@ public class bolaa extends javax.swing.JFrame {
         getContentPane().add(ButtonLatSoal6);
         ButtonLatSoal6.setBounds(1160, 350, 130, 110);
 
-        diameterJari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Bola/diameter jr bola.png"))); // NOI18N
-        diameterJari.addMouseListener(new java.awt.event.MouseAdapter() {
+        jLabel3.setText("Selimut dan Garis Pelukis Kerucut");
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                diameterJariMouseClicked(evt);
+                jLabel3MouseClicked(evt);
             }
         });
-        getContentPane().add(diameterJari);
-        diameterJari.setBounds(30, 60, 250, 240);
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(20, 60, 260, 230);
 
-        lsPermukaan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Bola/luas perm bola .png"))); // NOI18N
-        lsPermukaan.addMouseListener(new java.awt.event.MouseAdapter() {
+        jLabel4.setText("Luas Permukaan Kerucut");
+        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lsPermukaanMouseClicked(evt);
+                jLabel4MouseClicked(evt);
             }
         });
-        getContentPane().add(lsPermukaan);
-        lsPermukaan.setBounds(30, 310, 250, 240);
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(20, 310, 260, 240);
 
-        volumeBola.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Bola/volume bola.png"))); // NOI18N
-        volumeBola.addMouseListener(new java.awt.event.MouseAdapter() {
+        jLabel5.setText("Volume Kerucut");
+        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                volumeBolaMouseClicked(evt);
+                jLabel5MouseClicked(evt);
             }
         });
-        getContentPane().add(volumeBola);
-        volumeBola.setBounds(30, 560, 250, 230);
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(20, 560, 260, 230);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/bgkecil.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
@@ -227,132 +227,142 @@ public class bolaa extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel7MouseClicked
 
     private void ButtonLatSoal1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal1MouseClicked
+        kSel.setVisible(false);
         gbr1.setVisible(false);
-        bDiamet.setVisible(false);
-        gbr2.setVisible(true);
-        bLuas.setVisible(false);
+        kLuas.setVisible(false);
+        gbr2.setVisible(false);
+        kVolume.setVisible(false);
         gbr3.setVisible(false);
-        bVolume.setVisible(false);
-        bLatsol1.setVisible(true);
-        bLatsol2.setVisible(false);
-        bLatsol3.setVisible(false);
-        bLatsol4.setVisible(false);
-        bLatsol5.setVisible(false);
-        bLatsol6.setVisible(false);
+        kL1.setVisible(true);
+        kL2.setVisible(false);
+        kL3.setVisible(false);
+        kL4.setVisible(false);
+        kL5.setVisible(false);
+        kL6.setVisible(false);
     }//GEN-LAST:event_ButtonLatSoal1MouseClicked
 
     private void ButtonLatSoal2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal2MouseClicked
+        kSel.setVisible(false);
         gbr1.setVisible(false);
-        bDiamet.setVisible(false);
+        kLuas.setVisible(false);
         gbr2.setVisible(false);
-        bLuas.setVisible(false);
-        gbr3.setVisible(true);
-        bVolume.setVisible(false);
-        bLatsol1.setVisible(false);
-        bLatsol2.setVisible(true);
-        bLatsol3.setVisible(false);
-        bLatsol4.setVisible(false);
-        bLatsol5.setVisible(false);
-        bLatsol6.setVisible(false);
+        kVolume.setVisible(false);
+        gbr3.setVisible(false);
+        kL1.setVisible(false);
+        kL2.setVisible(true);
+        kL3.setVisible(false);
+        kL4.setVisible(false);
+        kL5.setVisible(false);
+        kL6.setVisible(false);
     }//GEN-LAST:event_ButtonLatSoal2MouseClicked
 
     private void ButtonLatSoal3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal3MouseClicked
-        //luas
+        kSel.setVisible(false);
         gbr1.setVisible(false);
-        bDiamet.setVisible(false);
-        gbr2.setVisible(true);
-        bLuas.setVisible(false);
+        kLuas.setVisible(false);
+        gbr2.setVisible(false);
+        kVolume.setVisible(false);
         gbr3.setVisible(false);
-        bVolume.setVisible(false);
-        bLatsol1.setVisible(false);
-        bLatsol2.setVisible(false);
-        bLatsol3.setVisible(true);
-        bLatsol4.setVisible(false);
-        bLatsol5.setVisible(false);
-        bLatsol6.setVisible(false);
+        kL1.setVisible(false);
+        kL2.setVisible(false);
+        kL3.setVisible(true);
+        kL4.setVisible(false);
+        kL5.setVisible(false);
+        kL6.setVisible(false);
     }//GEN-LAST:event_ButtonLatSoal3MouseClicked
 
     private void ButtonLatSoal4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal4MouseClicked
-        //diameter
-        gbr1.setVisible(true);
-        bDiamet.setVisible(false);
+        kSel.setVisible(false);
+        gbr1.setVisible(false);
+        kLuas.setVisible(false);
         gbr2.setVisible(false);
-        bLuas.setVisible(false);
+        kVolume.setVisible(false);
         gbr3.setVisible(false);
-        bVolume.setVisible(false);
-        bLatsol1.setVisible(false);
-        bLatsol2.setVisible(false);
-        bLatsol3.setVisible(false);
-        bLatsol4.setVisible(true);
-        bLatsol5.setVisible(false);
-        bLatsol6.setVisible(false);
+        kL1.setVisible(false);
+        kL2.setVisible(false);
+        kL3.setVisible(false);
+        kL4.setVisible(true);
+        kL5.setVisible(false);
+        kL6.setVisible(false);
     }//GEN-LAST:event_ButtonLatSoal4MouseClicked
 
     private void ButtonLatSoal5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal5MouseClicked
-        //jari
-        gbr1.setVisible(true);
-        bDiamet.setVisible(false);
+        kSel.setVisible(false);
+        gbr1.setVisible(false);
+        kLuas.setVisible(false);
         gbr2.setVisible(false);
-        bLuas.setVisible(false);
+        kVolume.setVisible(false);
         gbr3.setVisible(false);
-        bVolume.setVisible(false);
-        bLatsol1.setVisible(false);
-        bLatsol2.setVisible(false);
-        bLatsol3.setVisible(false);
-        bLatsol4.setVisible(false);
-        bLatsol5.setVisible(true);
-        bLatsol6.setVisible(false);
+        kL1.setVisible(false);
+        kL2.setVisible(false);
+        kL3.setVisible(false);
+        kL4.setVisible(false);
+        kL5.setVisible(true);
+        kL6.setVisible(false);
     }//GEN-LAST:event_ButtonLatSoal5MouseClicked
 
     private void ButtonLatSoal6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal6MouseClicked
-        //volLuas
+        kSel.setVisible(false);
         gbr1.setVisible(false);
-        bDiamet.setVisible(false);
-        gbr2.setVisible(true);
-        bLuas.setVisible(false);
+        kLuas.setVisible(false);
+        gbr2.setVisible(false);
+        kVolume.setVisible(false);
         gbr3.setVisible(false);
-        bVolume.setVisible(false);
-        bLatsol1.setVisible(false);
-        bLatsol2.setVisible(false);
-        bLatsol3.setVisible(false);
-        bLatsol4.setVisible(false);
-        bLatsol5.setVisible(false);
-        bLatsol6.setVisible(true);
+        kL1.setVisible(false);
+        kL2.setVisible(false);
+        kL3.setVisible(false);
+        kL4.setVisible(false);
+        kL5.setVisible(false);
+        kL6.setVisible(true);
     }//GEN-LAST:event_ButtonLatSoal6MouseClicked
 
-    private void diameterJariMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_diameterJariMouseClicked
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
         // TODO add your handling code here:
+        kSel.setVisible(true);
         gbr1.setVisible(true);
-        bDiamet.setVisible(true);
+        kLuas.setVisible(false);
         gbr2.setVisible(false);
-        bLuas.setVisible(false);
+        kVolume.setVisible(false);
         gbr3.setVisible(false);
-        bVolume.setVisible(false);
-        bLatsol1.setVisible(false);
-        bLatsol2.setVisible(false);
-    }//GEN-LAST:event_diameterJariMouseClicked
+        kL1.setVisible(false);
+        kL2.setVisible(false);
+        kL3.setVisible(false);
+        kL4.setVisible(false);
+        kL5.setVisible(false);
+        kL6.setVisible(false);
+    }//GEN-LAST:event_jLabel3MouseClicked
 
-    private void lsPermukaanMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lsPermukaanMouseClicked
+    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
         // TODO add your handling code here:
+        kSel.setVisible(false);
         gbr1.setVisible(false);
-        bDiamet.setVisible(false);
+        kLuas.setVisible(true);
         gbr2.setVisible(true);
-        bLuas.setVisible(true);
+        kVolume.setVisible(false);
         gbr3.setVisible(false);
-        bVolume.setVisible(false);
-        bLatsol1.setVisible(false);
-        bLatsol2.setVisible(false);
-    }//GEN-LAST:event_lsPermukaanMouseClicked
+        kL1.setVisible(false);
+        kL2.setVisible(false);
+        kL3.setVisible(false);
+        kL4.setVisible(false);
+        kL5.setVisible(false);
+        kL6.setVisible(false);
+    }//GEN-LAST:event_jLabel4MouseClicked
 
-    private void volumeBolaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volumeBolaMouseClicked
+    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
         // TODO add your handling code here:
+        kSel.setVisible(false);
         gbr1.setVisible(false);
-        bDiamet.setVisible(false);
+        kLuas.setVisible(false);
         gbr2.setVisible(false);
-        bLuas.setVisible(false);
+        kVolume.setVisible(true);
         gbr3.setVisible(true);
-        bVolume.setVisible(true);
-    }//GEN-LAST:event_volumeBolaMouseClicked
+        kL1.setVisible(false);
+        kL2.setVisible(false);
+        kL3.setVisible(false);
+        kL4.setVisible(false);
+        kL5.setVisible(false);
+        kL6.setVisible(false);
+    }//GEN-LAST:event_jLabel5MouseClicked
 
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
         // TODO add your handling code here:
@@ -366,7 +376,6 @@ public class bolaa extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -381,20 +390,20 @@ public class bolaa extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(bolaa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(kerucut.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(bolaa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(kerucut.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(bolaa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(kerucut.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(bolaa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(kerucut.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new bolaa().setVisible(true);
+                new kerucut().setVisible(true);
             }
         });
     }
@@ -406,14 +415,14 @@ public class bolaa extends javax.swing.JFrame {
     private javax.swing.JLabel ButtonLatSoal4;
     private javax.swing.JLabel ButtonLatSoal5;
     private javax.swing.JLabel ButtonLatSoal6;
-    private javax.swing.JLabel diameterJari;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JLabel lsPermukaan;
     private javax.swing.JPanel panelGambar;
     private javax.swing.JPanel panelUtama;
-    private javax.swing.JLabel volumeBola;
     // End of variables declaration//GEN-END:variables
 }
