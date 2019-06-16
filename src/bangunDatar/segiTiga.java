@@ -1,21 +1,51 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package bangunDatar;
 
-/**
- *
- * @author Asus
- */
+import javax.swing.JOptionPane;
+
 public class segiTiga extends javax.swing.JFrame {
 
-    /**
-     * Creates new form segiTiga
-     */
+    segitigaKeliling pB1;
+    segitigaKelilingGambar pA1;
+    segitigaLuas pB2;
+    segitigaLuasGambar pA2;
+    segitigaDiagonal pB3;
+    segitigaDiagonalGambar pA3;
+    segitigaLatihanSoal1 pBL1;
+    segitigaLatihanSoal2 pBL2;
+    segitigaLatihanSoal3 pBL3;
+    segitigaLatihanSoal4 pBL4;
+    segitigaLatihanSoal5 pBL5;
+    segitigaLatihanSoal6 pBL6;
+    
     public segiTiga() {
         initComponents();
+        pB1 = new segitigaKeliling();
+        pA1 = new segitigaKelilingGambar();
+        pB2 = new segitigaLuas();
+        pA2 = new segitigaLuasGambar();
+        pB3 = new segitigaDiagonal();
+        pA3 = new segitigaDiagonalGambar();
+        pBL1 = new segitigaLatihanSoal1();
+        pBL2 = new segitigaLatihanSoal2();
+        pBL3 = new segitigaLatihanSoal3();
+        pBL4 = new segitigaLatihanSoal4();
+        pBL5 = new segitigaLatihanSoal5();
+        pBL6 = new segitigaLatihanSoal6();
+        
+        panelUtama.add(pB1);
+        panelUtama.add(pB2);
+        panelUtama.add(pB3);
+        panelUtama.add(pBL1);
+        panelUtama.add(pBL2);
+        panelUtama.add(pBL3);
+        panelUtama.add(pBL4);
+        panelUtama.add(pBL5);
+        panelUtama.add(pBL6);
+        
+        panelGambar.add(pA1);
+        panelGambar.add(pA2);
+        panelGambar.add(pA3);
     }
 
     /**
@@ -28,19 +58,19 @@ public class segiTiga extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        jPanel6 = new javax.swing.JPanel();
+        buttonexit = new javax.swing.JLabel();
+        panelGambar = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        panelUtama = new javax.swing.JPanel();
+        buttonLatSol1 = new javax.swing.JLabel();
+        buttonLatSol2 = new javax.swing.JLabel();
+        buttonLatSol3 = new javax.swing.JLabel();
+        buttonLatSol4 = new javax.swing.JLabel();
+        buttonLatSol5 = new javax.swing.JLabel();
+        buttonLatSol6 = new javax.swing.JLabel();
+        buttonKeliling = new javax.swing.JLabel();
+        buttonLuas = new javax.swing.JLabel();
+        buttonDiagonal = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -48,8 +78,13 @@ public class segiTiga extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
 
-        jLabel3.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-        jLabel3.setText("X");
+        buttonexit.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        buttonexit.setText("X");
+        buttonexit.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                buttonexitMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -57,90 +92,135 @@ public class segiTiga extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(1261, Short.MAX_VALUE)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(buttonexit, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jLabel3)
+                .addComponent(buttonexit)
                 .addGap(0, 3, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 1310, 50);
 
-        jPanel6.setBackground(new java.awt.Color(8, 80, 116));
+        panelGambar.setBackground(new java.awt.Color(8, 80, 116));
 
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout panelGambarLayout = new javax.swing.GroupLayout(panelGambar);
+        panelGambar.setLayout(panelGambarLayout);
+        panelGambarLayout.setHorizontalGroup(
+            panelGambarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 570, Short.MAX_VALUE)
         );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        panelGambarLayout.setVerticalGroup(
+            panelGambarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 380, Short.MAX_VALUE)
         );
 
-        getContentPane().add(jPanel6);
-        jPanel6.setBounds(300, 60, 570, 380);
+        getContentPane().add(panelGambar);
+        panelGambar.setBounds(300, 60, 570, 380);
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal.png"))); // NOI18N
         getContentPane().add(jLabel7);
         jLabel7.setBounds(820, 60, 470, 170);
 
-        jPanel2.setBackground(new java.awt.Color(24, 64, 105));
+        panelUtama.setBackground(new java.awt.Color(24, 64, 105));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout panelUtamaLayout = new javax.swing.GroupLayout(panelUtama);
+        panelUtama.setLayout(panelUtamaLayout);
+        panelUtamaLayout.setHorizontalGroup(
+            panelUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 990, Short.MAX_VALUE)
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        panelUtamaLayout.setVerticalGroup(
+            panelUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 340, Short.MAX_VALUE)
         );
 
-        getContentPane().add(jPanel2);
-        jPanel2.setBounds(300, 450, 990, 340);
+        getContentPane().add(panelUtama);
+        panelUtama.setBounds(300, 450, 990, 340);
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (7).png"))); // NOI18N
-        getContentPane().add(jLabel6);
-        jLabel6.setBounds(880, 220, 130, 120);
+        buttonLatSol1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (7).png"))); // NOI18N
+        buttonLatSol1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                buttonLatSol1MouseClicked(evt);
+            }
+        });
+        getContentPane().add(buttonLatSol1);
+        buttonLatSol1.setBounds(880, 220, 130, 120);
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (8).png"))); // NOI18N
-        getContentPane().add(jLabel8);
-        jLabel8.setBounds(1020, 220, 130, 120);
+        buttonLatSol2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (8).png"))); // NOI18N
+        buttonLatSol2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                buttonLatSol2MouseClicked(evt);
+            }
+        });
+        getContentPane().add(buttonLatSol2);
+        buttonLatSol2.setBounds(1020, 220, 130, 120);
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (9).png"))); // NOI18N
-        getContentPane().add(jLabel9);
-        jLabel9.setBounds(1160, 220, 130, 120);
+        buttonLatSol3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (9).png"))); // NOI18N
+        buttonLatSol3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                buttonLatSol3MouseClicked(evt);
+            }
+        });
+        getContentPane().add(buttonLatSol3);
+        buttonLatSol3.setBounds(1160, 220, 130, 120);
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (10).png"))); // NOI18N
-        getContentPane().add(jLabel10);
-        jLabel10.setBounds(880, 350, 130, 110);
+        buttonLatSol4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (10).png"))); // NOI18N
+        buttonLatSol4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                buttonLatSol4MouseClicked(evt);
+            }
+        });
+        getContentPane().add(buttonLatSol4);
+        buttonLatSol4.setBounds(880, 350, 130, 110);
 
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (11).png"))); // NOI18N
-        getContentPane().add(jLabel11);
-        jLabel11.setBounds(1020, 350, 130, 110);
+        buttonLatSol5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (11).png"))); // NOI18N
+        buttonLatSol5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                buttonLatSol5MouseClicked(evt);
+            }
+        });
+        getContentPane().add(buttonLatSol5);
+        buttonLatSol5.setBounds(1020, 350, 130, 110);
 
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (12).png"))); // NOI18N
-        getContentPane().add(jLabel12);
-        jLabel12.setBounds(1160, 350, 130, 110);
+        buttonLatSol6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (12).png"))); // NOI18N
+        buttonLatSol6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                buttonLatSol6MouseClicked(evt);
+            }
+        });
+        getContentPane().add(buttonLatSol6);
+        buttonLatSol6.setBounds(1160, 350, 130, 110);
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambarSegitiga/Keliling Segitiga.png"))); // NOI18N
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(10, 60, 240, 240);
+        buttonKeliling.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Segitiga/Segitiga keliling icon.png"))); // NOI18N
+        buttonKeliling.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                buttonKelilingMouseClicked(evt);
+            }
+        });
+        getContentPane().add(buttonKeliling);
+        buttonKeliling.setBounds(20, 60, 240, 240);
 
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambarSegitiga/Luas segitiga.png"))); // NOI18N
-        getContentPane().add(jLabel13);
-        jLabel13.setBounds(10, 310, 240, 240);
+        buttonLuas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Segitiga/Segitiga luas icon.png"))); // NOI18N
+        buttonLuas.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                buttonLuasMouseClicked(evt);
+            }
+        });
+        getContentPane().add(buttonLuas);
+        buttonLuas.setBounds(20, 310, 240, 240);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambarSegitiga/Diagonal Segitiga.png"))); // NOI18N
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(10, 560, 240, 240);
+        buttonDiagonal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Segitiga/Segitiga diagonal icon.png"))); // NOI18N
+        buttonDiagonal.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                buttonDiagonalMouseClicked(evt);
+            }
+        });
+        getContentPane().add(buttonDiagonal);
+        buttonDiagonal.setBounds(20, 560, 240, 240);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/abstract-blue-geometric-shapes-background-vector.jpg"))); // NOI18N
         getContentPane().add(jLabel2);
@@ -148,6 +228,130 @@ public class segiTiga extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void buttonKelilingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonKelilingMouseClicked
+        pB1.setVisible(true);
+        pB2.setVisible(false);
+        pB3.setVisible(false);
+        pBL1.setVisible(false);
+        pBL2.setVisible(false);
+        pBL3.setVisible(false);
+        pBL4.setVisible(false);
+        pBL5.setVisible(false);
+        pBL6.setVisible(false);
+        
+        pA1.setVisible(true);
+        pA2.setVisible(false);
+        pA3.setVisible(false);
+    }//GEN-LAST:event_buttonKelilingMouseClicked
+
+    private void buttonLuasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLuasMouseClicked
+        pB1.setVisible(false);
+        pB2.setVisible(true);
+        pB3.setVisible(false);
+        pBL1.setVisible(false);
+        pBL2.setVisible(false);
+        pBL3.setVisible(false);
+        pBL4.setVisible(false);
+        pBL5.setVisible(false);
+        pBL6.setVisible(false);
+        
+        pA1.setVisible(false);
+        pA2.setVisible(true);
+        pA3.setVisible(false);
+    }//GEN-LAST:event_buttonLuasMouseClicked
+
+    private void buttonDiagonalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonDiagonalMouseClicked
+        pB1.setVisible(false);
+        pB2.setVisible(false);
+        pB3.setVisible(true);
+        pBL1.setVisible(false);
+        pBL2.setVisible(false);
+        pBL3.setVisible(false);
+        pBL4.setVisible(false);
+        pBL5.setVisible(false);
+        pBL6.setVisible(false);
+        
+        pA1.setVisible(false);
+        pA2.setVisible(false);
+        pA3.setVisible(true);
+    }//GEN-LAST:event_buttonDiagonalMouseClicked
+
+    private void buttonLatSol1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSol1MouseClicked
+        pB1.setVisible(false);
+        pB2.setVisible(false);
+        pB3.setVisible(false);
+        pBL1.setVisible(true);
+        pBL2.setVisible(false);
+        pBL3.setVisible(false);
+        pBL4.setVisible(false);
+        pBL5.setVisible(false);
+        pBL6.setVisible(false);
+    }//GEN-LAST:event_buttonLatSol1MouseClicked
+
+    private void buttonLatSol2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSol2MouseClicked
+        pB1.setVisible(false);
+        pB2.setVisible(false);
+        pB3.setVisible(false);
+        pBL1.setVisible(false);
+        pBL2.setVisible(true);
+        pBL3.setVisible(false);
+        pBL4.setVisible(false);
+        pBL5.setVisible(false);
+        pBL6.setVisible(false);
+    }//GEN-LAST:event_buttonLatSol2MouseClicked
+
+    private void buttonLatSol3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSol3MouseClicked
+        pB1.setVisible(false);
+        pB2.setVisible(false);
+        pB3.setVisible(false);
+        pBL1.setVisible(false);
+        pBL2.setVisible(false);
+        pBL3.setVisible(true);
+        pBL4.setVisible(false);
+        pBL5.setVisible(false);
+        pBL6.setVisible(false);
+    }//GEN-LAST:event_buttonLatSol3MouseClicked
+
+    private void buttonLatSol4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSol4MouseClicked
+        pB1.setVisible(false);
+        pB2.setVisible(false);
+        pB3.setVisible(false);
+        pBL1.setVisible(false);
+        pBL2.setVisible(false);
+        pBL3.setVisible(false);
+        pBL4.setVisible(true);
+        pBL5.setVisible(false);
+        pBL6.setVisible(false);
+    }//GEN-LAST:event_buttonLatSol4MouseClicked
+
+    private void buttonLatSol5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSol5MouseClicked
+        pB1.setVisible(false);
+        pB2.setVisible(false);
+        pB3.setVisible(false);
+        pBL1.setVisible(false);
+        pBL2.setVisible(false);
+        pBL3.setVisible(false);
+        pBL4.setVisible(false);
+        pBL5.setVisible(true);
+        pBL6.setVisible(false);
+    }//GEN-LAST:event_buttonLatSol5MouseClicked
+
+    private void buttonLatSol6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSol6MouseClicked
+        pB1.setVisible(false);
+        pB2.setVisible(false);
+        pB3.setVisible(false);
+        pBL1.setVisible(false);
+        pBL2.setVisible(false);
+        pBL3.setVisible(false);
+        pBL4.setVisible(false);
+        pBL5.setVisible(false);
+        pBL6.setVisible(true);
+    }//GEN-LAST:event_buttonLatSol6MouseClicked
+
+    private void buttonexitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonexitMouseClicked
+        
+    }//GEN-LAST:event_buttonexitMouseClicked
 
     /**
      * @param args the command line arguments
@@ -185,20 +389,20 @@ public class segiTiga extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel buttonDiagonal;
+    private javax.swing.JLabel buttonKeliling;
+    private javax.swing.JLabel buttonLatSol1;
+    private javax.swing.JLabel buttonLatSol2;
+    private javax.swing.JLabel buttonLatSol3;
+    private javax.swing.JLabel buttonLatSol4;
+    private javax.swing.JLabel buttonLatSol5;
+    private javax.swing.JLabel buttonLatSol6;
+    private javax.swing.JLabel buttonLuas;
+    private javax.swing.JLabel buttonexit;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel panelGambar;
+    private javax.swing.JPanel panelUtama;
     // End of variables declaration//GEN-END:variables
 }
