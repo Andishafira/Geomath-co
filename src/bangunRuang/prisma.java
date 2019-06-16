@@ -7,12 +7,6 @@ public class prisma extends javax.swing.JFrame {
     prismaVolumeGambar pA2;
     prismaDiagonal pB3;
     prismaDiagonalGambar pA3;
-    prismaLatihanSoal1 pBL1;
-    prismaLatihanSoal2 pBL2;
-    prismaLatihanSoal3 pBL3;
-    prismaLatihanSoal4 pBL4;
-    prismaLatihanSoal5 pBL5;
-    prismaLatihanSoal6 pBL6;
     prismaDeskripsi pB0;
     prismaGambar pA0;
     
@@ -24,12 +18,6 @@ public class prisma extends javax.swing.JFrame {
         pA2 = new prismaVolumeGambar();
         pB3 = new prismaDiagonal();
         pA3 = new prismaDiagonalGambar();
-        pBL1 = new prismaLatihanSoal1();
-        pBL2 = new prismaLatihanSoal2();
-        pBL3 = new prismaLatihanSoal3();
-        pBL4 = new prismaLatihanSoal4();
-        pBL5 = new prismaLatihanSoal5();
-        pBL6 = new prismaLatihanSoal6();
         pB0 = new prismaDeskripsi();
         pA0 = new prismaGambar();
         
@@ -37,12 +25,6 @@ public class prisma extends javax.swing.JFrame {
         panelUtama.add(pB1);
         panelUtama.add(pB2);
         panelUtama.add(pB3);
-        panelUtama.add(pBL1);
-        panelUtama.add(pBL2);
-        panelUtama.add(pBL3);
-        panelUtama.add(pBL4);
-        panelUtama.add(pBL5);
-        panelUtama.add(pBL6);
         
         panelGambar.add(pA0);
         panelGambar.add(pA1);
@@ -59,6 +41,9 @@ public class prisma extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         panelGambar = new javax.swing.JPanel();
         panelUtama = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -102,22 +87,45 @@ public class prisma extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("X");
+
+        jLabel6.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("O");
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/home icon kecil.png"))); // NOI18N
+
+        jLabel8.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("Latihan Soal");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(1261, Short.MAX_VALUE)
+                .addGap(17, 17, 17)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1052, Short.MAX_VALUE)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jLabel2)
-                .addGap(0, 3, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addComponent(jLabel8)))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel1);
@@ -145,12 +153,6 @@ public class prisma extends javax.swing.JFrame {
         pB1.setVisible(true);
         pB2.setVisible(false);
         pB3.setVisible(false);
-        pBL1.setVisible(false);
-        pBL2.setVisible(false);
-        pBL3.setVisible(false);
-        pBL4.setVisible(false);
-        pBL5.setVisible(false);
-        pBL6.setVisible(false);
 
         pA0.setVisible(false);
         pA1.setVisible(true);
@@ -163,13 +165,7 @@ public class prisma extends javax.swing.JFrame {
         pB1.setVisible(false);
         pB2.setVisible(true);
         pB3.setVisible(false);
-        pBL1.setVisible(false);
-        pBL2.setVisible(false);
-        pBL3.setVisible(false);
-        pBL4.setVisible(false);
-        pBL5.setVisible(false);
-        pBL6.setVisible(false);
-
+        
         pA0.setVisible(false);
         pA1.setVisible(false);
         pA2.setVisible(true);
@@ -181,13 +177,7 @@ public class prisma extends javax.swing.JFrame {
         pB1.setVisible(false);
         pB2.setVisible(false);
         pB3.setVisible(true);
-        pBL1.setVisible(false);
-        pBL2.setVisible(false);
-        pBL3.setVisible(false);
-        pBL4.setVisible(false);
-        pBL5.setVisible(false);
-        pBL6.setVisible(false);
-
+        
         pA0.setVisible(false);
         pA1.setVisible(false);
         pA2.setVisible(false);
@@ -235,6 +225,9 @@ public class prisma extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel panelGambar;
     private javax.swing.JPanel panelUtama;

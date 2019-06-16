@@ -55,21 +55,25 @@ public class prismaVolumeGambar extends javax.swing.JPanel {
         add(jLabel1);
         jLabel1.setBounds(650, 80, 300, 190);
 
+        jLabel5.setBackground(new java.awt.Color(204, 204, 204));
         jLabel5.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel5.setText("Prisma Segi Dua Puluh Empat");
         add(jLabel5);
         jLabel5.setBounds(710, 320, 280, 24);
 
+        jLabel8.setBackground(new java.awt.Color(204, 204, 204));
         jLabel8.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel8.setText("Prisma Segi Enam");
         add(jLabel8);
         jLabel8.setBounds(500, 320, 160, 24);
 
+        jLabel7.setBackground(new java.awt.Color(204, 204, 204));
         jLabel7.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel7.setText("Prisma Segi Lima");
         add(jLabel7);
         jLabel7.setBounds(270, 320, 160, 24);
 
+        jLabel6.setBackground(new java.awt.Color(204, 204, 204));
         jLabel6.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel6.setText("Prisma Segi Tiga");
         add(jLabel6);

@@ -31,10 +31,10 @@ public class prismaGambar extends javax.swing.JPanel {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(8, 80, 116));
         setLayout(null);
@@ -55,25 +55,29 @@ public class prismaGambar extends javax.swing.JPanel {
         add(jLabel4);
         jLabel4.setBounds(440, 20, 310, 290);
 
-        jLabel5.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel5.setText("Prisma Segi Dua Puluh Empat");
-        add(jLabel5);
-        jLabel5.setBounds(710, 320, 280, 24);
-
-        jLabel6.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel6.setText("Prisma Segi Tiga");
-        add(jLabel6);
-        jLabel6.setBounds(70, 320, 160, 24);
-
+        jLabel7.setBackground(new java.awt.Color(204, 204, 204));
         jLabel7.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel7.setText("Prisma Segi Lima");
         add(jLabel7);
         jLabel7.setBounds(270, 320, 160, 24);
 
+        jLabel6.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel6.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel6.setText("Prisma Segi Tiga");
+        add(jLabel6);
+        jLabel6.setBounds(70, 320, 160, 24);
+
+        jLabel8.setBackground(new java.awt.Color(204, 204, 204));
         jLabel8.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel8.setText("Prisma Segi Enam");
         add(jLabel8);
         jLabel8.setBounds(500, 320, 160, 24);
+
+        jLabel5.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel5.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel5.setText("Prisma Segi Dua Puluh Empat");
+        add(jLabel5);
+        jLabel5.setBounds(710, 320, 280, 24);
     }// </editor-fold>//GEN-END:initComponents
 
 
