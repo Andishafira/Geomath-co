@@ -2,9 +2,14 @@
 package ui.app.pbo;
 
 public class TampilanUtama extends javax.swing.JFrame {
+    
+    bangunDatarClass bDatar;
+    bangunRuangClass bRuang;
 
     public TampilanUtama() {
         initComponents();
+        bDatar = new bangunDatarClass();
+        bRuang = new bangunRuangClass();
     }
 
     @SuppressWarnings("unchecked")
@@ -29,10 +34,20 @@ public class TampilanUtama extends javax.swing.JFrame {
         jLabel4.setBounds(30, -10, 580, 210);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Bangun Ruang (1).png"))); // NOI18N
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1MouseClicked(evt);
+            }
+        });
         getContentPane().add(jLabel1);
         jLabel1.setBounds(760, 370, 350, 350);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Bangun Datar.png"))); // NOI18N
+        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel5MouseClicked(evt);
+            }
+        });
         getContentPane().add(jLabel5);
         jLabel5.setBounds(190, 370, 350, 350);
         getContentPane().add(jLabel3);
@@ -44,10 +59,22 @@ public class TampilanUtama extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/abstract-blue-geometric-shapes-background-vector.jpg"))); // NOI18N
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(-180, -50, 1490, 910);
+        jLabel2.setBounds(-180, -50, 1480, 900);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
+        // TODO add your handling code here:
+        bDatar.setVisible(true);
+        bRuang.setVisible(false);
+    }//GEN-LAST:event_jLabel5MouseClicked
+
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+        // TODO add your handling code here:
+        bRuang.setVisible(true);
+        bDatar.setVisible(false);
+    }//GEN-LAST:event_jLabel1MouseClicked
 
     public static void main(String args[]) {
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
