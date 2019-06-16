@@ -15,14 +15,10 @@ public class Main extends javax.swing.JFrame {
      * Creates new form Main
      */
     TampilanUtama tampil;
-    Main jalan;
     
     public Main() {
         initComponents();
         tampil = new TampilanUtama();
-        jalan = new Main();
-        
-        jalan.setVisible(true);
     }
 
     /**
@@ -83,7 +79,6 @@ public class Main extends javax.swing.JFrame {
     private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
         // TODO add your handling code here:
         tampil.setVisible(true);
-        jalan.setVisible(false);
     }//GEN-LAST:event_jLabel6MouseClicked
 
     /**
