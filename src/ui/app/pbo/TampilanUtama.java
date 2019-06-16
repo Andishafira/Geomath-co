@@ -44,7 +44,7 @@ public class TampilanUtama extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/abstract-blue-geometric-shapes-background-vector.jpg"))); // NOI18N
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(-150, -60, 1490, 910);
+        jLabel2.setBounds(-180, -50, 1490, 910);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

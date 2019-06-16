@@ -14,8 +14,13 @@ public class Main extends javax.swing.JFrame {
     /**
      * Creates new form Main
      */
+    TampilanUtama tampil;
+    Main jalan;
+    
     public Main() {
         initComponents();
+        tampil = new TampilanUtama();
+        jalan = new Main();
     }
 
     /**
@@ -52,6 +57,11 @@ public class Main extends javax.swing.JFrame {
         jLabel4.setBounds(220, 80, 1100, 210);
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/startIcon.png"))); // NOI18N
+        jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel6MouseClicked(evt);
+            }
+        });
         getContentPane().add(jLabel6);
         jLabel6.setBounds(500, 530, 310, 230);
 
@@ -63,10 +73,15 @@ public class Main extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/abstract-blue-geometric-shapes-background-vector.jpg"))); // NOI18N
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(-150, -60, 1490, 910);
+        jLabel2.setBounds(-180, -60, 1490, 910);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
+        // TODO add your handling code here:
+        tampil.setVisible(true);
+    }//GEN-LAST:event_jLabel6MouseClicked
 
     /**
      * @param args the command line arguments
