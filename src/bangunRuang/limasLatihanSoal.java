@@ -9,13 +9,34 @@ package bangunRuang;
  *
  * @author Asus
  */
-public class limasLatihanSoal extends javax.swing.JPanel {
-
+public class limasLatihanSoal extends javax.swing.JFrame {
+    limasLatihanSoal1 pBL1;
+    limasLatihanSoal2 pBL2;
+    limasLatihanSoal3 pBL3;
+    limasLatihanSoal4 pBL4;
+    limasLatihanSoal5 pBL5;
+    limasLatihanSoal6 pBL6;
+    limasLatihanSoalAwal pBL0;
     /**
      * Creates new form limasLatihanSoal
      */
     public limasLatihanSoal() {
         initComponents();
+        pBL1 = new limasLatihanSoal1();
+        pBL2 = new limasLatihanSoal2();
+        pBL3 = new limasLatihanSoal3();
+        pBL4 = new limasLatihanSoal4();
+        pBL5 = new limasLatihanSoal5();
+        pBL6 = new limasLatihanSoal6();
+        pBL0 = new limasLatihanSoalAwal();
+        
+        panelUtama2.add(pBL0);
+        panelUtama2.add(pBL1);
+        panelUtama2.add(pBL2);
+        panelUtama2.add(pBL3);
+        panelUtama2.add(pBL4);
+        panelUtama2.add(pBL5);
+        panelUtama2.add(pBL6);
     }
 
     /**
@@ -36,12 +57,13 @@ public class limasLatihanSoal extends javax.swing.JPanel {
         ButtonLatSoal2 = new javax.swing.JLabel();
         ButtonLatSoal3 = new javax.swing.JLabel();
         panelUtama2 = new javax.swing.JPanel();
-        ButtonLatSoal6 = new javax.swing.JLabel();
-        ButtonLatSoal5 = new javax.swing.JLabel();
         ButtonLatSoal4 = new javax.swing.JLabel();
+        ButtonLatSoal5 = new javax.swing.JLabel();
+        ButtonLatSoal6 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
-        setLayout(null);
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
 
@@ -79,7 +101,7 @@ public class limasLatihanSoal extends javax.swing.JPanel {
                 .addGap(0, 3, Short.MAX_VALUE))
         );
 
-        add(jPanel1);
+        getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 1310, 50);
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal.png"))); // NOI18N
@@ -88,7 +110,7 @@ public class limasLatihanSoal extends javax.swing.JPanel {
                 jLabel11MouseClicked(evt);
             }
         });
-        add(jLabel11);
+        getContentPane().add(jLabel11);
         jLabel11.setBounds(430, 50, 470, 170);
 
         ButtonLatSoal1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal (7).png"))); // NOI18N
@@ -97,7 +119,7 @@ public class limasLatihanSoal extends javax.swing.JPanel {
                 ButtonLatSoal1MouseClicked(evt);
             }
         });
-        add(ButtonLatSoal1);
+        getContentPane().add(ButtonLatSoal1);
         ButtonLatSoal1.setBounds(460, 210, 130, 120);
 
         ButtonLatSoal2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal (8).png"))); // NOI18N
@@ -106,7 +128,7 @@ public class limasLatihanSoal extends javax.swing.JPanel {
                 ButtonLatSoal2MouseClicked(evt);
             }
         });
-        add(ButtonLatSoal2);
+        getContentPane().add(ButtonLatSoal2);
         ButtonLatSoal2.setBounds(600, 210, 130, 120);
 
         ButtonLatSoal3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal (9).png"))); // NOI18N
@@ -115,31 +137,13 @@ public class limasLatihanSoal extends javax.swing.JPanel {
                 ButtonLatSoal3MouseClicked(evt);
             }
         });
-        add(ButtonLatSoal3);
+        getContentPane().add(ButtonLatSoal3);
         ButtonLatSoal3.setBounds(740, 210, 130, 120);
 
         panelUtama2.setBackground(new java.awt.Color(24, 64, 105));
         panelUtama2.setLayout(new java.awt.CardLayout());
-        add(panelUtama2);
+        getContentPane().add(panelUtama2);
         panelUtama2.setBounds(160, 440, 990, 340);
-
-        ButtonLatSoal6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal (12).png"))); // NOI18N
-        ButtonLatSoal6.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ButtonLatSoal6MouseClicked(evt);
-            }
-        });
-        add(ButtonLatSoal6);
-        ButtonLatSoal6.setBounds(740, 340, 130, 110);
-
-        ButtonLatSoal5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal (11).png"))); // NOI18N
-        ButtonLatSoal5.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ButtonLatSoal5MouseClicked(evt);
-            }
-        });
-        add(ButtonLatSoal5);
-        ButtonLatSoal5.setBounds(600, 340, 130, 110);
 
         ButtonLatSoal4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal (10).png"))); // NOI18N
         ButtonLatSoal4.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -147,12 +151,32 @@ public class limasLatihanSoal extends javax.swing.JPanel {
                 ButtonLatSoal4MouseClicked(evt);
             }
         });
-        add(ButtonLatSoal4);
+        getContentPane().add(ButtonLatSoal4);
         ButtonLatSoal4.setBounds(460, 340, 130, 110);
 
+        ButtonLatSoal5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal (11).png"))); // NOI18N
+        ButtonLatSoal5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ButtonLatSoal5MouseClicked(evt);
+            }
+        });
+        getContentPane().add(ButtonLatSoal5);
+        ButtonLatSoal5.setBounds(600, 340, 130, 110);
+
+        ButtonLatSoal6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal (12).png"))); // NOI18N
+        ButtonLatSoal6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ButtonLatSoal6MouseClicked(evt);
+            }
+        });
+        getContentPane().add(ButtonLatSoal6);
+        ButtonLatSoal6.setBounds(740, 340, 130, 110);
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/bgkecil.jpg"))); // NOI18N
-        add(jLabel1);
+        getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 0, 1310, 820);
+
+        pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
@@ -189,26 +213,6 @@ public class limasLatihanSoal extends javax.swing.JPanel {
         pBL6.setVisible(false);
     }//GEN-LAST:event_ButtonLatSoal3MouseClicked
 
-    private void ButtonLatSoal6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal6MouseClicked
-
-        pBL1.setVisible(false);
-        pBL2.setVisible(false);
-        pBL3.setVisible(false);
-        pBL4.setVisible(false);
-        pBL5.setVisible(false);
-        pBL6.setVisible(true);
-    }//GEN-LAST:event_ButtonLatSoal6MouseClicked
-
-    private void ButtonLatSoal5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal5MouseClicked
-
-        pBL1.setVisible(false);
-        pBL2.setVisible(false);
-        pBL3.setVisible(false);
-        pBL4.setVisible(false);
-        pBL5.setVisible(true);
-        pBL6.setVisible(false);
-    }//GEN-LAST:event_ButtonLatSoal5MouseClicked
-
     private void ButtonLatSoal4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal4MouseClicked
 
         pBL1.setVisible(false);
@@ -220,6 +224,60 @@ public class limasLatihanSoal extends javax.swing.JPanel {
 
     }//GEN-LAST:event_ButtonLatSoal4MouseClicked
 
+    private void ButtonLatSoal5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal5MouseClicked
+
+        pBL1.setVisible(false);
+        pBL2.setVisible(false);
+        pBL3.setVisible(false);
+        pBL4.setVisible(false);
+        pBL5.setVisible(true);
+        pBL6.setVisible(false);
+    }//GEN-LAST:event_ButtonLatSoal5MouseClicked
+
+    private void ButtonLatSoal6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal6MouseClicked
+
+        pBL1.setVisible(false);
+        pBL2.setVisible(false);
+        pBL3.setVisible(false);
+        pBL4.setVisible(false);
+        pBL5.setVisible(false);
+        pBL6.setVisible(true);
+    }//GEN-LAST:event_ButtonLatSoal6MouseClicked
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(limasLatihanSoal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(limasLatihanSoal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(limasLatihanSoal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(limasLatihanSoal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new limasLatihanSoal().setVisible(true);
+            }
+        });
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel ButtonLatSoal1;
