@@ -12,6 +12,7 @@ import bangunRuang.kubus;
 import bangunRuang.limas;
 import bangunRuang.prisma;
 import bangunRuang.tabung;
+import javax.swing.JFrame;
 
 /**
  *
@@ -22,23 +23,23 @@ public class bangunRuangClass extends javax.swing.JFrame {
     /**
      * Creates new form bangunRuangClass
      */
-    balok bal;
-    bolaa bol;
-    kerucut ker;
-    kubus kub;
-    limas lim;
-    prisma pri;
-    tabung tab;
+//    balok bal;
+//    bolaa bol;
+//    kerucut ker;
+//    kubus kub;
+//    limas lim;
+//    prisma pri;
+//    tabung tab;
     
     public bangunRuangClass() {
         initComponents();
-        bal = new balok();
-        bol = new bolaa();
-        ker = new kerucut();
-        kub = new kubus();
-        lim = new limas();
-        pri = new prisma();
-        tab = new tabung();
+//        bal = new balok();
+//        bol = new bolaa();
+//        ker = new kerucut();
+//        kub = new kubus();
+//        lim = new limas();
+//        pri = new prisma();
+//        tab = new tabung();
     }
 
     /**
@@ -155,79 +156,78 @@ public class bangunRuangClass extends javax.swing.JFrame {
 
     private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
         // TODO add your handling code here:
-        bal.setVisible(true);
-        bol.setVisible(false);
-        ker.setVisible(false);
-        kub.setVisible(false);
-        lim.setVisible(false);
-        pri.setVisible(false);
-        tab.setVisible(false);
+        balok blk = new balok();
+        new balok().setVisible(true);
+        blk.pack();
+        blk.setLocationRelativeTo(null);
+        blk.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
     }//GEN-LAST:event_jLabel4MouseClicked
 
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
         // TODO add your handling code here:
-        bal.setVisible(false);
-        bol.setVisible(true);
-        ker.setVisible(false);
-        kub.setVisible(false);
-        lim.setVisible(false);
-        pri.setVisible(false);
-        tab.setVisible(false);
+//        bal.setVisible(false);
+//        bol.setVisible(true);
+//        ker.setVisible(false);
+//        kub.setVisible(false);
+//        lim.setVisible(false);
+//        pri.setVisible(false);
+//        tab.setVisible(false);
     }//GEN-LAST:event_jLabel5MouseClicked
 
     private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
         // TODO add your handling code here:
-        bal.setVisible(false);
-        bol.setVisible(false);
-        ker.setVisible(true);
-        kub.setVisible(false);
-        lim.setVisible(false);
-        pri.setVisible(false);
-        tab.setVisible(false);
+//        bal.setVisible(false);
+//        bol.setVisible(false);
+//        ker.setVisible(true);
+//        kub.setVisible(false);
+//        lim.setVisible(false);
+//        pri.setVisible(false);
+//        tab.setVisible(false);
     }//GEN-LAST:event_jLabel6MouseClicked
 
     private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
         // TODO add your handling code here:
-        bal.setVisible(false);
-        bol.setVisible(false);
-        ker.setVisible(false);
-        kub.setVisible(true);
-        lim.setVisible(false);
-        pri.setVisible(false);
-        tab.setVisible(false);
+//        bal.setVisible(false);
+//        bol.setVisible(false);
+//        ker.setVisible(false);
+//        kub.setVisible(true);
+//        lim.setVisible(false);
+//        pri.setVisible(false);
+//        tab.setVisible(false);
     }//GEN-LAST:event_jLabel7MouseClicked
 
     private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
         // TODO add your handling code here:
-        bal.setVisible(false);
-        bol.setVisible(false);
-        ker.setVisible(false);
-        kub.setVisible(false);
-        lim.setVisible(false);
-        pri.setVisible(true);
-        tab.setVisible(false);
+//        bal.setVisible(false);
+//        bol.setVisible(false);
+//        ker.setVisible(false);
+//        kub.setVisible(false);
+//        lim.setVisible(false);
+//        pri.setVisible(true);
+//        tab.setVisible(false);
     }//GEN-LAST:event_jLabel10MouseClicked
 
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
         // TODO add your handling code here:
-        bal.setVisible(false);
-        bol.setVisible(false);
-        ker.setVisible(false);
-        kub.setVisible(false);
-        lim.setVisible(false);
-        pri.setVisible(false);
-        tab.setVisible(true);
+//        bal.setVisible(false);
+//        bol.setVisible(false);
+//        ker.setVisible(false);
+//        kub.setVisible(false);
+//        lim.setVisible(false);
+//        pri.setVisible(false);
+//        tab.setVisible(true);
     }//GEN-LAST:event_jLabel1MouseClicked
 
     private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
         // TODO add your handling code here:
-        bal.setVisible(false);
-        bol.setVisible(false);
-        ker.setVisible(false);
-        kub.setVisible(false);
-        lim.setVisible(true);
-        pri.setVisible(false);
-        tab.setVisible(false);
+//        bal.setVisible(false);
+//        bol.setVisible(false);
+//        ker.setVisible(false);
+//        kub.setVisible(false);
+//        lim.setVisible(true);
+//        pri.setVisible(false);
+//        tab.setVisible(false);
     }//GEN-LAST:event_jLabel8MouseClicked
 
     /**

@@ -66,7 +66,7 @@ public class belahKetupatLatihanSoal5 extends javax.swing.JPanel {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/jawaban.png"))); // NOI18N
         add(jLabel2);
-        jLabel2.setBounds(670, 0, 320, 340);
+        jLabel2.setBounds(700, 0, 320, 340);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed

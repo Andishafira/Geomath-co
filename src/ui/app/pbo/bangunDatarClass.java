@@ -12,6 +12,7 @@ import bangunDatar.persegi;
 import bangunDatar.persegiPanjang;
 import bangunDatar.segiTiga;
 import bangunDatar.trapesium;
+import javax.swing.JFrame;
 
 /**
  *
@@ -22,23 +23,10 @@ public class bangunDatarClass extends javax.swing.JFrame {
     /**
      * Creates new form bangunDatarClass
      */
-    belahKetupat bKet;
-    layangLayang lay;
-    lingkaran ling;
-    persegi per;
-    persegiPanjang psg;
-    segiTiga seg;
-    trapesium trap;
+
     
     public bangunDatarClass() {
         initComponents();
-        bKet = new belahKetupat();
-        lay = new layangLayang();
-        ling = new lingkaran();
-        per = new persegi();
-        psg = new persegiPanjang();
-        seg = new segiTiga();
-        trap = new trapesium();
         
     }
 
@@ -79,7 +67,7 @@ public class bangunDatarClass extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("BANGUN DATAR");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(450, 50, 420, 70);
+        jLabel3.setBounds(400, 40, 420, 70);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -156,79 +144,43 @@ public class bangunDatarClass extends javax.swing.JFrame {
 
     private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
         // TODO add your handling code here:
-        bKet.setVisible(true);
-        lay.setVisible(false);
-        ling.setVisible(false);
-        per.setVisible(false);
-        psg.setVisible(false);
-        seg.setVisible(false);
-        trap.setVisible(false);
+        belahKetupat BL = new belahKetupat();
+        new belahKetupat().setVisible(true);
+        BL.pack();
+        BL.setLocationRelativeTo(null);
+        BL.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
+        
     }//GEN-LAST:event_jLabel4MouseClicked
 
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
         // TODO add your handling code here:
-        bKet.setVisible(false);
-        lay.setVisible(true);
-        ling.setVisible(false);
-        per.setVisible(false);
-        psg.setVisible(false);
-        seg.setVisible(false);
-        trap.setVisible(false);
+       
     }//GEN-LAST:event_jLabel5MouseClicked
 
     private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
         // TODO add your handling code here:
-        bKet.setVisible(false);
-        lay.setVisible(false);
-        ling.setVisible(true);
-        per.setVisible(false);
-        psg.setVisible(false);
-        seg.setVisible(false);
-        trap.setVisible(false);
+        
     }//GEN-LAST:event_jLabel6MouseClicked
 
     private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
         // TODO add your handling code here:
-        bKet.setVisible(false);
-        lay.setVisible(false);
-        ling.setVisible(false);
-        per.setVisible(true);
-        psg.setVisible(false);
-        seg.setVisible(false);
-        trap.setVisible(false);
+        
     }//GEN-LAST:event_jLabel7MouseClicked
 
     private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
         // TODO add your handling code here:
-        bKet.setVisible(false);
-        lay.setVisible(false);
-        ling.setVisible(false);
-        per.setVisible(false);
-        psg.setVisible(true);
-        seg.setVisible(false);
-        trap.setVisible(false);
+        
     }//GEN-LAST:event_jLabel8MouseClicked
 
     private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
         // TODO add your handling code here:
-        bKet.setVisible(false);
-        lay.setVisible(false);
-        ling.setVisible(false);
-        per.setVisible(false);
-        psg.setVisible(false);
-        seg.setVisible(true);
-        trap.setVisible(false);
+       
     }//GEN-LAST:event_jLabel10MouseClicked
 
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
         // TODO add your handling code here:
-        bKet.setVisible(false);
-        lay.setVisible(false);
-        ling.setVisible(false);
-        per.setVisible(false);
-        psg.setVisible(false);
-        seg.setVisible(false);
-        trap.setVisible(true);
+        
     }//GEN-LAST:event_jLabel1MouseClicked
 
     /**

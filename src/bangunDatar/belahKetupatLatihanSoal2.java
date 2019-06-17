@@ -35,7 +35,7 @@ public class belahKetupatLatihanSoal2 extends javax.swing.JPanel {
         jButton1 = new javax.swing.JButton();
         jTextField2 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(24, 64, 105));
         setLayout(null);
@@ -49,7 +49,7 @@ public class belahKetupatLatihanSoal2 extends javax.swing.JPanel {
             }
         });
         add(jButton1);
-        jButton1.setBounds(820, 160, 77, 23);
+        jButton1.setBounds(820, 160, 77, 32);
 
         jTextField2.setEditable(false);
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
@@ -64,9 +64,9 @@ public class belahKetupatLatihanSoal2 extends javax.swing.JPanel {
         add(jLabel1);
         jLabel1.setBounds(0, 0, 740, 340);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/jawaban.png"))); // NOI18N
-        add(jLabel2);
-        jLabel2.setBounds(680, 0, 310, 340);
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/jawaban.png"))); // NOI18N
+        add(jLabel4);
+        jLabel4.setBounds(720, 0, 270, 340);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
@@ -88,7 +88,7 @@ public class belahKetupatLatihanSoal2 extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables

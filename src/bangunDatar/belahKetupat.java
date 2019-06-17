@@ -65,12 +65,12 @@ public class belahKetupat extends javax.swing.JFrame {
         buttonLuas = new javax.swing.JLabel();
         buttonDiagonal = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        ButtonLatSoal2 = new javax.swing.JLabel();
         ButtonLatSoal1 = new javax.swing.JLabel();
+        ButtonLatSoal2 = new javax.swing.JLabel();
         ButtonLatSoal3 = new javax.swing.JLabel();
-        ButtonLatSoal4 = new javax.swing.JLabel();
-        ButtonLatSoal5 = new javax.swing.JLabel();
         ButtonLatSoal6 = new javax.swing.JLabel();
+        ButtonLatSoal5 = new javax.swing.JLabel();
+        ButtonLatSoal4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -79,6 +79,7 @@ public class belahKetupat extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
 
         tombolKeluar.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        tombolKeluar.setForeground(new java.awt.Color(255, 255, 255));
         tombolKeluar.setText("X");
         tombolKeluar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -142,20 +143,16 @@ public class belahKetupat extends javax.swing.JFrame {
         getContentPane().add(buttonDiagonal);
         buttonDiagonal.setBounds(10, 560, 240, 230);
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal.png"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal.png"))); // NOI18N
+        jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel7MouseClicked(evt);
+            }
+        });
         getContentPane().add(jLabel7);
         jLabel7.setBounds(820, 60, 470, 170);
 
-        ButtonLatSoal2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (8).png"))); // NOI18N
-        ButtonLatSoal2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ButtonLatSoal2MouseClicked(evt);
-            }
-        });
-        getContentPane().add(ButtonLatSoal2);
-        ButtonLatSoal2.setBounds(1020, 220, 130, 120);
-
-        ButtonLatSoal1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (7).png"))); // NOI18N
+        ButtonLatSoal1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal (7).png"))); // NOI18N
         ButtonLatSoal1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ButtonLatSoal1MouseClicked(evt);
@@ -164,7 +161,16 @@ public class belahKetupat extends javax.swing.JFrame {
         getContentPane().add(ButtonLatSoal1);
         ButtonLatSoal1.setBounds(880, 220, 130, 120);
 
-        ButtonLatSoal3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (9).png"))); // NOI18N
+        ButtonLatSoal2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal (8).png"))); // NOI18N
+        ButtonLatSoal2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ButtonLatSoal2MouseClicked(evt);
+            }
+        });
+        getContentPane().add(ButtonLatSoal2);
+        ButtonLatSoal2.setBounds(1020, 220, 130, 120);
+
+        ButtonLatSoal3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal (9).png"))); // NOI18N
         ButtonLatSoal3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ButtonLatSoal3MouseClicked(evt);
@@ -173,25 +179,7 @@ public class belahKetupat extends javax.swing.JFrame {
         getContentPane().add(ButtonLatSoal3);
         ButtonLatSoal3.setBounds(1160, 220, 130, 120);
 
-        ButtonLatSoal4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (10).png"))); // NOI18N
-        ButtonLatSoal4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ButtonLatSoal4MouseClicked(evt);
-            }
-        });
-        getContentPane().add(ButtonLatSoal4);
-        ButtonLatSoal4.setBounds(880, 350, 130, 110);
-
-        ButtonLatSoal5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (11).png"))); // NOI18N
-        ButtonLatSoal5.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ButtonLatSoal5MouseClicked(evt);
-            }
-        });
-        getContentPane().add(ButtonLatSoal5);
-        ButtonLatSoal5.setBounds(1020, 350, 130, 110);
-
-        ButtonLatSoal6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/latihan soal (12).png"))); // NOI18N
+        ButtonLatSoal6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal (12).png"))); // NOI18N
         ButtonLatSoal6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ButtonLatSoal6MouseClicked(evt);
@@ -200,9 +188,27 @@ public class belahKetupat extends javax.swing.JFrame {
         getContentPane().add(ButtonLatSoal6);
         ButtonLatSoal6.setBounds(1160, 350, 130, 110);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/abstract-blue-geometric-shapes-background-vector.jpg"))); // NOI18N
+        ButtonLatSoal5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal (11).png"))); // NOI18N
+        ButtonLatSoal5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ButtonLatSoal5MouseClicked(evt);
+            }
+        });
+        getContentPane().add(ButtonLatSoal5);
+        ButtonLatSoal5.setBounds(1020, 350, 130, 110);
+
+        ButtonLatSoal4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal (10).png"))); // NOI18N
+        ButtonLatSoal4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ButtonLatSoal4MouseClicked(evt);
+            }
+        });
+        getContentPane().add(ButtonLatSoal4);
+        ButtonLatSoal4.setBounds(880, 350, 130, 110);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/bgkecil.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(-220, 0, 1530, 850);
+        jLabel1.setBounds(0, -10, 1530, 850);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -257,7 +263,21 @@ public class belahKetupat extends javax.swing.JFrame {
         pA3.setVisible(true);
     }//GEN-LAST:event_buttonDiagonalMouseClicked
 
+    private void tombolKeluarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tombolKeluarMouseClicked
+        // TODO add your handling code here:
+        int option = JOptionPane.showConfirmDialog(null, "Selesai Belajar?", "AMOBA", JOptionPane.YES_NO_OPTION);
+        
+        if(option == JOptionPane.YES_OPTION){
+            System.exit(0);
+        }
+    }//GEN-LAST:event_tombolKeluarMouseClicked
+
+    private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel7MouseClicked
+
     private void ButtonLatSoal1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal1MouseClicked
+        pB0.setVisible(false);
         pB1.setVisible(false);
         pB2.setVisible(false);
         pB3.setVisible(false);
@@ -267,9 +287,15 @@ public class belahKetupat extends javax.swing.JFrame {
         pBL4.setVisible(false);
         pBL5.setVisible(false);
         pBL6.setVisible(false);
+
+        pA0.setVisible(false);
+        pA1.setVisible(false);
+        pA2.setVisible(false);
+        pA3.setVisible(false);
     }//GEN-LAST:event_ButtonLatSoal1MouseClicked
 
     private void ButtonLatSoal2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal2MouseClicked
+        pB0.setVisible(false);
         pB1.setVisible(false);
         pB2.setVisible(false);
         pB3.setVisible(false);
@@ -279,9 +305,15 @@ public class belahKetupat extends javax.swing.JFrame {
         pBL4.setVisible(false);
         pBL5.setVisible(false);
         pBL6.setVisible(false);
+
+        pA0.setVisible(false);
+        pA1.setVisible(false);
+        pA2.setVisible(false);
+        pA3.setVisible(false);
     }//GEN-LAST:event_ButtonLatSoal2MouseClicked
 
     private void ButtonLatSoal3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal3MouseClicked
+        pB0.setVisible(false);
         pB1.setVisible(false);
         pB2.setVisible(false);
         pB3.setVisible(false);
@@ -291,33 +323,15 @@ public class belahKetupat extends javax.swing.JFrame {
         pBL4.setVisible(false);
         pBL5.setVisible(false);
         pBL6.setVisible(false);
+
+        pA0.setVisible(false);
+        pA1.setVisible(false);
+        pA2.setVisible(false);
+        pA3.setVisible(false);
     }//GEN-LAST:event_ButtonLatSoal3MouseClicked
 
-    private void ButtonLatSoal4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal4MouseClicked
-        pB1.setVisible(false);
-        pB2.setVisible(false);
-        pB3.setVisible(false);
-        pBL1.setVisible(false);
-        pBL2.setVisible(false);
-        pBL3.setVisible(false);
-        pBL4.setVisible(true);
-        pBL5.setVisible(false);
-        pBL6.setVisible(false);
-    }//GEN-LAST:event_ButtonLatSoal4MouseClicked
-
-    private void ButtonLatSoal5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal5MouseClicked
-        pB1.setVisible(false);
-        pB2.setVisible(false);
-        pB3.setVisible(false);
-        pBL1.setVisible(false);
-        pBL2.setVisible(false);
-        pBL3.setVisible(false);
-        pBL4.setVisible(false);
-        pBL5.setVisible(true);
-        pBL6.setVisible(false);
-    }//GEN-LAST:event_ButtonLatSoal5MouseClicked
-
     private void ButtonLatSoal6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal6MouseClicked
+        pB0.setVisible(false);
         pB1.setVisible(false);
         pB2.setVisible(false);
         pB3.setVisible(false);
@@ -327,16 +341,48 @@ public class belahKetupat extends javax.swing.JFrame {
         pBL4.setVisible(false);
         pBL5.setVisible(false);
         pBL6.setVisible(true);
+
+        pA0.setVisible(false);
+        pA1.setVisible(false);
+        pA2.setVisible(false);
+        pA3.setVisible(false);
     }//GEN-LAST:event_ButtonLatSoal6MouseClicked
 
-    private void tombolKeluarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tombolKeluarMouseClicked
-        // TODO add your handling code here:
-        int option = JOptionPane.showConfirmDialog(null, "Selesai Belajar?", "AMOBA", JOptionPane.YES_NO_OPTION);
-        
-        if(option == JOptionPane.YES_OPTION){
-            System.exit(0);
-        }
-    }//GEN-LAST:event_tombolKeluarMouseClicked
+    private void ButtonLatSoal5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal5MouseClicked
+        pB0.setVisible(false);
+        pB1.setVisible(false);
+        pB2.setVisible(false);
+        pB3.setVisible(false);
+        pBL1.setVisible(false);
+        pBL2.setVisible(false);
+        pBL3.setVisible(false);
+        pBL4.setVisible(false);
+        pBL5.setVisible(true);
+        pBL6.setVisible(false);
+
+        pA0.setVisible(false);
+        pA1.setVisible(false);
+        pA2.setVisible(false);
+        pA3.setVisible(false);
+    }//GEN-LAST:event_ButtonLatSoal5MouseClicked
+
+    private void ButtonLatSoal4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal4MouseClicked
+        pB0.setVisible(false);
+        pB1.setVisible(false);
+        pB2.setVisible(false);
+        pB3.setVisible(false);
+        pBL1.setVisible(false);
+        pBL2.setVisible(false);
+        pBL3.setVisible(false);
+        pBL4.setVisible(true);
+        pBL5.setVisible(false);
+        pBL6.setVisible(false);
+
+        pA0.setVisible(false);
+        pA1.setVisible(false);
+        pA2.setVisible(false);
+        pA3.setVisible(false);
+    }//GEN-LAST:event_ButtonLatSoal4MouseClicked
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
