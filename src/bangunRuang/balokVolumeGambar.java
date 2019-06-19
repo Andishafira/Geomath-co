@@ -32,9 +32,9 @@ public class balokVolumeGambar extends javax.swing.JPanel {
         setBackground(new java.awt.Color(8, 80, 116));
         setLayout(null);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Balok/volume.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Balok/volumegam.png"))); // NOI18N
         add(jLabel1);
-        jLabel1.setBounds(-360, 0, 930, 390);
+        jLabel1.setBounds(0, 0, 570, 440);
     }// </editor-fold>//GEN-END:initComponents
 
 

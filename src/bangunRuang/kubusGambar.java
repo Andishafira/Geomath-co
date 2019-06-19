@@ -32,9 +32,9 @@ public class kubusGambar extends javax.swing.JPanel {
         setBackground(new java.awt.Color(8, 80, 116));
         setLayout(null);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Kubus/gambar kubus.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Kubus/! (8).png"))); // NOI18N
         add(jLabel1);
-        jLabel1.setBounds(130, 40, 300, 300);
+        jLabel1.setBounds(0, 0, 570, 410);
     }// </editor-fold>//GEN-END:initComponents
 
 
