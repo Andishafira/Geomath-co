@@ -1,5 +1,7 @@
 package bangunRuang;
 
+import javax.swing.JOptionPane;
+
 public class balok extends javax.swing.JFrame {
     balokLuasPermukaan pB1;
     balokLuasPermukaanGambar pA1;
@@ -78,6 +80,11 @@ public class balok extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel2.setText("X");
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -275,7 +282,7 @@ public class balok extends javax.swing.JFrame {
         pBL6.setVisible(false);
 
         pA0.setVisible(false);
-        pA1.setVisible(false);
+        pA1.setVisible(true);
         pA2.setVisible(false);
         pA3.setVisible(false);
     }//GEN-LAST:event_ButtonLatSoal1MouseClicked
@@ -295,7 +302,7 @@ public class balok extends javax.swing.JFrame {
         pA0.setVisible(false);
         pA1.setVisible(false);
         pA2.setVisible(false);
-        pA3.setVisible(false);
+        pA3.setVisible(true);
     }//GEN-LAST:event_ButtonLatSoal2MouseClicked
 
     private void ButtonLatSoal3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal3MouseClicked
@@ -313,7 +320,7 @@ public class balok extends javax.swing.JFrame {
         pA0.setVisible(false);
         pA1.setVisible(false);
         pA2.setVisible(false);
-        pA3.setVisible(false);
+        pA3.setVisible(true);
     }//GEN-LAST:event_ButtonLatSoal3MouseClicked
 
     private void ButtonLatSoal6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal6MouseClicked
@@ -329,7 +336,7 @@ public class balok extends javax.swing.JFrame {
         pBL6.setVisible(true);
 
         pA0.setVisible(false);
-        pA1.setVisible(false);
+        pA1.setVisible(true);
         pA2.setVisible(false);
         pA3.setVisible(false);
     }//GEN-LAST:event_ButtonLatSoal6MouseClicked
@@ -347,7 +354,7 @@ public class balok extends javax.swing.JFrame {
         pBL6.setVisible(false);
 
         pA0.setVisible(false);
-        pA1.setVisible(false);
+        pA1.setVisible(true);
         pA2.setVisible(false);
         pA3.setVisible(false);
     }//GEN-LAST:event_ButtonLatSoal5MouseClicked
@@ -365,7 +372,7 @@ public class balok extends javax.swing.JFrame {
         pBL6.setVisible(false);
 
         pA0.setVisible(false);
-        pA1.setVisible(false);
+        pA1.setVisible(true);
         pA2.setVisible(false);
         pA3.setVisible(false);
     }//GEN-LAST:event_ButtonLatSoal4MouseClicked
@@ -373,6 +380,15 @@ public class balok extends javax.swing.JFrame {
     private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_jLabel7MouseClicked
+
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+        // TODO add your handling code here:
+        int option = JOptionPane.showConfirmDialog(null, "Selesai Belajar?", "AMOBA", JOptionPane.YES_NO_OPTION);
+        
+        if(option == JOptionPane.YES_OPTION){
+            System.exit(0);
+        }
+    }//GEN-LAST:event_jLabel2MouseClicked
 
     /**
      * @param args the command line arguments

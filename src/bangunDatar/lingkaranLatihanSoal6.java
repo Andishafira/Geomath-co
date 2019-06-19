@@ -5,6 +5,8 @@
  */
 package bangunDatar;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Asus
@@ -61,8 +63,13 @@ public class lingkaranLatihanSoal6 extends javax.swing.JPanel {
         jLabel9.setBounds(30, 200, 140, 24);
 
         jButton1.setText("Cek");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         add(jButton1);
-        jButton1.setBounds(70, 240, 52, 32);
+        jButton1.setBounds(70, 240, 51, 23);
 
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -70,16 +77,15 @@ public class lingkaranLatihanSoal6 extends javax.swing.JPanel {
             }
         });
         add(jTextField2);
-        jTextField2.setBounds(170, 190, 170, 40);
+        jTextField2.setBounds(160, 240, 170, 40);
 
-        jTextField1.setText("12");
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
             }
         });
         add(jTextField1);
-        jTextField1.setBounds(170, 240, 170, 40);
+        jTextField1.setBounds(160, 190, 170, 40);
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/lingkaran/soal gambar kososng4.png"))); // NOI18N
         add(jLabel4);
@@ -88,7 +94,7 @@ public class lingkaranLatihanSoal6 extends javax.swing.JPanel {
         jLabel2.setForeground(new java.awt.Color(255, 0, 51));
         jLabel2.setText("14 cm");
         add(jLabel2);
-        jLabel2.setBounds(840, 150, 41, 16);
+        jLabel2.setBounds(840, 150, 41, 14);
 
         jLabel10.setForeground(new java.awt.Color(153, 255, 255));
         jLabel10.setText("2");
@@ -107,6 +113,17 @@ public class lingkaranLatihanSoal6 extends javax.swing.JPanel {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        String jawaban = jTextField1.getText();
+        
+        if(jawaban.equals("1350")){
+            jTextField2.setText("Jawaban Benar : 1350 cm");
+        } else {
+            JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

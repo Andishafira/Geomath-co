@@ -5,6 +5,8 @@
  */
 package bangunRuang;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Asus
@@ -83,7 +85,7 @@ public class kubusLatihanSoal6 extends javax.swing.JPanel {
             }
         });
         add(jTextField2);
-        jTextField2.setBounds(680, 190, 170, 40);
+        jTextField2.setBounds(680, 240, 170, 40);
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -91,11 +93,16 @@ public class kubusLatihanSoal6 extends javax.swing.JPanel {
             }
         });
         add(jTextField1);
-        jTextField1.setBounds(680, 240, 170, 40);
+        jTextField1.setBounds(680, 190, 170, 40);
 
         jButton1.setText("Cek");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         add(jButton1);
-        jButton1.setBounds(580, 240, 52, 32);
+        jButton1.setBounds(580, 240, 51, 23);
 
         jLabel3.setFont(new java.awt.Font("Dialog", 1, 10)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 0, 51));
@@ -115,6 +122,17 @@ public class kubusLatihanSoal6 extends javax.swing.JPanel {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        String jawaban = jTextField1.getText();
+        
+        if(jawaban.equals("1350")){
+            jTextField2.setText("Jawaban Benar : 1350 cm");
+        } else {
+            JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

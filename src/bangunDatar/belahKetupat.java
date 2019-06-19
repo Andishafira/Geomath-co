@@ -50,7 +50,6 @@ public class belahKetupat extends javax.swing.JFrame {
         panelUtama.add(pA0);
         panelGambar.add(pA2);
         panelGambar.add(pA3);
-        
     }
 
     @SuppressWarnings("unchecked")
@@ -289,7 +288,7 @@ public class belahKetupat extends javax.swing.JFrame {
         pBL6.setVisible(false);
 
         pA0.setVisible(false);
-        pA1.setVisible(false);
+        pA1.setVisible(true);
         pA2.setVisible(false);
         pA3.setVisible(false);
     }//GEN-LAST:event_ButtonLatSoal1MouseClicked
@@ -308,7 +307,7 @@ public class belahKetupat extends javax.swing.JFrame {
 
         pA0.setVisible(false);
         pA1.setVisible(false);
-        pA2.setVisible(false);
+        pA2.setVisible(true);
         pA3.setVisible(false);
     }//GEN-LAST:event_ButtonLatSoal2MouseClicked
 
@@ -327,7 +326,7 @@ public class belahKetupat extends javax.swing.JFrame {
         pA0.setVisible(false);
         pA1.setVisible(false);
         pA2.setVisible(false);
-        pA3.setVisible(false);
+        pA3.setVisible(true);
     }//GEN-LAST:event_ButtonLatSoal3MouseClicked
 
     private void ButtonLatSoal6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal6MouseClicked
@@ -345,7 +344,7 @@ public class belahKetupat extends javax.swing.JFrame {
         pA0.setVisible(false);
         pA1.setVisible(false);
         pA2.setVisible(false);
-        pA3.setVisible(false);
+        pA3.setVisible(true);
     }//GEN-LAST:event_ButtonLatSoal6MouseClicked
 
     private void ButtonLatSoal5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal5MouseClicked
@@ -360,7 +359,7 @@ public class belahKetupat extends javax.swing.JFrame {
         pBL5.setVisible(true);
         pBL6.setVisible(false);
 
-        pA0.setVisible(false);
+        pA0.setVisible(true);
         pA1.setVisible(false);
         pA2.setVisible(false);
         pA3.setVisible(false);

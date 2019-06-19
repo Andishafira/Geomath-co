@@ -1,6 +1,8 @@
 
 package bangunDatar;
 
+import javax.swing.JOptionPane;
+
 
 public class lingkaran extends javax.swing.JFrame {
     lingkaranDeskripsi pB0;
@@ -81,6 +83,11 @@ public class lingkaran extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel3.setText("X");
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel3MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -116,7 +123,6 @@ public class lingkaran extends javax.swing.JFrame {
         panelUtama.setBounds(300, 450, 990, 340);
 
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/lingkaran/keliling.png"))); // NOI18N
         jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -127,7 +133,6 @@ public class lingkaran extends javax.swing.JFrame {
         jLabel4.setBounds(10, 60, 240, 240);
 
         jLabel5.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/lingkaran/luas.png"))); // NOI18N
         jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -138,7 +143,6 @@ public class lingkaran extends javax.swing.JFrame {
         jLabel5.setBounds(10, 310, 240, 240);
 
         jLabel13.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(0, 0, 0));
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/lingkaran/diagonal.png"))); // NOI18N
         jLabel13.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -277,7 +281,7 @@ public class lingkaran extends javax.swing.JFrame {
 
         pA0.setVisible(false);
         pA1.setVisible(false);
-        pA2.setVisible(false);
+        pA2.setVisible(true);
         pA3.setVisible(false);
     }//GEN-LAST:event_ButtonLatSoal1MouseClicked
 
@@ -295,7 +299,7 @@ public class lingkaran extends javax.swing.JFrame {
 
         pA0.setVisible(false);
         pA1.setVisible(false);
-        pA2.setVisible(false);
+        pA2.setVisible(true);
         pA3.setVisible(false);
     }//GEN-LAST:event_ButtonLatSoal2MouseClicked
 
@@ -313,7 +317,7 @@ public class lingkaran extends javax.swing.JFrame {
 
         pA0.setVisible(false);
         pA1.setVisible(false);
-        pA2.setVisible(false);
+        pA2.setVisible(true);
         pA3.setVisible(false);
     }//GEN-LAST:event_ButtonLatSoal3MouseClicked
 
@@ -330,7 +334,7 @@ public class lingkaran extends javax.swing.JFrame {
         pBL6.setVisible(false);
 
         pA0.setVisible(false);
-        pA1.setVisible(false);
+        pA1.setVisible(true);
         pA2.setVisible(false);
         pA3.setVisible(false);
     }//GEN-LAST:event_ButtonLatSoal4MouseClicked
@@ -349,7 +353,7 @@ public class lingkaran extends javax.swing.JFrame {
 
         pA0.setVisible(false);
         pA1.setVisible(false);
-        pA2.setVisible(false);
+        pA2.setVisible(true);
         pA3.setVisible(false);
     }//GEN-LAST:event_ButtonLatSoal5MouseClicked
 
@@ -367,9 +371,18 @@ public class lingkaran extends javax.swing.JFrame {
 
         pA0.setVisible(false);
         pA1.setVisible(false);
-        pA2.setVisible(false);
+        pA2.setVisible(true);
         pA3.setVisible(false);
     }//GEN-LAST:event_ButtonLatSoal6MouseClicked
+
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+        // TODO add your handling code here:
+        int option = JOptionPane.showConfirmDialog(null, "Selesai Belajar?", "AMOBA", JOptionPane.YES_NO_OPTION);
+        
+        if(option == JOptionPane.YES_OPTION){
+            System.exit(0);
+        }
+    }//GEN-LAST:event_jLabel3MouseClicked
 
     /**
      * @param args the command line arguments

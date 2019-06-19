@@ -1,5 +1,7 @@
 package bangunRuang;
 
+import javax.swing.JOptionPane;
+
 public class kubus extends javax.swing.JFrame {
     kubusLuasPermukaan pB1;
     kubusLuasPermukaanGambar pA1;
@@ -150,6 +152,11 @@ public class kubus extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel2.setText("X");
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -171,7 +178,6 @@ public class kubus extends javax.swing.JFrame {
         jPanel1.setBounds(0, 0, 1310, 50);
 
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Kubus/Luas Permukaan iconn.png"))); // NOI18N
         jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -182,7 +188,6 @@ public class kubus extends javax.swing.JFrame {
         jLabel4.setBounds(10, 60, 240, 240);
 
         jLabel5.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Kubus/volume icon.png"))); // NOI18N
         jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -193,7 +198,6 @@ public class kubus extends javax.swing.JFrame {
         jLabel5.setBounds(10, 310, 240, 240);
 
         jLabel3.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Kubus/diagonal icon.png"))); // NOI18N
         jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -224,7 +228,7 @@ public class kubus extends javax.swing.JFrame {
 
         pA0.setVisible(false);
         pA1.setVisible(false);
-        pA2.setVisible(false);
+        pA2.setVisible(true);
         pA3.setVisible(false);
     }//GEN-LAST:event_ButtonLatSoal5MouseClicked
 
@@ -242,7 +246,7 @@ public class kubus extends javax.swing.JFrame {
 
         pA0.setVisible(false);
         pA1.setVisible(false);
-        pA2.setVisible(false);
+        pA2.setVisible(true);
         pA3.setVisible(false);
     }//GEN-LAST:event_ButtonLatSoal4MouseClicked
 
@@ -261,7 +265,7 @@ public class kubus extends javax.swing.JFrame {
         pA0.setVisible(false);
         pA1.setVisible(false);
         pA2.setVisible(false);
-        pA3.setVisible(false);
+        pA3.setVisible(true);
     }//GEN-LAST:event_ButtonLatSoal1MouseClicked
 
     private void ButtonLatSoal2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal2MouseClicked
@@ -277,7 +281,7 @@ public class kubus extends javax.swing.JFrame {
         pBL6.setVisible(false);
 
         pA0.setVisible(false);
-        pA1.setVisible(false);
+        pA1.setVisible(true);
         pA2.setVisible(false);
         pA3.setVisible(false);
     }//GEN-LAST:event_ButtonLatSoal2MouseClicked
@@ -296,7 +300,7 @@ public class kubus extends javax.swing.JFrame {
 
         pA0.setVisible(false);
         pA1.setVisible(false);
-        pA2.setVisible(false);
+        pA2.setVisible(true);
         pA3.setVisible(false);
     }//GEN-LAST:event_ButtonLatSoal3MouseClicked
 
@@ -314,7 +318,7 @@ public class kubus extends javax.swing.JFrame {
 
         pA0.setVisible(false);
         pA1.setVisible(false);
-        pA2.setVisible(false);
+        pA2.setVisible(true);
         pA3.setVisible(false);
     }//GEN-LAST:event_ButtonLatSoal6MouseClicked
 
@@ -332,7 +336,7 @@ public class kubus extends javax.swing.JFrame {
 
         pA0.setVisible(false);
         pA1.setVisible(true);
-        pA2.setVisible(false);
+        pA2.setVisible(true);
         pA3.setVisible(false);
     }//GEN-LAST:event_jLabel4MouseClicked
 
@@ -375,6 +379,15 @@ public class kubus extends javax.swing.JFrame {
     private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_jLabel7MouseClicked
+
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+        // TODO add your handling code here:
+        int option = JOptionPane.showConfirmDialog(null, "Selesai Belajar?", "AMOBA", JOptionPane.YES_NO_OPTION);
+        
+        if(option == JOptionPane.YES_OPTION){
+            System.exit(0);
+        }
+    }//GEN-LAST:event_jLabel2MouseClicked
 
     /**
      * @param args the command line arguments
