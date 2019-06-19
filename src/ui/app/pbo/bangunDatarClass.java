@@ -12,6 +12,7 @@ import bangunDatar.persegi;
 import bangunDatar.persegiPanjang;
 import bangunDatar.segiTiga;
 import bangunDatar.trapesium;
+import java.util.Locale;
 import javax.swing.JFrame;
 
 /**
@@ -155,32 +156,62 @@ public class bangunDatarClass extends javax.swing.JFrame {
 
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
         // TODO add your handling code here:
-       
+       layangLayang layang = new layangLayang();
+       new layangLayang().setVisible(true);
+       layang.pack();
+       layang.setLocation(null);
+       layang.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+       this.dispose();
     }//GEN-LAST:event_jLabel5MouseClicked
 
     private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
         // TODO add your handling code here:
-        
+        lingkaran ling = new lingkaran();
+        new lingkaran().setVisible(true);
+        ling.pack();
+        ling.setLocation(null);
+        ling.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
     }//GEN-LAST:event_jLabel6MouseClicked
 
     private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
         // TODO add your handling code here:
-        
+        persegi pers = new persegi();
+        new persegi().setVisible(true);
+        pers.pack();
+        pers.setLocation(null);
+        pers.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
     }//GEN-LAST:event_jLabel7MouseClicked
 
     private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
         // TODO add your handling code here:
-        
+        persegiPanjang psg = new persegiPanjang();
+        new persegiPanjang().setVisible(true);
+        psg.pack();
+        psg.setLocation(null);
+        psg.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
     }//GEN-LAST:event_jLabel8MouseClicked
 
     private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
         // TODO add your handling code here:
-       
+       segiTiga ST = new segiTiga();
+       new segiTiga().setVisible(true);
+       ST.pack();
+       ST.setLocation(null);
+       ST.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+       this.dispose();
     }//GEN-LAST:event_jLabel10MouseClicked
 
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
         // TODO add your handling code here:
-        
+        trapesium trap = new trapesium();
+        new trapesium().setVisible(true);
+        trap.pack();
+        trap.setLocation(null);
+        trap.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
     }//GEN-LAST:event_jLabel1MouseClicked
 
     /**
