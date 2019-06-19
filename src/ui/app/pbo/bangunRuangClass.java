@@ -59,80 +59,80 @@ public class bangunRuangClass extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("BALOK");
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Tampilan/Luas Permukaan (35).png"))); // NOI18N
         jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel4MouseClicked(evt);
             }
         });
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(390, 180, 200, 70);
+        jLabel4.setBounds(110, 150, 250, 250);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("BOLA");
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Tampilan/Luas Permukaan (37).png"))); // NOI18N
         jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel5MouseClicked(evt);
             }
         });
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(390, 250, 170, 70);
+        jLabel5.setBounds(250, 420, 250, 250);
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("KERUCUT");
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Tampilan/Luas Permukaan (31).png"))); // NOI18N
         jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel6MouseClicked(evt);
             }
         });
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(390, 320, 260, 70);
+        jLabel6.setBounds(380, 150, 250, 250);
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("KUBUS");
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Tampilan/Luas Permukaan (29).png"))); // NOI18N
         jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel7MouseClicked(evt);
             }
         });
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(390, 400, 190, 70);
+        jLabel7.setBounds(520, 420, 250, 248);
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("LIMAS");
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Tampilan/Luas Permukaan (40).png"))); // NOI18N
         jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel8MouseClicked(evt);
             }
         });
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(760, 310, 180, 70);
+        jLabel8.setBounds(920, 150, 250, 250);
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("PRISMA");
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Tampilan/Luas Permukaan (39).png"))); // NOI18N
         jLabel10.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel10MouseClicked(evt);
             }
         });
         getContentPane().add(jLabel10);
-        jLabel10.setBounds(760, 170, 230, 70);
+        jLabel10.setBounds(650, 150, 250, 250);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("TABUNG");
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Tampilan/Luas Permukaan (32).png"))); // NOI18N
         jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel1MouseClicked(evt);
             }
         });
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(760, 240, 260, 70);
+        jLabel1.setBounds(790, 420, 250, 250);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/abstract-blue-geometric-shapes-background-vector.jpg"))); // NOI18N
         getContentPane().add(jLabel2);
