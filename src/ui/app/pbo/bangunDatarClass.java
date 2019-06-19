@@ -12,7 +12,6 @@ import bangunDatar.persegi;
 import bangunDatar.persegiPanjang;
 import bangunDatar.segiTiga;
 import bangunDatar.trapesium;
-import java.util.Locale;
 import javax.swing.JFrame;
 
 /**
