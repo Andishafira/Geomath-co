@@ -5,6 +5,8 @@
  */
 package bangunRuang;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Asus
@@ -63,7 +65,7 @@ public class prismaLatihanSoal1 extends javax.swing.JPanel {
             }
         });
         add(jTextField2);
-        jTextField2.setBounds(190, 200, 170, 40);
+        jTextField2.setBounds(190, 250, 170, 40);
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -71,7 +73,7 @@ public class prismaLatihanSoal1 extends javax.swing.JPanel {
             }
         });
         add(jTextField1);
-        jTextField1.setBounds(190, 250, 170, 40);
+        jTextField1.setBounds(190, 200, 170, 40);
 
         jLabel8.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
@@ -80,13 +82,18 @@ public class prismaLatihanSoal1 extends javax.swing.JPanel {
         jLabel8.setBounds(50, 210, 140, 24);
 
         jButton1.setText("Cek");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         add(jButton1);
         jButton1.setBounds(90, 250, 52, 32);
 
         jLabel5.setBackground(new java.awt.Color(0, 102, 102));
         jLabel5.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 51, 51));
-        jLabel5.setText("dengan luas alas 18√3.");
+        jLabel5.setText("dengan luas alas 25√3 cm dan tinggi 20 cm.");
         add(jLabel5);
         jLabel5.setBounds(40, 70, 620, 40);
 
@@ -102,6 +109,19 @@ public class prismaLatihanSoal1 extends javax.swing.JPanel {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        String jawaban = jTextField1.getText();
+        
+        if(jawaban.equals("600 + 50√ 3")){
+            jTextField2.setText("Jawaban Benar : 600 + 50√ 3 cm2 ");
+        }
+        else if(jawaban.equals("600 + 50 akar 3")){
+            jTextField2.setText("Jawaban Benar : 600 + 50√ 3 cm2 ");
+        }else {
+            JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -69,7 +69,7 @@ public class lingkaranLatihanSoal6 extends javax.swing.JPanel {
             }
         });
         add(jButton1);
-        jButton1.setBounds(70, 240, 51, 23);
+        jButton1.setBounds(70, 240, 52, 32);
 
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -94,7 +94,7 @@ public class lingkaranLatihanSoal6 extends javax.swing.JPanel {
         jLabel2.setForeground(new java.awt.Color(255, 0, 51));
         jLabel2.setText("14 cm");
         add(jLabel2);
-        jLabel2.setBounds(840, 150, 41, 14);
+        jLabel2.setBounds(840, 150, 41, 16);
 
         jLabel10.setForeground(new java.awt.Color(153, 255, 255));
         jLabel10.setText("2");
@@ -118,8 +118,10 @@ public class lingkaranLatihanSoal6 extends javax.swing.JPanel {
         // TODO add your handling code here:
         String jawaban = jTextField1.getText();
         
-        if(jawaban.equals("1350")){
-            jTextField2.setText("Jawaban Benar : 1350 cm");
+        if(jawaban.equals("12")){
+            jTextField2.setText("Jawaban Benar : 12 cm");
+        }else if(jawaban.equals("12 cm")){
+            jTextField2.setText("Jawaban Benar : 12 cm");
         } else {
             JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
         }

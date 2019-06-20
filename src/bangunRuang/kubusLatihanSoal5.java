@@ -118,8 +118,8 @@ public class kubusLatihanSoal5 extends javax.swing.JPanel {
         // TODO add your handling code here:
         String jawaban = jTextField1.getText();
         
-        if(jawaban.equals("1350")){
-            jTextField2.setText("Jawaban Benar : 1350 cm");
+        if(jawaban.equals("1512")){
+            jTextField2.setText("Jawaban Benar : 1512 cm2");
         } else {
             JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
         }

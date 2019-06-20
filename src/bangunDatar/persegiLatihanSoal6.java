@@ -5,6 +5,8 @@
  */
 package bangunDatar;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Asus
@@ -29,12 +31,12 @@ public class persegiLatihanSoal6 extends javax.swing.JPanel {
 
         jLabel6 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jTextField2 = new javax.swing.JTextField();
         jTextField1 = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(24, 64, 105));
@@ -52,32 +54,6 @@ public class persegiLatihanSoal6 extends javax.swing.JPanel {
         add(jLabel5);
         jLabel5.setBounds(530, 90, 390, 50);
 
-        jLabel8.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(153, 255, 255));
-        jLabel8.setText("Jawabanmu : ");
-        add(jLabel8);
-        jLabel8.setBounds(120, 190, 140, 24);
-
-        jButton1.setText("Cek");
-        add(jButton1);
-        jButton1.setBounds(160, 230, 52, 32);
-
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
-            }
-        });
-        add(jTextField2);
-        jTextField2.setBounds(260, 180, 170, 40);
-
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
-        add(jTextField1);
-        jTextField1.setBounds(260, 230, 170, 40);
-
         jLabel7.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(153, 255, 255));
         jLabel7.setText("Jika panjang sisi taman tersebut ialah 12 m");
@@ -90,10 +66,52 @@ public class persegiLatihanSoal6 extends javax.swing.JPanel {
         add(jLabel9);
         jLabel9.setBounds(120, 90, 470, 50);
 
+        jLabel10.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(153, 255, 255));
+        jLabel10.setText("Jawabanmu : ");
+        add(jLabel10);
+        jLabel10.setBounds(240, 200, 140, 24);
+
+        jButton1.setText("Cek");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        add(jButton1);
+        jButton1.setBounds(280, 240, 52, 32);
+
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
+        add(jTextField2);
+        jTextField2.setBounds(370, 240, 170, 40);
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        add(jTextField1);
+        jTextField1.setBounds(370, 190, 170, 40);
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/persegi/soal.png"))); // NOI18N
         add(jLabel1);
         jLabel1.setBounds(-1, -1, 1000, 340);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        String jawaban = jTextField1.getText();
+
+        if(jawaban.equals("576")){
+            jTextField2.setText("Jawaban Benar : 576 cm");
+        } else {
+            JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
@@ -107,10 +125,10 @@ public class persegiLatihanSoal6 extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;

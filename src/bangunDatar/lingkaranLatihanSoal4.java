@@ -45,7 +45,7 @@ public class lingkaranLatihanSoal4 extends javax.swing.JPanel {
         jLabel7.setBackground(new java.awt.Color(255, 255, 255));
         jLabel7.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(153, 255, 255));
-        jLabel7.setText("Diketahui lingkaran dengan jari jari 10 cm");
+        jLabel7.setText("Diketahui lingkaran dengan jari jari 5 cm");
         add(jLabel7);
         jLabel7.setBounds(30, 30, 510, 50);
 
@@ -69,7 +69,7 @@ public class lingkaranLatihanSoal4 extends javax.swing.JPanel {
             }
         });
         add(jButton1);
-        jButton1.setBounds(70, 240, 51, 23);
+        jButton1.setBounds(70, 240, 52, 32);
 
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -88,9 +88,9 @@ public class lingkaranLatihanSoal4 extends javax.swing.JPanel {
         jTextField1.setBounds(160, 190, 170, 40);
 
         jLabel2.setForeground(new java.awt.Color(255, 0, 51));
-        jLabel2.setText("10 cm");
+        jLabel2.setText("5 cm");
         add(jLabel2);
-        jLabel2.setBounds(840, 150, 41, 14);
+        jLabel2.setBounds(840, 150, 41, 16);
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/lingkaran/soal gambar kososng2.png"))); // NOI18N
         add(jLabel4);
@@ -99,7 +99,7 @@ public class lingkaranLatihanSoal4 extends javax.swing.JPanel {
         jLabel3.setForeground(new java.awt.Color(255, 0, 51));
         jLabel3.setText("14 cm");
         add(jLabel3);
-        jLabel3.setBounds(840, 150, 41, 14);
+        jLabel3.setBounds(840, 150, 41, 16);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/lingkaran/soal.png"))); // NOI18N
         add(jLabel1);
@@ -118,8 +118,10 @@ public class lingkaranLatihanSoal4 extends javax.swing.JPanel {
         // TODO add your handling code here:
         String jawaban = jTextField1.getText();
         
-        if(jawaban.equals("1350")){
-            jTextField2.setText("Jawaban Benar : 1350 cm");
+        if(jawaban.equals("31,4")){
+            jTextField2.setText("Jawaban Benar : 31,4 cm");
+        }else if(jawaban.equals("31,4 cm")){
+            jTextField2.setText("Jawaban Benar : 31,4 cm");
         } else {
             JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
         }

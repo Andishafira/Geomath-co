@@ -114,8 +114,8 @@ public class tabungLatihanSoal5 extends javax.swing.JPanel {
         // TODO add your handling code here:
         String jawaban = jTextField1.getText();
         
-        if(jawaban.equals("1350")){
-            jTextField2.setText("Jawaban Benar : 1350 cm");
+        if(jawaban.equals("3080")){
+            jTextField2.setText("Jawaban Benar : 3080 cm");
         } else {
             JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
         }

@@ -5,6 +5,8 @@
  */
 package ui.app.pbo;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author Asus
@@ -14,11 +16,9 @@ public class Main extends javax.swing.JFrame {
     /**
      * Creates new form Main
      */
-    TampilanUtama tampil;
     
     public Main() {
         initComponents();
-        tampil = new TampilanUtama();
     }
 
     /**
@@ -38,6 +38,7 @@ public class Main extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(1304, 816));
         getContentPane().setLayout(null);
         getContentPane().add(jLabel1);
         jLabel1.setBounds(290, 250, 30, 0);
@@ -77,8 +78,12 @@ public class Main extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
-        // TODO add your handling code here:
-        tampil.setVisible(true);
+        TampilanUtama utama = new TampilanUtama();
+        new TampilanUtama().setVisible(true);
+        utama.pack();
+        utama.setLocationRelativeTo(null);
+        utama.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
     }//GEN-LAST:event_jLabel6MouseClicked
 
     /**

@@ -5,6 +5,8 @@
  */
 package bangunRuang;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Asus
@@ -44,6 +46,11 @@ public class prismaLatihanSoal2 extends javax.swing.JPanel {
         jLabel8.setBounds(60, 210, 140, 24);
 
         jButton1.setText("Cek");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         add(jButton1);
         jButton1.setBounds(100, 250, 52, 32);
 
@@ -53,7 +60,7 @@ public class prismaLatihanSoal2 extends javax.swing.JPanel {
             }
         });
         add(jTextField2);
-        jTextField2.setBounds(200, 200, 170, 40);
+        jTextField2.setBounds(200, 250, 170, 40);
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -61,7 +68,7 @@ public class prismaLatihanSoal2 extends javax.swing.JPanel {
             }
         });
         add(jTextField1);
-        jTextField1.setBounds(200, 250, 170, 40);
+        jTextField1.setBounds(200, 200, 170, 40);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Prisma/prisma-segitiga.jpg"))); // NOI18N
         add(jLabel2);
@@ -86,6 +93,19 @@ public class prismaLatihanSoal2 extends javax.swing.JPanel {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        String jawaban = jTextField1.getText();
+        
+        if(jawaban.equals("500√ 3")){
+            jTextField2.setText("Jawaban Benar : 500√ 3 cm2 ");
+        }
+        else if(jawaban.equals("500 akar 3")){
+            jTextField2.setText("Jawaban Benar : 500√ 3 cm2 ");
+        }else {
+            JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

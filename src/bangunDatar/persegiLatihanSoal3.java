@@ -5,6 +5,8 @@
  */
 package bangunDatar;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Asus
@@ -29,9 +31,6 @@ public class persegiLatihanSoal3 extends javax.swing.JPanel {
 
         jLabel6 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
@@ -39,7 +38,10 @@ public class persegiLatihanSoal3 extends javax.swing.JPanel {
         jLabel7 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(24, 64, 105));
@@ -56,26 +58,6 @@ public class persegiLatihanSoal3 extends javax.swing.JPanel {
         jLabel5.setText("berbentuk persegi. jika ia kembali 4 kali ke titik awal");
         add(jLabel5);
         jLabel5.setBounds(120, 70, 480, 50);
-
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
-            }
-        });
-        add(jTextField2);
-        jTextField2.setBounds(310, 180, 170, 40);
-
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
-        add(jTextField1);
-        jTextField1.setBounds(310, 230, 170, 40);
-
-        jButton1.setText("Cek");
-        add(jButton1);
-        jButton1.setBounds(210, 230, 52, 32);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(null);
@@ -116,16 +98,54 @@ public class persegiLatihanSoal3 extends javax.swing.JPanel {
         add(jLabel10);
         jLabel10.setBounds(120, 130, 430, 50);
 
-        jLabel11.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(153, 255, 255));
-        jLabel11.setText("Jawabanmu : ");
-        add(jLabel11);
-        jLabel11.setBounds(170, 190, 140, 24);
+        jLabel12.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(153, 255, 255));
+        jLabel12.setText("Jawabanmu : ");
+        add(jLabel12);
+        jLabel12.setBounds(170, 200, 140, 24);
+
+        jButton1.setText("Cek");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        add(jButton1);
+        jButton1.setBounds(210, 240, 52, 32);
+
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
+        add(jTextField2);
+        jTextField2.setBounds(300, 240, 170, 40);
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        add(jTextField1);
+        jTextField1.setBounds(300, 190, 170, 40);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/persegi/soal.png"))); // NOI18N
         add(jLabel1);
         jLabel1.setBounds(-1, -1, 1000, 340);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        String jawaban = jTextField1.getText();
+
+        if(jawaban.equals("480")){
+            jTextField2.setText("Jawaban Benar : 480 cm");
+        }else if(jawaban.equals("480 cm")){
+            jTextField2.setText("Jawaban Benar : 480 cm");
+        } else {
+            JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
@@ -140,7 +160,7 @@ public class persegiLatihanSoal3 extends javax.swing.JPanel {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
