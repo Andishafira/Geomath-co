@@ -5,6 +5,12 @@
  */
 package bangunDatar;
 
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import ui.app.pbo.TampilanUtama;
+import ui.app.pbo.bangunDatarClass;
+import ui.app.pbo.bangunRuangClass;
+
 
 /**
  *
@@ -67,8 +73,6 @@ public class persegiPanjang extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
         panelGambar = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         panelUtama = new javax.swing.JPanel();
@@ -81,39 +85,15 @@ public class persegiPanjang extends javax.swing.JFrame {
         diagonPers = new javax.swing.JLabel();
         pKeliling = new javax.swing.JLabel();
         lsPers = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(1304, 816));
         getContentPane().setLayout(null);
-
-        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
-
-        jLabel3.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-        jLabel3.setText("X");
-        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel3MouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(1261, Short.MAX_VALUE)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(21, 21, 21))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jLabel3)
-                .addGap(0, 3, Short.MAX_VALUE))
-        );
-
-        getContentPane().add(jPanel1);
-        jPanel1.setBounds(0, 0, 1310, 50);
 
         panelGambar.setBackground(new java.awt.Color(8, 80, 116));
         panelGambar.setLayout(new java.awt.CardLayout());
@@ -190,7 +170,7 @@ public class persegiPanjang extends javax.swing.JFrame {
             }
         });
         getContentPane().add(diagonPers);
-        diagonPers.setBounds(40, 540, 240, 250);
+        diagonPers.setBounds(20, 540, 240, 250);
 
         pKeliling.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/PsgPanjang/kell persegi pjg.png"))); // NOI18N
         pKeliling.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -199,7 +179,7 @@ public class persegiPanjang extends javax.swing.JFrame {
             }
         });
         getContentPane().add(pKeliling);
-        pKeliling.setBounds(40, 60, 240, 230);
+        pKeliling.setBounds(20, 60, 240, 230);
 
         lsPers.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/PsgPanjang/ls persegi pjg.png"))); // NOI18N
         lsPers.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -208,7 +188,66 @@ public class persegiPanjang extends javax.swing.JFrame {
             }
         });
         getContentPane().add(lsPers);
-        lsPers.setBounds(40, 300, 240, 230);
+        lsPers.setBounds(20, 300, 240, 230);
+
+        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
+        jPanel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel1MouseClicked(evt);
+            }
+        });
+
+        jLabel4.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("X");
+        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel4MouseClicked(evt);
+            }
+        });
+
+        jLabel6.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("O");
+        jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel6MouseClicked(evt);
+            }
+        });
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/home icon kecil.png"))); // NOI18N
+        jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel8MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1171, Short.MAX_VALUE)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(21, 21, 21))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel4)
+                        .addComponent(jLabel6)))
+                .addGap(0, 3, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(0, 0, 1310, 50);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/abstract-blue-geometric-shapes-background-vector.jpg"))); // NOI18N
         getContentPane().add(jLabel2);
@@ -232,11 +271,6 @@ public class persegiPanjang extends javax.swing.JFrame {
         pL5.setVisible(false);
         pL6.setVisible(false);
     }//GEN-LAST:event_pKelilingMouseClicked
-
-    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
-        // TODO add your handling code here:
-        System.exit(0);
-    }//GEN-LAST:event_jLabel3MouseClicked
 
     private void lsPersMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lsPersMouseClicked
         // TODO add your handling code here:
@@ -366,6 +400,36 @@ public class persegiPanjang extends javax.swing.JFrame {
         pL6.setVisible(true);
     }//GEN-LAST:event_Latsol6MouseClicked
 
+    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
+        int pilih = JOptionPane.showConfirmDialog(null, "Selesai Belajar?", "AMOBA", JOptionPane.YES_NO_OPTION);
+
+        if(pilih == JOptionPane.YES_OPTION){
+            System.exit(0);
+        }
+    }//GEN-LAST:event_jLabel4MouseClicked
+
+    private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
+        bangunDatarClass Datar = new bangunDatarClass();
+        new bangunDatarClass().setVisible(true);
+        Datar.pack();
+        Datar.setLocationRelativeTo(null);
+        Datar.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
+    }//GEN-LAST:event_jLabel6MouseClicked
+
+    private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
+        TampilanUtama utama = new TampilanUtama();
+        new TampilanUtama().setVisible(true);
+        utama.pack();
+        utama.setLocationRelativeTo(null);
+        utama.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
+    }//GEN-LAST:event_jLabel8MouseClicked
+
+    private void jPanel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MouseClicked
+
+    }//GEN-LAST:event_jPanel1MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -410,8 +474,10 @@ public class persegiPanjang extends javax.swing.JFrame {
     private javax.swing.JLabel Latsol6;
     private javax.swing.JLabel diagonPers;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lsPers;
     private javax.swing.JLabel pKeliling;

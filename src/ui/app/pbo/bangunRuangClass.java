@@ -46,16 +46,20 @@ public class bangunRuangClass extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(1304, 816));
         getContentPane().setLayout(null);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setForeground(new java.awt.Color(0, 51, 51));
         jLabel3.setText("BANGUN RUANG");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(450, 50, 420, 70);
+        jLabel3.setBounds(470, 100, 420, 70);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -66,7 +70,7 @@ public class bangunRuangClass extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(110, 150, 250, 250);
+        jLabel4.setBounds(130, 220, 250, 250);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
@@ -77,7 +81,7 @@ public class bangunRuangClass extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(250, 420, 250, 250);
+        jLabel5.setBounds(270, 490, 250, 250);
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
@@ -88,7 +92,7 @@ public class bangunRuangClass extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(380, 150, 250, 250);
+        jLabel6.setBounds(400, 220, 250, 250);
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
@@ -99,7 +103,7 @@ public class bangunRuangClass extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(520, 420, 250, 248);
+        jLabel7.setBounds(540, 490, 250, 248);
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
@@ -110,7 +114,7 @@ public class bangunRuangClass extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(920, 150, 250, 250);
+        jLabel8.setBounds(940, 220, 250, 250);
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
@@ -121,7 +125,7 @@ public class bangunRuangClass extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jLabel10);
-        jLabel10.setBounds(650, 150, 250, 250);
+        jLabel10.setBounds(670, 220, 250, 250);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -132,11 +136,57 @@ public class bangunRuangClass extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(790, 420, 250, 250);
+        jLabel1.setBounds(810, 490, 250, 250);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/abstract-blue-geometric-shapes-background-vector.jpg"))); // NOI18N
+        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
+        jPanel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel1MouseClicked(evt);
+            }
+        });
+
+        jLabel9.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("X");
+        jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel9MouseClicked(evt);
+            }
+        });
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/home icon kecil.png"))); // NOI18N
+        jLabel12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel12MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1205, Short.MAX_VALUE)
+                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(21, 21, 21))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel9))
+                .addGap(0, 3, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(0, 0, 1310, 50);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/bgkecil.jpg"))); // NOI18N
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(-220, -50, 1480, 900);
+        jLabel2.setBounds(0, -40, 1310, 890);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -156,7 +206,7 @@ public class bangunRuangClass extends javax.swing.JFrame {
         bolaa bol = new bolaa();
         new bolaa().setVisible(true);
         bol.pack();
-        bol.setLocation(null);
+        bol.setLocationRelativeTo(null);
         bol.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.dispose();
     }//GEN-LAST:event_jLabel5MouseClicked
@@ -166,7 +216,7 @@ public class bangunRuangClass extends javax.swing.JFrame {
         kerucut ker = new kerucut();
         new kerucut().setVisible(true);
         ker.pack();
-        ker.setLocation(null);
+        ker.setLocationRelativeTo(null);
         ker.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.dispose();
     }//GEN-LAST:event_jLabel6MouseClicked
@@ -176,7 +226,7 @@ public class bangunRuangClass extends javax.swing.JFrame {
         kubus kub = new kubus();
         new kubus().setVisible(true);
         kub.pack();
-        kub.setLocation(null);
+        kub.setLocationRelativeTo(null);
         kub.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.dispose();
     }//GEN-LAST:event_jLabel7MouseClicked
@@ -186,7 +236,7 @@ public class bangunRuangClass extends javax.swing.JFrame {
         prisma pris = new prisma();
         new prisma().setVisible(true);
         pris.pack();
-        pris.setLocation(null);
+        pris.setLocationRelativeTo(null);
         pris.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.dispose();
     }//GEN-LAST:event_jLabel10MouseClicked
@@ -196,7 +246,7 @@ public class bangunRuangClass extends javax.swing.JFrame {
         tabung tab = new tabung();
         new tabung().setVisible(true);
         tab.pack();
-        tab.setLocation(null);
+        tab.setLocationRelativeTo(null);
         tab.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.dispose();
     }//GEN-LAST:event_jLabel1MouseClicked
@@ -206,10 +256,31 @@ public class bangunRuangClass extends javax.swing.JFrame {
         limas lim = new limas();
         new limas().setVisible(true);
         lim.pack();
-        lim.setLocation(null);
+        lim.setLocationRelativeTo(null);
         lim.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.dispose();
     }//GEN-LAST:event_jLabel8MouseClicked
+
+    private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
+        int pilih = JOptionPane.showConfirmDialog(null, "Selesai Belajar?", "AMOBA", JOptionPane.YES_NO_OPTION);
+
+        if(pilih == JOptionPane.YES_OPTION){
+            System.exit(0);
+        }
+    }//GEN-LAST:event_jLabel9MouseClicked
+
+    private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
+        TampilanUtama utama = new TampilanUtama();
+        new TampilanUtama().setVisible(true);
+        utama.pack();
+        utama.setLocationRelativeTo(null);
+        utama.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
+    }//GEN-LAST:event_jLabel12MouseClicked
+
+    private void jPanel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MouseClicked
+
+    }//GEN-LAST:event_jPanel1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -249,6 +320,7 @@ public class bangunRuangClass extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -256,5 +328,7 @@ public class bangunRuangClass extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
