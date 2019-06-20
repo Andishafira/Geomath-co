@@ -43,6 +43,8 @@ public class limas extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        panelGambar1 = new javax.swing.JPanel();
+        panelUtama1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -51,7 +53,7 @@ public class limas extends javax.swing.JFrame {
         panelGambar.setBackground(new java.awt.Color(8, 80, 116));
         panelGambar.setLayout(new java.awt.CardLayout());
         getContentPane().add(panelGambar);
-        panelGambar.setBounds(301, 62, 990, 380);
+        panelGambar.setBounds(301, 62, 990, 0);
 
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
 
@@ -72,7 +74,7 @@ public class limas extends javax.swing.JFrame {
         panelUtama.setBackground(new java.awt.Color(24, 64, 105));
         panelUtama.setLayout(new java.awt.CardLayout());
         getContentPane().add(panelUtama);
-        panelUtama.setBounds(301, 454, 990, 340);
+        panelUtama.setBounds(301, 454, 0, 0);
 
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 0, 0));
@@ -106,6 +108,16 @@ public class limas extends javax.swing.JFrame {
         });
         getContentPane().add(jLabel3);
         jLabel3.setBounds(10, 560, 240, 230);
+
+        panelGambar1.setBackground(new java.awt.Color(8, 80, 116));
+        panelGambar1.setLayout(new java.awt.CardLayout());
+        getContentPane().add(panelGambar1);
+        panelGambar1.setBounds(300, 60, 990, 380);
+
+        panelUtama1.setBackground(new java.awt.Color(24, 64, 105));
+        panelUtama1.setLayout(new java.awt.CardLayout());
+        getContentPane().add(panelUtama1);
+        panelUtama1.setBounds(300, 450, 990, 340);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/bgkecil.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
@@ -189,6 +201,8 @@ public class limas extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel panelGambar;
+    private javax.swing.JPanel panelGambar1;
     private javax.swing.JPanel panelUtama;
+    private javax.swing.JPanel panelUtama1;
     // End of variables declaration//GEN-END:variables
 }

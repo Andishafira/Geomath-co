@@ -27,19 +27,68 @@ public class limasGambar extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+
+        setBackground(new java.awt.Color(8, 80, 116));
+        setLayout(null);
+
+        jLabel2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(153, 255, 255));
+        jLabel2.setText("Limas segi dua puluh empat");
+        add(jLabel2);
+        jLabel2.setBounds(730, 320, 260, 30);
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Limas/BRLimas4.png"))); // NOI18N
+        add(jLabel4);
+        jLabel4.setBounds(490, 20, 300, 310);
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Limas/BRLimas24.png"))); // NOI18N
+        add(jLabel5);
+        jLabel5.setBounds(700, 30, 300, 310);
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Limas/BRLimas6.png"))); // NOI18N
+        add(jLabel6);
+        jLabel6.setBounds(0, 30, 280, 310);
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Limas/BRLimas5.png"))); // NOI18N
+        add(jLabel7);
+        jLabel7.setBounds(230, 30, 270, 310);
+
+        jLabel3.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(153, 255, 255));
+        jLabel3.setText("Limas segi enam");
+        add(jLabel3);
+        jLabel3.setBounds(70, 320, 160, 24);
+
+        jLabel8.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(153, 255, 255));
+        jLabel8.setText("Limas segi lima");
+        add(jLabel8);
+        jLabel8.setBounds(310, 320, 160, 24);
+
+        jLabel9.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(153, 255, 255));
+        jLabel9.setText("Limas segi empat");
+        add(jLabel9);
+        jLabel9.setBounds(540, 320, 160, 24);
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     // End of variables declaration//GEN-END:variables
 }

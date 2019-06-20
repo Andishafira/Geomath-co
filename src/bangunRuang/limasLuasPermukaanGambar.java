@@ -27,19 +27,30 @@ public class limasLuasPermukaanGambar extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+
+        setBackground(new java.awt.Color(8, 80, 116));
+        setLayout(null);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Limas/jaring-jaring-limas.png"))); // NOI18N
+        add(jLabel2);
+        jLabel2.setBounds(550, 120, 270, 230);
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Limas/jaring jaring lim5.png"))); // NOI18N
+        add(jLabel4);
+        jLabel4.setBounds(220, 110, 270, 230);
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Limas/luaspergam.png"))); // NOI18N
+        add(jLabel3);
+        jLabel3.setBounds(-100, 0, 870, 800);
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     // End of variables declaration//GEN-END:variables
 }
