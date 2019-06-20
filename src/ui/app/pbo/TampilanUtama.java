@@ -112,12 +112,11 @@ public class TampilanUtama extends javax.swing.JFrame {
 
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
         bangunRuangClass ruang = new bangunRuangClass();
-        new bangunDatarClass().setVisible(true);
+        new bangunRuangClass().setVisible(true);
         ruang.pack();
         ruang.setLocationRelativeTo(null);
         ruang.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.dispose();
-
     }//GEN-LAST:event_jLabel1MouseClicked
 
     private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
