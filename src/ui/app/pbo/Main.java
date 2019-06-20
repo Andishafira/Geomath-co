@@ -79,6 +79,7 @@ public class Main extends javax.swing.JFrame {
     private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
         // TODO add your handling code here:
         tampil.setVisible(true);
+        dispose();
     }//GEN-LAST:event_jLabel6MouseClicked
 
     /**
