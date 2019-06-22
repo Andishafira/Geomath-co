@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  *
  * @author Asus
  */
-public class limasLatihanSoal3 extends javax.swing.JPanel {
+public class limasLatihanSoal3 extends javax.swing.JPanel implements interfaceBangunRuang {
 
     /**
      * Creates new form limasLatihanSoal3
@@ -69,7 +69,7 @@ public class limasLatihanSoal3 extends javax.swing.JPanel {
             }
         });
         add(jButton1);
-        jButton1.setBounds(90, 250, 52, 32);
+        jButton1.setBounds(90, 250, 51, 23);
 
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -77,7 +77,7 @@ public class limasLatihanSoal3 extends javax.swing.JPanel {
             }
         });
         add(jTextField2);
-        jTextField2.setBounds(190, 200, 170, 40);
+        jTextField2.setBounds(180, 250, 170, 40);
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -85,12 +85,12 @@ public class limasLatihanSoal3 extends javax.swing.JPanel {
             }
         });
         add(jTextField1);
-        jTextField1.setBounds(190, 250, 170, 40);
+        jTextField1.setBounds(180, 200, 170, 40);
 
         jLabel6.setForeground(new java.awt.Color(255, 0, 0));
         jLabel6.setText("6 cm");
         add(jLabel6);
-        jLabel6.setBounds(860, 260, 41, 16);
+        jLabel6.setBounds(860, 260, 41, 14);
 
         jLabel7.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
@@ -98,15 +98,14 @@ public class limasLatihanSoal3 extends javax.swing.JPanel {
         add(jLabel7);
         jLabel7.setBounds(20, 120, 500, 32);
 
-        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setText("Z");
         add(jLabel9);
-        jLabel9.setBounds(850, 240, 41, 16);
+        jLabel9.setBounds(850, 240, 41, 14);
 
         jLabel10.setForeground(new java.awt.Color(255, 0, 0));
         jLabel10.setText("15 cm");
         add(jLabel10);
-        jLabel10.setBounds(830, 180, 41, 16);
+        jLabel10.setBounds(830, 180, 41, 14);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Limas/gambar soal lim4.jpg"))); // NOI18N
         add(jLabel3);
@@ -126,6 +125,11 @@ public class limasLatihanSoal3 extends javax.swing.JPanel {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        bangunRuang();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    @Override
+    public void bangunRuang() {
         String jawaban = jTextField1.getText();
         
         if(jawaban.equals("216")){
@@ -133,8 +137,7 @@ public class limasLatihanSoal3 extends javax.swing.JPanel {
         } else {
             JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
-
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;

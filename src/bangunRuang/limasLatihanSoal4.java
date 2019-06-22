@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  *
  * @author Asus
  */
-public class limasLatihanSoal4 extends javax.swing.JPanel {
+public class limasLatihanSoal4 extends javax.swing.JPanel implements interfaceBangunRuang {
 
     /**
      * Creates new form limasLatihanSoal4
@@ -67,7 +67,7 @@ public class limasLatihanSoal4 extends javax.swing.JPanel {
             }
         });
         add(jButton1);
-        jButton1.setBounds(90, 250, 52, 32);
+        jButton1.setBounds(90, 250, 51, 23);
 
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -75,7 +75,7 @@ public class limasLatihanSoal4 extends javax.swing.JPanel {
             }
         });
         add(jTextField2);
-        jTextField2.setBounds(190, 200, 170, 40);
+        jTextField2.setBounds(190, 250, 170, 40);
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -83,17 +83,17 @@ public class limasLatihanSoal4 extends javax.swing.JPanel {
             }
         });
         add(jTextField1);
-        jTextField1.setBounds(190, 250, 170, 40);
+        jTextField1.setBounds(190, 200, 170, 40);
 
         jLabel10.setForeground(new java.awt.Color(255, 0, 0));
         jLabel10.setText("6 cm");
         add(jLabel10);
-        jLabel10.setBounds(780, 180, 41, 16);
+        jLabel10.setBounds(780, 180, 41, 14);
 
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("2");
         add(jLabel6);
-        jLabel6.setBounds(510, 80, 41, 16);
+        jLabel6.setBounds(510, 80, 41, 14);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Limas/gambar kerucut.png"))); // NOI18N
         add(jLabel3);
@@ -113,6 +113,11 @@ public class limasLatihanSoal4 extends javax.swing.JPanel {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        bangunRuang();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    @Override
+    public void bangunRuang() {
         String jawaban = jTextField1.getText();
         
         if(jawaban.equals("200")){
@@ -120,8 +125,7 @@ public class limasLatihanSoal4 extends javax.swing.JPanel {
         } else {
             JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
-
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;

@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  *
  * @author Asus
  */
-public class kubusLatihanSoal1 extends javax.swing.JPanel {
+public class kubusLatihanSoal1 extends javax.swing.JPanel implements interfaceBangunRuang {
 
     /**
      * Creates new form kubusLatihanSoal1
@@ -102,13 +102,7 @@ public class kubusLatihanSoal1 extends javax.swing.JPanel {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        String jawaban = jTextField1.getText();
-        
-        if(jawaban.equals("103")){
-            jTextField2.setText("Jawaban Benar : 103 cm");
-        } else {
-            JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
-        }
+        bangunRuang();
     }//GEN-LAST:event_jButton1ActionPerformed
 
 
@@ -122,4 +116,15 @@ public class kubusLatihanSoal1 extends javax.swing.JPanel {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
+
+    @Override
+    public void bangunRuang() {
+        String jawaban = jTextField1.getText();
+        
+        if(jawaban.equals("103")){
+            jTextField2.setText("Jawaban Benar : 103 cm");
+        } else {
+            JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
+        }
+    }
 }

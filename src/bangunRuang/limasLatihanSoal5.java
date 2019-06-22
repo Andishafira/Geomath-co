@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  *
  * @author Asus
  */
-public class limasLatihanSoal5 extends javax.swing.JPanel {
+public class limasLatihanSoal5 extends javax.swing.JPanel implements interfaceBangunRuang {
 
     /**
      * Creates new form limasLatihanSoal5
@@ -65,7 +65,7 @@ public class limasLatihanSoal5 extends javax.swing.JPanel {
             }
         });
         add(jButton1);
-        jButton1.setBounds(90, 250, 52, 32);
+        jButton1.setBounds(90, 250, 51, 23);
 
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -73,7 +73,7 @@ public class limasLatihanSoal5 extends javax.swing.JPanel {
             }
         });
         add(jTextField2);
-        jTextField2.setBounds(190, 200, 170, 40);
+        jTextField2.setBounds(190, 250, 170, 40);
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -81,7 +81,7 @@ public class limasLatihanSoal5 extends javax.swing.JPanel {
             }
         });
         add(jTextField1);
-        jTextField1.setBounds(190, 250, 170, 40);
+        jTextField1.setBounds(190, 200, 170, 40);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Limas/gambar kerucut.png"))); // NOI18N
         add(jLabel3);
@@ -101,15 +101,19 @@ public class limasLatihanSoal5 extends javax.swing.JPanel {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        bangunRuang();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    @Override
+    public void bangunRuang() {
         String jawaban = jTextField1.getText();
         
         if(jawaban.equals("tak hingga")){
-            jTextField2.setText("Jawaban Benar : tak hinggam");
+            jTextField2.setText("Jawaban Benar : tak hingga");
         } else {
             JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
-
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
