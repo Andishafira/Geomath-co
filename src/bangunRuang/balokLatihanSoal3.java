@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  *
  * @author Asus
  */
-public class balokLatihanSoal3 extends javax.swing.JPanel {
+public class balokLatihanSoal3 extends javax.swing.JPanel implements interfaceBangunRuang{
 
     /**
      * Creates new form balokLatihanSoal3
@@ -118,6 +118,11 @@ public class balokLatihanSoal3 extends javax.swing.JPanel {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        bangunRuang();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    @Override
+    public void bangunRuang() {
         String jawaban = jTextField1.getText();
         
         if(jawaban.equals("2√29")){
@@ -132,8 +137,7 @@ public class balokLatihanSoal3 extends javax.swing.JPanel {
         }else {
             JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
-
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
