@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  *
  * @author Asus
  */
-public class persegiLatihanSoal4 extends javax.swing.JPanel {
+public class persegiLatihanSoal4 extends javax.swing.JPanel implements interfaceBangunDatar {
 
     /**
      * Creates new form persegiLatihanSoal4
@@ -108,6 +108,11 @@ public class persegiLatihanSoal4 extends javax.swing.JPanel {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        jawaban();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    @Override
+    public void jawaban() {
         String jawaban = jTextField1.getText();
 
         if(jawaban.equals("9√2")){
@@ -117,8 +122,8 @@ public class persegiLatihanSoal4 extends javax.swing.JPanel {
         } else {
             JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
-
+    }
+    
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
