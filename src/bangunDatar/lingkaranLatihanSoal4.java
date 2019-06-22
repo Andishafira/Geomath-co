@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  *
  * @author Asus
  */
-public class lingkaranLatihanSoal4 extends javax.swing.JPanel {
+public class lingkaranLatihanSoal4 extends javax.swing.JPanel implements interfaceBangunDatar {
 
     /**
      * Creates new form lingkaranLatihanSoal4
@@ -116,15 +116,7 @@ public class lingkaranLatihanSoal4 extends javax.swing.JPanel {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        String jawaban = jTextField1.getText();
-        
-        if(jawaban.equals("31,4")){
-            jTextField2.setText("Jawaban Benar : 31,4 cm");
-        }else if(jawaban.equals("31,4 cm")){
-            jTextField2.setText("Jawaban Benar : 31,4 cm");
-        } else {
-            JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
-        }
+        jawaban();
     }//GEN-LAST:event_jButton1ActionPerformed
 
 
@@ -140,4 +132,17 @@ public class lingkaranLatihanSoal4 extends javax.swing.JPanel {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
+
+    @Override
+    public void jawaban() {
+        String jawaban = jTextField1.getText();
+        
+        if(jawaban.equals("31.4")){
+            jTextField2.setText("Jawaban Benar : 31.4 cm");
+        }else if(jawaban.equals("31.4 cm")){
+            jTextField2.setText("Jawaban Benar : 31.4 cm");
+        } else {
+            JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
+        }
+    }
 }
