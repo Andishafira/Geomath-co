@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  *
  * @author SONY
  */
-public class kerucutLatihanSoal4 extends javax.swing.JPanel {
+public class kerucutLatihanSoal4 extends javax.swing.JPanel implements interfaceBangunRuang {
 
     /**
      * Creates new form kerucutLatihanSoal4
@@ -57,7 +57,12 @@ public class kerucutLatihanSoal4 extends javax.swing.JPanel {
 
     private void buttonCekActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCekActionPerformed
         // TODO add your handling code here:
-        String jawaban;
+        bangunRuang();
+    }//GEN-LAST:event_buttonCekActionPerformed
+
+    @Override
+    public void bangunRuang() {
+      String jawaban;
 
         jawaban = jTextField1.getText();
 
@@ -65,9 +70,8 @@ public class kerucutLatihanSoal4 extends javax.swing.JPanel {
             jTextField2.setText("Jawaban Benar : 34 cm persegi");
         } else {
             JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
-        }
-    }//GEN-LAST:event_buttonCekActionPerformed
-
+        } 
+   }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton buttonCek;
