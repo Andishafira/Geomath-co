@@ -120,9 +120,16 @@ public class balokLatihanSoal3 extends javax.swing.JPanel {
         // TODO add your handling code here:
         String jawaban = jTextField1.getText();
         
-        if(jawaban.equals("1350")){
-            jTextField2.setText("Jawaban Benar : 1350 cm");
-        } else {
+        if(jawaban.equals("2√29")){
+            jTextField2.setText("Jawaban Benar : 2√29 cm");
+        } 
+        else if(jawaban.equals("√116")){
+            jTextField2.setText("Jawaban Benar : √116 cm");
+        }else if(jawaban.equals("akar 116")){
+            jTextField2.setText("Jawaban Benar : √116 cm");
+        }else if(jawaban.equals("2 akar 29")){
+            jTextField2.setText("Jawaban Benar : 2√29 cm");
+        }else {
             JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
         }
     }//GEN-LAST:event_jButton1ActionPerformed

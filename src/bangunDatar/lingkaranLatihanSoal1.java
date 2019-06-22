@@ -115,9 +115,11 @@ public class lingkaranLatihanSoal1 extends javax.swing.JPanel {
         // TODO add your handling code here:
         String jawaban = jTextField1.getText();
         
-        if(jawaban.equals("1350")){
-            jTextField2.setText("Jawaban Benar : 1350 cm");
-        } else {
+        if(jawaban.equals("44")){
+            jTextField2.setText("Jawaban Benar : 44 cm2");}
+        else if(jawaban.equals("44 cm2")){
+            jTextField2.setText("Jawaban Benar : 44 cm2");}
+        else {
             JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
         }
     }//GEN-LAST:event_jButton1ActionPerformed

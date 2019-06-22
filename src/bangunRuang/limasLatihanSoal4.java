@@ -5,6 +5,8 @@
  */
 package bangunRuang;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Asus
@@ -48,7 +50,7 @@ public class limasLatihanSoal4 extends javax.swing.JPanel {
 
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("dan tinggi limas 5 cm. Tentukan volume!");
+        jLabel4.setText("dan tinggi limas 6 cm. Tentukan volume!");
         add(jLabel4);
         jLabel4.setBounds(20, 120, 500, 32);
 
@@ -59,6 +61,11 @@ public class limasLatihanSoal4 extends javax.swing.JPanel {
         jLabel8.setBounds(50, 210, 140, 24);
 
         jButton1.setText("Cek");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         add(jButton1);
         jButton1.setBounds(90, 250, 52, 32);
 
@@ -79,7 +86,7 @@ public class limasLatihanSoal4 extends javax.swing.JPanel {
         jTextField1.setBounds(190, 250, 170, 40);
 
         jLabel10.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel10.setText("5 cm");
+        jLabel10.setText("6 cm");
         add(jLabel10);
         jLabel10.setBounds(780, 180, 41, 16);
 
@@ -104,6 +111,16 @@ public class limasLatihanSoal4 extends javax.swing.JPanel {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        String jawaban = jTextField1.getText();
+        
+        if(jawaban.equals("200")){
+            jTextField2.setText("Jawaban Benar : 200 cm3 ");
+        } else {
+            JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

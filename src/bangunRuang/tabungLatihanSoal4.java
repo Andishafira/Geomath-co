@@ -50,7 +50,7 @@ public class tabungLatihanSoal4 extends javax.swing.JPanel {
 
         jLabel6.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("luas permukaan tabung dengan tutupnya!");
+        jLabel6.setText("luas permukaan tabung tanpa tutupnya!");
         add(jLabel6);
         jLabel6.setBounds(90, 90, 650, 30);
 
@@ -67,7 +67,7 @@ public class tabungLatihanSoal4 extends javax.swing.JPanel {
             }
         });
         add(jButton1);
-        jButton1.setBounds(140, 220, 51, 23);
+        jButton1.setBounds(140, 220, 52, 32);
 
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -91,7 +91,7 @@ public class tabungLatihanSoal4 extends javax.swing.JPanel {
 
         jLabel5.setText("5 cm");
         add(jLabel5);
-        jLabel5.setBounds(670, 140, 41, 14);
+        jLabel5.setBounds(670, 140, 41, 16);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Tabung/BRTabung.png"))); // NOI18N
         add(jLabel2);
@@ -114,8 +114,8 @@ public class tabungLatihanSoal4 extends javax.swing.JPanel {
         // TODO add your handling code here:
         String jawaban = jTextField1.getText();
         
-        if(jawaban.equals("1350")){
-            jTextField2.setText("Jawaban Benar : 1350 cm");
+        if(jawaban.equals("1056")){
+            jTextField2.setText("Jawaban Benar : 1056 cm2");
         } else {
             JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
         }

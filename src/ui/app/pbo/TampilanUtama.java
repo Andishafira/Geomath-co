@@ -26,6 +26,7 @@ public class TampilanUtama extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(1304, 816));
         getContentPane().setLayout(null);
 
         jLabel4.setFont(new java.awt.Font("Android Nation", 1, 60)); // NOI18N
@@ -95,7 +96,7 @@ public class TampilanUtama extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/abstract-blue-geometric-shapes-background-vector.jpg"))); // NOI18N
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(-180, -50, 1480, 900);
+        jLabel2.setBounds(-180, -50, 1490, 900);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
