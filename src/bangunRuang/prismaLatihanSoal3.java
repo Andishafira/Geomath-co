@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  *
  * @author Asus
  */
-public class prismaLatihanSoal3 extends javax.swing.JPanel {
+public class prismaLatihanSoal3 extends javax.swing.JPanel implements interfaceBangunRuang {
 
     /**
      * Creates new form prismaLatihanSoal3
@@ -90,6 +90,11 @@ public class prismaLatihanSoal3 extends javax.swing.JPanel {
     }//GEN-LAST:event_jTextField2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        bangunRuang();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    @Override
+    public void bangunRuang() {
         String jawaban = jTextField2.getText();
         
         if(jawaban.equals("552")){
@@ -97,8 +102,7 @@ public class prismaLatihanSoal3 extends javax.swing.JPanel {
         }else {
             JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
-
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
