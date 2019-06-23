@@ -242,7 +242,7 @@ public class trapesium extends javax.swing.JFrame {
 
     private void buttonLatSoal1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSoal1MouseClicked
         tKel.setVisible(false);
-        tKelGa.setVisible(false);
+        tKelGa.setVisible(true);
         tLuas.setVisible(false);
         tLuasGa.setVisible(false);
         tDi.setVisible(false);
@@ -257,7 +257,7 @@ public class trapesium extends javax.swing.JFrame {
 
     private void buttonLatSoal2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSoal2MouseClicked
         tKel.setVisible(false);
-        tKelGa.setVisible(false);
+        tKelGa.setVisible(true);
         tLuas.setVisible(false);
         tLuasGa.setVisible(false);
         tDi.setVisible(false);
@@ -274,7 +274,7 @@ public class trapesium extends javax.swing.JFrame {
         tKel.setVisible(false);
         tKelGa.setVisible(false);
         tLuas.setVisible(false);
-        tLuasGa.setVisible(false);
+        tLuasGa.setVisible(true);
         tDi.setVisible(false);
         tDiGa.setVisible(false);
         tLS1.setVisible(false);
@@ -287,7 +287,7 @@ public class trapesium extends javax.swing.JFrame {
 
     private void buttonLatSoal4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSoal4MouseClicked
         tKel.setVisible(false);
-        tKelGa.setVisible(false);
+        tKelGa.setVisible(true);
         tLuas.setVisible(false);
         tLuasGa.setVisible(false);
         tDi.setVisible(false);
@@ -302,7 +302,7 @@ public class trapesium extends javax.swing.JFrame {
 
     private void buttonLatSoal5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSoal5MouseClicked
         tKel.setVisible(false);
-        tKelGa.setVisible(false);
+        tKelGa.setVisible(true);
         tLuas.setVisible(false);
         tLuasGa.setVisible(false);
         tDi.setVisible(false);
@@ -319,7 +319,7 @@ public class trapesium extends javax.swing.JFrame {
         tKel.setVisible(false);
         tKelGa.setVisible(false);
         tLuas.setVisible(false);
-        tLuasGa.setVisible(false);
+        tLuasGa.setVisible(true);
         tDi.setVisible(false);
         tDiGa.setVisible(false);
         tLS1.setVisible(false);
