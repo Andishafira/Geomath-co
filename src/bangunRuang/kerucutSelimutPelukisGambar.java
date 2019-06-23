@@ -29,22 +29,12 @@ public class kerucutSelimutPelukisGambar extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
 
-        jLabel1.setText("Gambar Selimut dan Garis Pelukis");
+        setBackground(new java.awt.Color(8, 80, 116));
+        setLayout(null);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel1)
-                .addGap(0, 413, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel1)
-                .addGap(0, 366, Short.MAX_VALUE))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Kerucut/panel gbr selimut.png"))); // NOI18N
+        add(jLabel1);
+        jLabel1.setBounds(0, 0, 559, 397);
     }// </editor-fold>//GEN-END:initComponents
 
 

@@ -5,11 +5,13 @@
  */
 package bangunRuang;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Asus
  */
-public class kubusLatihanSoal3 extends javax.swing.JPanel {
+public class kubusLatihanSoal3 extends javax.swing.JPanel implements interfaceBangunRuang {
 
     /**
      * Creates new form kubusLatihanSoal3
@@ -42,15 +44,15 @@ public class kubusLatihanSoal3 extends javax.swing.JPanel {
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 51));
-        jLabel2.setText("Berapa luas ABGH jika diketahui");
+        jLabel2.setText("Berapa luas ACGE jika diketahui");
         add(jLabel2);
         jLabel2.setBounds(150, 60, 410, 30);
 
         jLabel5.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 0, 51));
-        jLabel5.setText("jika diketahui volume");
+        jLabel5.setText("volume");
         add(jLabel5);
-        jLabel5.setBounds(150, 90, 450, 30);
+        jLabel5.setBounds(440, 60, 450, 30);
 
         jLabel3.setFont(new java.awt.Font("Dialog", 1, 10)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 0, 51));
@@ -64,13 +66,13 @@ public class kubusLatihanSoal3 extends javax.swing.JPanel {
             }
         });
         add(jTextField2);
-        jTextField2.setBounds(310, 180, 170, 40);
+        jTextField2.setBounds(310, 230, 170, 40);
 
         jLabel7.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(0, 0, 51));
         jLabel7.setText("kubus ialah 125 cm");
         add(jLabel7);
-        jLabel7.setBounds(150, 120, 450, 24);
+        jLabel7.setBounds(150, 100, 450, 24);
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -78,7 +80,7 @@ public class kubusLatihanSoal3 extends javax.swing.JPanel {
             }
         });
         add(jTextField1);
-        jTextField1.setBounds(310, 230, 170, 40);
+        jTextField1.setBounds(310, 180, 170, 40);
 
         jLabel8.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(0, 0, 51));
@@ -87,6 +89,11 @@ public class kubusLatihanSoal3 extends javax.swing.JPanel {
         jLabel8.setBounds(170, 190, 140, 24);
 
         jButton1.setText("Cek");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         add(jButton1);
         jButton1.setBounds(210, 230, 52, 32);
 
@@ -107,6 +114,23 @@ public class kubusLatihanSoal3 extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        bangunRuang();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    @Override
+    public void bangunRuang() {
+        String jawaban = jTextField1.getText();
+        if(jawaban.equals("25√2")){
+            jTextField2.setText("Jawaban Benar : 25√2 cm");
+        }
+        else if(jawaban.equals("25 akar 2")){
+            jTextField2.setText("Jawaban Benar : 25√2 cm");
+        } else {
+            JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
+        }
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;

@@ -5,11 +5,13 @@
  */
 package bangunDatar;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Asus
  */
-public class persegiLatihanSoal1 extends javax.swing.JPanel {
+public class persegiLatihanSoal1 extends javax.swing.JPanel implements interfaceBangunDatar {
 
     /**
      * Creates new form persegiLatihanSoal1
@@ -33,7 +35,7 @@ public class persegiLatihanSoal1 extends javax.swing.JPanel {
         jLabel2 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jTextField2 = new javax.swing.JTextField();
         jTextField1 = new javax.swing.JTextField();
@@ -54,7 +56,7 @@ public class persegiLatihanSoal1 extends javax.swing.JPanel {
         jLabel2.setForeground(new java.awt.Color(51, 51, 51));
         jLabel2.setText("12 cm");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(90, 170, 28, 14);
+        jLabel2.setBounds(90, 170, 35, 16);
 
         add(jPanel1);
         jPanel1.setBounds(640, 60, 220, 210);
@@ -71,15 +73,20 @@ public class persegiLatihanSoal1 extends javax.swing.JPanel {
         add(jLabel6);
         jLabel6.setBounds(120, 60, 800, 50);
 
-        jLabel8.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(153, 255, 255));
-        jLabel8.setText("Jawabanmu : ");
-        add(jLabel8);
-        jLabel8.setBounds(170, 190, 140, 24);
+        jLabel9.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(153, 255, 255));
+        jLabel9.setText("Jawabanmu : ");
+        add(jLabel9);
+        jLabel9.setBounds(170, 210, 140, 24);
 
         jButton1.setText("Cek");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         add(jButton1);
-        jButton1.setBounds(210, 230, 51, 23);
+        jButton1.setBounds(210, 250, 52, 32);
 
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,7 +94,7 @@ public class persegiLatihanSoal1 extends javax.swing.JPanel {
             }
         });
         add(jTextField2);
-        jTextField2.setBounds(310, 180, 170, 40);
+        jTextField2.setBounds(300, 250, 170, 40);
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -95,13 +102,30 @@ public class persegiLatihanSoal1 extends javax.swing.JPanel {
             }
         });
         add(jTextField1);
-        jTextField1.setBounds(310, 230, 170, 40);
+        jTextField1.setBounds(300, 200, 170, 40);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/persegi/soal.png"))); // NOI18N
         add(jLabel1);
         jLabel1.setBounds(-1, -1, 1000, 340);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        jawaban();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    @Override
+    public void jawaban() {
+        String jawaban = jTextField1.getText();
+
+        if(jawaban.equals("12√2")){
+            jTextField2.setText("Jawaban Benar : 12√2 cm");
+        }else if(jawaban.equals("12 akar 2")){
+            jTextField2.setText("Jawaban Benar : 12√2 cm");
+        } else {
+            JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
+        }
+    }
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
@@ -119,7 +143,7 @@ public class persegiLatihanSoal1 extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;

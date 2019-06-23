@@ -5,11 +5,13 @@
  */
 package bangunDatar;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Asus
  */
-public class persegiLatihanSoal4 extends javax.swing.JPanel {
+public class persegiLatihanSoal4 extends javax.swing.JPanel implements interfaceBangunDatar {
 
     /**
      * Creates new form persegiLatihanSoal4
@@ -30,12 +32,12 @@ public class persegiLatihanSoal4 extends javax.swing.JPanel {
         jLabel6 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField1 = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(24, 64, 105));
@@ -58,26 +60,6 @@ public class persegiLatihanSoal4 extends javax.swing.JPanel {
         add(jLabel8);
         jLabel8.setBounds(390, 100, 140, 24);
 
-        jButton1.setText("Cek");
-        add(jButton1);
-        jButton1.setBounds(210, 230, 52, 32);
-
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
-            }
-        });
-        add(jTextField2);
-        jTextField2.setBounds(310, 180, 170, 40);
-
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
-        add(jTextField1);
-        jTextField1.setBounds(310, 230, 170, 40);
-
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(null);
 
@@ -92,13 +74,56 @@ public class persegiLatihanSoal4 extends javax.swing.JPanel {
         jLabel9.setForeground(new java.awt.Color(153, 255, 255));
         jLabel9.setText("Jawabanmu : ");
         add(jLabel9);
-        jLabel9.setBounds(170, 190, 140, 24);
+        jLabel9.setBounds(150, 200, 140, 24);
+
+        jButton1.setText("Cek");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        add(jButton1);
+        jButton1.setBounds(190, 240, 52, 32);
+
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
+        add(jTextField2);
+        jTextField2.setBounds(280, 240, 170, 40);
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        add(jTextField1);
+        jTextField1.setBounds(280, 190, 170, 40);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/persegi/soal.png"))); // NOI18N
         add(jLabel1);
         jLabel1.setBounds(-1, -1, 1000, 340);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        jawaban();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    @Override
+    public void jawaban() {
+        String jawaban = jTextField1.getText();
+
+        if(jawaban.equals("9√2")){
+            jTextField2.setText("Jawaban Benar : 9√2 cm");
+        }else if(jawaban.equals("9 akar 2 cm")){
+            jTextField2.setText("Jawaban Benar : 9√2 cm");
+        } else {
+            JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
+        }
+    }
+    
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed

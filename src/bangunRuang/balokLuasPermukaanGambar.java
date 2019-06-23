@@ -27,18 +27,26 @@ public class balokLuasPermukaanGambar extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel5 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(8, 80, 116));
         setLayout(null);
 
-        jLabel1.setText("luas permuk gbr");
+        jLabel5.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("Warna yang sama merupakan sepasang sisi yang kongruen");
+        add(jLabel5);
+        jLabel5.setBounds(20, 300, 530, 30);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Balok/luaspergam.png"))); // NOI18N
         add(jLabel1);
-        jLabel1.setBounds(317, 144, 170, 16);
+        jLabel1.setBounds(0, 0, 570, 460);
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel5;
     // End of variables declaration//GEN-END:variables
 }

@@ -27,21 +27,39 @@ public class persegiDiagonalGambar extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setBackground(new java.awt.Color(8, 80, 116));
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 570, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 380, Short.MAX_VALUE)
-        );
+        setBackground(new java.awt.Color(8, 80, 116));
+        setLayout(null);
+
+        jLabel2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel2.setText("sama panjang");
+        add(jLabel2);
+        jLabel2.setBounds(380, 220, 160, 30);
+
+        jLabel3.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel3.setText("Persegi hanya");
+        add(jLabel3);
+        jLabel3.setBounds(380, 160, 130, 30);
+
+        jLabel4.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel4.setText("2 diagonal yang");
+        add(jLabel4);
+        jLabel4.setBounds(380, 190, 160, 30);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/persegi/diagam.png"))); // NOI18N
+        add(jLabel1);
+        jLabel1.setBounds(-50, 0, 570, 470);
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     // End of variables declaration//GEN-END:variables
 }

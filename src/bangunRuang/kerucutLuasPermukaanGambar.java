@@ -32,22 +32,13 @@ public class kerucutLuasPermukaanGambar extends javax.swing.JPanel {
 
         jLabel1.setText("jLabel1");
 
-        jLabel2.setText("gambar luas kerucut");
+        setBackground(new java.awt.Color(8, 80, 116));
+        setLayout(null);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel2)
-                .addGap(0, 473, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel2)
-                .addGap(0, 366, Short.MAX_VALUE))
-        );
+        jLabel2.setBackground(new java.awt.Color(8, 80, 116));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Kerucut/panel gbr ls perm kerucut.png"))); // NOI18N
+        add(jLabel2);
+        jLabel2.setBounds(0, 0, 560, 380);
     }// </editor-fold>//GEN-END:initComponents
 
 

@@ -5,11 +5,13 @@
  */
 package bangunRuang;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Asus
  */
-public class prismaLatihanSoal5 extends javax.swing.JPanel {
+public class prismaLatihanSoal5 extends javax.swing.JPanel implements interfaceBangunRuang {
 
     /**
      * Creates new form prismaLatihanSoal5
@@ -27,19 +29,102 @@ public class prismaLatihanSoal5 extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+
+        setLayout(null);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Prisma/kubus.jpg"))); // NOI18N
+        add(jLabel2);
+        jLabel2.setBounds(710, 10, 230, 310);
+
+        jLabel4.setBackground(new java.awt.Color(0, 102, 102));
+        jLabel4.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 51, 51));
+        jLabel4.setText("Dari soal nomer 4. Tentukan Volume");
+        add(jLabel4);
+        jLabel4.setBounds(190, 40, 720, 40);
+
+        jLabel5.setBackground(new java.awt.Color(0, 102, 102));
+        jLabel5.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 51, 51));
+        jLabel5.setText("prisma tersebut!");
+        add(jLabel5);
+        jLabel5.setBounds(310, 90, 740, 40);
+
+        jLabel9.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("Jawabanmu : ");
+        add(jLabel9);
+        jLabel9.setBounds(100, 210, 140, 24);
+
+        jButton2.setText("Cek");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        add(jButton2);
+        jButton2.setBounds(140, 250, 52, 32);
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        add(jTextField1);
+        jTextField1.setBounds(240, 200, 170, 40);
+
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
+        add(jTextField2);
+        jTextField2.setBounds(240, 250, 170, 40);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Prisma/soal.png"))); // NOI18N
+        add(jLabel1);
+        jLabel1.setBounds(0, -100, 990, 510);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        bangunRuang();
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    @Override
+    public void bangunRuang() {
+        String jawaban = jTextField1.getText();
+        
+        if(jawaban.equals("4913")){
+            jTextField2.setText("Jawaban Benar : 4913 cm3 ");
+        }else {
+            JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
+        }
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 }

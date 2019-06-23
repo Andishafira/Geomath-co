@@ -27,18 +27,50 @@ public class kubusDiagonalGambar extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(8, 80, 116));
         setLayout(null);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Kubus/gambar bidang diagonal.JPG"))); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("3. Bidang diagonal = ACGE");
+        add(jLabel2);
+        jLabel2.setBounds(320, 170, 240, 120);
+
+        jLabel3.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("1. Diagonal sisi = BG");
+        add(jLabel3);
+        jLabel3.setBounds(320, 110, 240, 120);
+
+        jLabel4.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("2. Diagonal ruang = CE");
+        add(jLabel4);
+        jLabel4.setBounds(320, 140, 240, 120);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Kubus/diagonalgam.png"))); // NOI18N
         add(jLabel1);
-        jLabel1.setBounds(130, 60, 300, 270);
+        jLabel1.setBounds(-20, 0, 570, 430);
+
+        jLabel5.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("1. Diagonal sisi = BG");
+        add(jLabel5);
+        jLabel5.setBounds(320, 110, 240, 120);
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     // End of variables declaration//GEN-END:variables
 }

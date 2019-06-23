@@ -29,22 +29,11 @@ public class psgPanjangLuas extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
 
-        jLabel1.setText("Persegi Panjang Luas");
+        setLayout(null);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel1)
-                .addGap(0, 888, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel1)
-                .addGap(0, 326, Short.MAX_VALUE))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/PsgPanjang/ls pers.png"))); // NOI18N
+        add(jLabel1);
+        jLabel1.setBounds(0, 0, 990, 340);
     }// </editor-fold>//GEN-END:initComponents
 
 

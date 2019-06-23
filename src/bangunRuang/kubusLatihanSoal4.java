@@ -5,11 +5,13 @@
  */
 package bangunRuang;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Asus
  */
-public class kubusLatihanSoal4 extends javax.swing.JPanel {
+public class kubusLatihanSoal4 extends javax.swing.JPanel implements interfaceBangunRuang {
 
     /**
      * Creates new form kubusLatihanSoal4
@@ -68,7 +70,7 @@ public class kubusLatihanSoal4 extends javax.swing.JPanel {
             }
         });
         add(jTextField2);
-        jTextField2.setBounds(680, 170, 170, 40);
+        jTextField2.setBounds(680, 220, 170, 40);
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -76,11 +78,16 @@ public class kubusLatihanSoal4 extends javax.swing.JPanel {
             }
         });
         add(jTextField1);
-        jTextField1.setBounds(680, 220, 170, 40);
+        jTextField1.setBounds(680, 170, 170, 40);
 
         jButton1.setText("Cek");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         add(jButton1);
-        jButton1.setBounds(580, 220, 52, 32);
+        jButton1.setBounds(580, 220, 51, 23);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Kubus/soal.png"))); // NOI18N
         add(jLabel1);
@@ -95,6 +102,21 @@ public class kubusLatihanSoal4 extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        bangunRuang();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    @Override
+    public void bangunRuang() {
+        String jawaban = jTextField1.getText();
+        
+        if(jawaban.equals("1000")){
+            jTextField2.setText("Jawaban Benar : 1000 buah ");
+        } else {
+            JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
+        }
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;

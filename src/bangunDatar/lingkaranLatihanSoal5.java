@@ -5,11 +5,13 @@
  */
 package bangunDatar;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Asus
  */
-public class lingkaranLatihanSoal5 extends javax.swing.JPanel {
+public class lingkaranLatihanSoal5 extends javax.swing.JPanel implements interfaceBangunDatar {
 
     /**
      * Creates new form lingkaranLatihanSoal5
@@ -60,8 +62,13 @@ public class lingkaranLatihanSoal5 extends javax.swing.JPanel {
         jLabel9.setBounds(30, 200, 140, 24);
 
         jButton1.setText("Cek");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         add(jButton1);
-        jButton1.setBounds(70, 240, 52, 32);
+        jButton1.setBounds(70, 240, 51, 23);
 
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -69,7 +76,7 @@ public class lingkaranLatihanSoal5 extends javax.swing.JPanel {
             }
         });
         add(jTextField2);
-        jTextField2.setBounds(170, 190, 170, 40);
+        jTextField2.setBounds(160, 250, 170, 40);
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -77,7 +84,7 @@ public class lingkaranLatihanSoal5 extends javax.swing.JPanel {
             }
         });
         add(jTextField1);
-        jTextField1.setBounds(170, 240, 170, 40);
+        jTextField1.setBounds(160, 200, 170, 40);
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/lingkaran/soal gambar kososng4.png"))); // NOI18N
         add(jLabel4);
@@ -86,7 +93,7 @@ public class lingkaranLatihanSoal5 extends javax.swing.JPanel {
         jLabel2.setForeground(new java.awt.Color(255, 0, 51));
         jLabel2.setText("14 cm");
         add(jLabel2);
-        jLabel2.setBounds(840, 150, 41, 16);
+        jLabel2.setBounds(840, 150, 41, 14);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/lingkaran/soal.png"))); // NOI18N
         add(jLabel1);
@@ -101,6 +108,11 @@ public class lingkaranLatihanSoal5 extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        jawaban();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
@@ -113,4 +125,17 @@ public class lingkaranLatihanSoal5 extends javax.swing.JPanel {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
+
+    @Override
+    public void jawaban() {
+        String jawaban = jTextField1.getText();
+        
+        if(jawaban.equals("78.5")){
+            jTextField2.setText("Jawaban Benar : 78.5 cm");
+        }else if(jawaban.equals("78.5 cm")){
+            jTextField2.setText("Jawaban Benar : 78.5 cm");
+        } else {
+            JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
+        }
+    }
 }

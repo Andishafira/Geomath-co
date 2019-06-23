@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  *
  * @author SONY
  */
-public class psgPanjangLatsol2 extends javax.swing.JPanel {
+public class psgPanjangLatsol2 extends javax.swing.JPanel implements interfaceBangunDatar {
 
     /**
      * Creates new form psgPanjangLatsol2
@@ -68,13 +68,7 @@ public class psgPanjangLatsol2 extends javax.swing.JPanel {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        jawaban = jTextField5.getText();
-        
-        if(jawaban.equals("108")){
-            jTextField6.setText("Jawaban Benar : 108 cm");
-        } else {
-            JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
-        }
+        jawaban();
     }//GEN-LAST:event_jButton3ActionPerformed
 
 
@@ -90,4 +84,15 @@ public class psgPanjangLatsol2 extends javax.swing.JPanel {
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
     // End of variables declaration//GEN-END:variables
+
+    @Override
+    public void jawaban() {
+        jawaban = jTextField1.getText();
+        
+        if(jawaban.equals("108")){
+            jTextField3.setText("Jawaban Benar : 108 cm");
+        } else {
+            JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
+        }
+    }
 }

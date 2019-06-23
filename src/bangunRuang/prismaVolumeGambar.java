@@ -27,64 +27,18 @@ public class prismaVolumeGambar extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(8, 80, 116));
         setLayout(null);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Prisma/BRPrisma3.png"))); // NOI18N
-        add(jLabel2);
-        jLabel2.setBounds(20, 20, 200, 310);
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Prisma/BRPrisma5.png"))); // NOI18N
-        add(jLabel3);
-        jLabel3.setBounds(190, 20, 310, 310);
-
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Prisma/BRPrisma6.png"))); // NOI18N
-        add(jLabel4);
-        jLabel4.setBounds(440, 20, 310, 290);
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Prisma/BRPrisma24.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Prisma/! (16).png"))); // NOI18N
         add(jLabel1);
-        jLabel1.setBounds(650, 80, 300, 190);
-
-        jLabel5.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel5.setText("Prisma Segi Dua Puluh Empat");
-        add(jLabel5);
-        jLabel5.setBounds(710, 320, 280, 24);
-
-        jLabel8.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel8.setText("Prisma Segi Enam");
-        add(jLabel8);
-        jLabel8.setBounds(500, 320, 160, 24);
-
-        jLabel7.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel7.setText("Prisma Segi Lima");
-        add(jLabel7);
-        jLabel7.setBounds(270, 320, 160, 24);
-
-        jLabel6.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel6.setText("Prisma Segi Tiga");
-        add(jLabel6);
-        jLabel6.setBounds(70, 320, 160, 24);
+        jLabel1.setBounds(0, 0, 590, 480);
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     // End of variables declaration//GEN-END:variables
 }

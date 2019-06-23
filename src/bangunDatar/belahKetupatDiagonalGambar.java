@@ -30,25 +30,11 @@ public class belahKetupatDiagonalGambar extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(8, 80, 116));
+        setLayout(null);
 
-        jLabel1.setText("gambardiagonal");
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(113, 113, 113)
-                .addComponent(jLabel1)
-                .addContainerGap(365, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(140, 140, 140)
-                .addComponent(jLabel1)
-                .addContainerGap(224, Short.MAX_VALUE))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/BelahKetupat/panel gbr diagonal belah ketupat.png"))); // NOI18N
+        add(jLabel1);
+        jLabel1.setBounds(3, 0, 550, 380);
     }// </editor-fold>//GEN-END:initComponents
 
 

@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  *
  * @author Asus
  */
-public class belahKetupatLatihanSoal5 extends javax.swing.JPanel {
+public class belahKetupatLatihanSoal5 extends javax.swing.JPanel implements interfaceBangunDatar {
 
     /**
      * Creates new form belahKetupatLatihanSoal5
@@ -66,7 +66,7 @@ public class belahKetupatLatihanSoal5 extends javax.swing.JPanel {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/jawaban.png"))); // NOI18N
         add(jLabel2);
-        jLabel2.setBounds(670, 0, 320, 340);
+        jLabel2.setBounds(700, 0, 320, 340);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
@@ -75,13 +75,7 @@ public class belahKetupatLatihanSoal5 extends javax.swing.JPanel {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        jawaban = jTextField1.getText();
-        
-        if(jawaban.equals("224")){
-            jTextField2.setText("Jawaban Benar : 224 cm");
-        } else {
-            JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
-        }
+        jawaban();
     }//GEN-LAST:event_jButton1ActionPerformed
 
 
@@ -92,4 +86,15 @@ public class belahKetupatLatihanSoal5 extends javax.swing.JPanel {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
+
+    @Override
+    public void jawaban() {
+        jawaban = jTextField1.getText();
+        
+        if(jawaban.equals("224")){
+            jTextField2.setText("Jawaban Benar : 224 cm");
+        } else {
+            JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
+        }
+    }
 }

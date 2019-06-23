@@ -30,25 +30,11 @@ public class belahKetupatKelilingGambar extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(8, 80, 116));
+        setLayout(null);
 
-        jLabel1.setText("gambar keliling");
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(143, 143, 143)
-                .addComponent(jLabel1)
-                .addContainerGap(340, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(164, 164, 164)
-                .addComponent(jLabel1)
-                .addContainerGap(200, Short.MAX_VALUE))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/BelahKetupat/panel gbr keliling belah ketupat.png"))); // NOI18N
+        add(jLabel1);
+        jLabel1.setBounds(0, 0, 630, 400);
     }// </editor-fold>//GEN-END:initComponents
 
 

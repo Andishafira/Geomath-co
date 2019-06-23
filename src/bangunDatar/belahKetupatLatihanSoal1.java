@@ -11,13 +11,11 @@ import javax.swing.JOptionPane;
  *
  * @author Asus
  */
-public class belahKetupatLatihanSoal1 extends javax.swing.JPanel {
+public class belahKetupatLatihanSoal1 extends javax.swing.JPanel implements interfaceBangunDatar {
 
     /**
      * Creates new form belahKetupatLatihanSoal1
      */
-    String jawaban;
-    
     public belahKetupatLatihanSoal1() {
         initComponents();
     }
@@ -35,7 +33,7 @@ public class belahKetupatLatihanSoal1 extends javax.swing.JPanel {
         jTextField2 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(28, 28, 28));
         setLayout(null);
@@ -46,7 +44,7 @@ public class belahKetupatLatihanSoal1 extends javax.swing.JPanel {
             }
         });
         add(jTextField1);
-        jTextField1.setBounds(790, 80, 150, 40);
+        jTextField1.setBounds(790, 90, 160, 40);
 
         jTextField2.setEditable(false);
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
@@ -55,7 +53,7 @@ public class belahKetupatLatihanSoal1 extends javax.swing.JPanel {
             }
         });
         add(jTextField2);
-        jTextField2.setBounds(790, 250, 140, 40);
+        jTextField2.setBounds(800, 260, 140, 50);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/LATIHAN SOAL 1 (1).png"))); // NOI18N
         add(jLabel1);
@@ -70,9 +68,9 @@ public class belahKetupatLatihanSoal1 extends javax.swing.JPanel {
         add(jButton1);
         jButton1.setBounds(820, 150, 73, 30);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/jawaban.png"))); // NOI18N
-        add(jLabel3);
-        jLabel3.setBounds(690, 0, 300, 340);
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/jawaban.png"))); // NOI18N
+        add(jLabel4);
+        jLabel4.setBounds(720, 0, 270, 340);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
@@ -85,21 +83,26 @@ public class belahKetupatLatihanSoal1 extends javax.swing.JPanel {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        jawaban = jTextField1.getText();
-        
-        if(jawaban.equals("8")){
-            jTextField2.setText("Jawaban Benar : 8 cm");
-        } else {
-            JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
-        }
+        jawaban();
     }//GEN-LAST:event_jButton1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
+
+    @Override
+    public void jawaban() {
+        String jawaban = jTextField1.getText();
+        
+        if(jawaban.equals("8")){
+            jTextField2.setText("Jawaban Benar : 8 cm");
+        } else {
+            JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
+        }
+    }
 }

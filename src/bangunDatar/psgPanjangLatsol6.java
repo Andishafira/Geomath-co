@@ -5,11 +5,13 @@
  */
 package bangunDatar;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author SONY
  */
-public class psgPanjangLatsol6 extends javax.swing.JPanel {
+public class psgPanjangLatsol6 extends javax.swing.JPanel implements interfaceBangunDatar {
 
     /**
      * Creates new form psgPanjangLatsol6
@@ -37,6 +39,11 @@ public class psgPanjangLatsol6 extends javax.swing.JPanel {
         jTextField1.setBounds(200, 210, 150, 40);
 
         jButton1.setText("CEK KUNCI");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         add(jButton1);
         jButton1.setBounds(430, 210, 90, 23);
         add(jTextField3);
@@ -47,6 +54,11 @@ public class psgPanjangLatsol6 extends javax.swing.JPanel {
         jLabel1.setBounds(0, 0, 990, 340);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        jawaban();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
@@ -54,4 +66,15 @@ public class psgPanjangLatsol6 extends javax.swing.JPanel {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField3;
     // End of variables declaration//GEN-END:variables
+
+    @Override
+    public void jawaban() {
+        String jawaban = jTextField1.getText();
+        
+        if(jawaban.equals("18.02")){
+            jTextField3.setText("Jawaban Benar : 18.02 cm");
+        } else {
+            JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
+        }
+    }
 }
