@@ -7,12 +7,49 @@ import ui.app.pbo.bangunDatarClass;
 import ui.app.pbo.bangunRuangClass;
 
 public class trapesium extends javax.swing.JFrame {
+    trapesiumKeliling tKel;
+    trapesiumKelilingGambar tKelGa;
+    trapesiumLuas tLuas;
+    trapesiumLuasGambar tLuasGa;
+    trapesiumDiagonal tDi;
+    trapesiumDiagonalGambar tDiGa;
+    trapesiumLatsol1 tLS1;
+    trapesiumLatsol2 tLS2;
+    trapesiumLatsol3 tLS3;
+    trapesiumLatsol4 tLS4;
+    trapesiumLatsol5 tLS5;
+    trapesiumLatsol6 tLS6;
     
     
     public trapesium() {
         initComponents();
         
+        tKel = new trapesiumKeliling();
+        tKelGa = new trapesiumKelilingGambar();
+        tLuas = new trapesiumLuas();
+        tLuasGa = new trapesiumLuasGambar();
+        tDi = new trapesiumDiagonal();
+        tDiGa = new trapesiumDiagonalGambar();
+        tLS1 = new trapesiumLatsol1();
+        tLS2 = new trapesiumLatsol2();
+        tLS3 = new trapesiumLatsol3();
+        tLS4 = new trapesiumLatsol4();
+        tLS5 = new trapesiumLatsol5();
+        tLS6 = new trapesiumLatsol6();
         
+        panelUtama.add(tKel);
+        panelUtama.add(tLuas);
+        panelUtama.add(tDi);
+        panelUtama.add(tLS1);
+        panelUtama.add(tLS2);
+        panelUtama.add(tLS3);
+        panelUtama.add(tLS4);
+        panelUtama.add(tLS5);
+        panelUtama.add(tLS6);
+        
+        panelGambar.add(tKelGa);
+        panelGambar.add(tLuasGa);
+        panelGambar.add(tDiGa);
     }
 
     
@@ -204,27 +241,93 @@ public class trapesium extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void buttonLatSoal1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSoal1MouseClicked
-      
+        tKel.setVisible(false);
+        tKelGa.setVisible(false);
+        tLuas.setVisible(false);
+        tLuasGa.setVisible(false);
+        tDi.setVisible(false);
+        tDiGa.setVisible(false);
+        tLS1.setVisible(true);
+        tLS2.setVisible(false);
+        tLS3.setVisible(false);
+        tLS4.setVisible(false);
+        tLS5.setVisible(false);
+        tLS6.setVisible(false);
     }//GEN-LAST:event_buttonLatSoal1MouseClicked
 
     private void buttonLatSoal2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSoal2MouseClicked
-        
+        tKel.setVisible(false);
+        tKelGa.setVisible(false);
+        tLuas.setVisible(false);
+        tLuasGa.setVisible(false);
+        tDi.setVisible(false);
+        tDiGa.setVisible(false);
+        tLS1.setVisible(false);
+        tLS2.setVisible(true);
+        tLS3.setVisible(false);
+        tLS4.setVisible(false);
+        tLS5.setVisible(false);
+        tLS6.setVisible(false);
     }//GEN-LAST:event_buttonLatSoal2MouseClicked
 
     private void buttonLatSoal3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSoal3MouseClicked
-        
+        tKel.setVisible(false);
+        tKelGa.setVisible(false);
+        tLuas.setVisible(false);
+        tLuasGa.setVisible(false);
+        tDi.setVisible(false);
+        tDiGa.setVisible(false);
+        tLS1.setVisible(false);
+        tLS2.setVisible(false);
+        tLS3.setVisible(true);
+        tLS4.setVisible(false);
+        tLS5.setVisible(false);
+        tLS6.setVisible(false);
     }//GEN-LAST:event_buttonLatSoal3MouseClicked
 
     private void buttonLatSoal4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSoal4MouseClicked
-        
+        tKel.setVisible(false);
+        tKelGa.setVisible(false);
+        tLuas.setVisible(false);
+        tLuasGa.setVisible(false);
+        tDi.setVisible(false);
+        tDiGa.setVisible(false);
+        tLS1.setVisible(false);
+        tLS2.setVisible(false);
+        tLS3.setVisible(false);
+        tLS4.setVisible(true);
+        tLS5.setVisible(false);
+        tLS6.setVisible(false);
     }//GEN-LAST:event_buttonLatSoal4MouseClicked
 
     private void buttonLatSoal5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSoal5MouseClicked
-        
+        tKel.setVisible(false);
+        tKelGa.setVisible(false);
+        tLuas.setVisible(false);
+        tLuasGa.setVisible(false);
+        tDi.setVisible(false);
+        tDiGa.setVisible(false);
+        tLS1.setVisible(false);
+        tLS2.setVisible(false);
+        tLS3.setVisible(false);
+        tLS4.setVisible(false);
+        tLS5.setVisible(true);
+        tLS6.setVisible(false);
     }//GEN-LAST:event_buttonLatSoal5MouseClicked
 
     private void buttonLatSoal6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSoal6MouseClicked
-        
+        tKel.setVisible(false);
+        tKelGa.setVisible(false);
+        tLuas.setVisible(false);
+        tLuasGa.setVisible(false);
+        tDi.setVisible(false);
+        tDiGa.setVisible(false);
+        tLS1.setVisible(false);
+        tLS2.setVisible(false);
+        tLS3.setVisible(false);
+        tLS4.setVisible(false);
+        tLS5.setVisible(false);
+        tLS6.setVisible(true);
     }//GEN-LAST:event_buttonLatSoal6MouseClicked
 
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
@@ -258,15 +361,48 @@ public class trapesium extends javax.swing.JFrame {
     }//GEN-LAST:event_jPanel1MouseClicked
 
     private void buttonKelilingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonKelilingMouseClicked
-        
+        tKel.setVisible(true);
+        tKelGa.setVisible(true);
+        tLuas.setVisible(false);
+        tLuasGa.setVisible(false);
+        tDi.setVisible(false);
+        tDiGa.setVisible(false);
+        tLS1.setVisible(false);
+        tLS2.setVisible(false);
+        tLS3.setVisible(false);
+        tLS4.setVisible(false);
+        tLS5.setVisible(false);
+        tLS6.setVisible(false);
     }//GEN-LAST:event_buttonKelilingMouseClicked
 
     private void buttonLuasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLuasMouseClicked
-        
+        tKel.setVisible(false);
+        tKelGa.setVisible(false);
+        tLuas.setVisible(true);
+        tLuasGa.setVisible(true);
+        tDi.setVisible(false);
+        tDiGa.setVisible(false);
+        tLS1.setVisible(false);
+        tLS2.setVisible(false);
+        tLS3.setVisible(false);
+        tLS4.setVisible(false);
+        tLS5.setVisible(false);
+        tLS6.setVisible(false);
     }//GEN-LAST:event_buttonLuasMouseClicked
 
     private void buttonDiagonalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonDiagonalMouseClicked
-        
+        tKel.setVisible(false);
+        tKelGa.setVisible(false);
+        tLuas.setVisible(false);
+        tLuasGa.setVisible(false);
+        tDi.setVisible(true);
+        tDiGa.setVisible(true);
+        tLS1.setVisible(false);
+        tLS2.setVisible(false);
+        tLS3.setVisible(false);
+        tLS4.setVisible(false);
+        tLS5.setVisible(false);
+        tLS6.setVisible(false);
     }//GEN-LAST:event_buttonDiagonalMouseClicked
 
     public static void main(String args[]) {
