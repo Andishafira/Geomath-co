@@ -81,18 +81,7 @@ public class trapesium extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         panelGambar.setBackground(new java.awt.Color(8, 80, 116));
-
-        javax.swing.GroupLayout panelGambarLayout = new javax.swing.GroupLayout(panelGambar);
-        panelGambar.setLayout(panelGambarLayout);
-        panelGambarLayout.setHorizontalGroup(
-            panelGambarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 570, Short.MAX_VALUE)
-        );
-        panelGambarLayout.setVerticalGroup(
-            panelGambarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 380, Short.MAX_VALUE)
-        );
-
+        panelGambar.setLayout(new java.awt.CardLayout());
         getContentPane().add(panelGambar);
         panelGambar.setBounds(300, 60, 570, 380);
 
@@ -101,18 +90,7 @@ public class trapesium extends javax.swing.JFrame {
         jLabel7.setBounds(820, 60, 470, 170);
 
         panelUtama.setBackground(new java.awt.Color(24, 64, 105));
-
-        javax.swing.GroupLayout panelUtamaLayout = new javax.swing.GroupLayout(panelUtama);
-        panelUtama.setLayout(panelUtamaLayout);
-        panelUtamaLayout.setHorizontalGroup(
-            panelUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 990, Short.MAX_VALUE)
-        );
-        panelUtamaLayout.setVerticalGroup(
-            panelUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 340, Short.MAX_VALUE)
-        );
-
+        panelUtama.setLayout(new java.awt.CardLayout());
         getContentPane().add(panelUtama);
         panelUtama.setBounds(300, 450, 990, 340);
 
