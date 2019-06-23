@@ -9,12 +9,12 @@ package bangunDatar;
  *
  * @author FAZA
  */
-public class segitigaLuas extends javax.swing.JPanel {
+public class trapesiumLatsol1 extends javax.swing.JPanel {
 
     /**
-     * Creates new form segitigaLuas
+     * Creates new form trapesiumLatsol1
      */
-    public segitigaLuas() {
+    public trapesiumLatsol1() {
         initComponents();
     }
 
@@ -27,30 +27,19 @@ public class segitigaLuas extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-
-        jLabel1.setText("Luas Segitiga");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(397, 397, 397)
-                .addComponent(jLabel1)
-                .addContainerGap(530, Short.MAX_VALUE))
+            .addGap(0, 400, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(93, 93, 93)
-                .addComponent(jLabel1)
-                .addContainerGap(233, Short.MAX_VALUE))
+            .addGap(0, 300, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

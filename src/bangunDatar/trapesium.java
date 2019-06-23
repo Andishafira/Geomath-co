@@ -7,50 +7,12 @@ import ui.app.pbo.bangunDatarClass;
 import ui.app.pbo.bangunRuangClass;
 
 public class trapesium extends javax.swing.JFrame {
-    trapesiumKeliling pB1;
-    trapesiumKelilingGambar pA1;
-    trapesiumLuas pB2;
-    trapesiumLuasGambar pA2;
-    trapesiumDiagonal pB3;
-    trapesiumDiagonalGambar pA3;
-    trapesiumLatihanSoal1 pBL1;
-    trapesiumLatihanSoal2 pBL2;
-    trapesiumLatihanSoal3 pBL3;
-    trapesiumLatihanSoal4 pBL4;
-    trapesiumLatihanSoal5 pBL5;
-    trapesiumLatihanSoal6 pBL6;
+    
     
     public trapesium() {
         initComponents();
         
-        pB1 = new trapesiumKeliling();
-        pA1 = new trapesiumKelilingGambar();
-        pB2 = new trapesiumLuas();
-        pA2 = new trapesiumLuasGambar();
-        pB3 = new trapesiumDiagonal();
-        pA3 = new trapesiumDiagonalGambar();
-        pBL1 = new trapesiumLatihanSoal1();
-        pBL2 = new trapesiumLatihanSoal2();
-        pBL3 = new trapesiumLatihanSoal3();
-        pBL4 = new trapesiumLatihanSoal4();
-        pBL5 = new trapesiumLatihanSoal5();
-        pBL6 = new trapesiumLatihanSoal6();
         
-        panelUtama.add(pB1);
-        panelUtama.add(pB2);
-        panelUtama.add(pB3);
-        panelUtama.add(pBL1);
-        panelUtama.add(pBL2);
-        panelUtama.add(pBL3);
-        panelUtama.add(pBL4);
-        panelUtama.add(pBL5);
-        panelUtama.add(pBL6);
-        
-        panelGambar.add(pA1);
-        panelGambar.add(pA2);
-        panelGambar.add(pA3);
-                
-                  
     }
 
     
@@ -242,75 +204,27 @@ public class trapesium extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void buttonLatSoal1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSoal1MouseClicked
-       pB1.setVisible(false);
-        pB2.setVisible(false);
-        pB3.setVisible(false);
-        pBL1.setVisible(true);
-        pBL2.setVisible(false);
-        pBL3.setVisible(false);
-        pBL4.setVisible(false);
-        pBL5.setVisible(false);
-        pBL6.setVisible(false);
+      
     }//GEN-LAST:event_buttonLatSoal1MouseClicked
 
     private void buttonLatSoal2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSoal2MouseClicked
-        pB1.setVisible(false);
-        pB2.setVisible(false);
-        pB3.setVisible(false);
-        pBL1.setVisible(false);
-        pBL2.setVisible(true);
-        pBL3.setVisible(false);
-        pBL4.setVisible(false);
-        pBL5.setVisible(false);
-        pBL6.setVisible(false);
+        
     }//GEN-LAST:event_buttonLatSoal2MouseClicked
 
     private void buttonLatSoal3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSoal3MouseClicked
-        pB1.setVisible(false);
-        pB2.setVisible(false);
-        pB3.setVisible(false);
-        pBL1.setVisible(false);
-        pBL2.setVisible(false);
-        pBL3.setVisible(true);
-        pBL4.setVisible(false);
-        pBL5.setVisible(false);
-        pBL6.setVisible(false);
+        
     }//GEN-LAST:event_buttonLatSoal3MouseClicked
 
     private void buttonLatSoal4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSoal4MouseClicked
-        pB1.setVisible(false);
-        pB2.setVisible(false);
-        pB3.setVisible(false);
-        pBL1.setVisible(false);
-        pBL2.setVisible(false);
-        pBL3.setVisible(false);
-        pBL4.setVisible(true);
-        pBL5.setVisible(false);
-        pBL6.setVisible(false);
+        
     }//GEN-LAST:event_buttonLatSoal4MouseClicked
 
     private void buttonLatSoal5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSoal5MouseClicked
-        pB1.setVisible(false);
-        pB2.setVisible(false);
-        pB3.setVisible(false);
-        pBL1.setVisible(false);
-        pBL2.setVisible(false);
-        pBL3.setVisible(false);
-        pBL4.setVisible(false);
-        pBL5.setVisible(true);
-        pBL6.setVisible(false);
+        
     }//GEN-LAST:event_buttonLatSoal5MouseClicked
 
     private void buttonLatSoal6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSoal6MouseClicked
-        pB1.setVisible(false);
-        pB2.setVisible(false);
-        pB3.setVisible(false);
-        pBL1.setVisible(false);
-        pBL2.setVisible(false);
-        pBL3.setVisible(false);
-        pBL4.setVisible(false);
-        pBL5.setVisible(false);
-        pBL6.setVisible(true);
+        
     }//GEN-LAST:event_buttonLatSoal6MouseClicked
 
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
@@ -344,51 +258,15 @@ public class trapesium extends javax.swing.JFrame {
     }//GEN-LAST:event_jPanel1MouseClicked
 
     private void buttonKelilingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonKelilingMouseClicked
-        pB1.setVisible(true);
-        pB2.setVisible(false);
-        pB3.setVisible(false);
-        pBL1.setVisible(false);
-        pBL2.setVisible(false);
-        pBL3.setVisible(false);
-        pBL4.setVisible(false);
-        pBL5.setVisible(false);
-        pBL6.setVisible(false);
         
-        pA1.setVisible(true);
-        pA2.setVisible(false);
-        pA3.setVisible(false);
     }//GEN-LAST:event_buttonKelilingMouseClicked
 
     private void buttonLuasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLuasMouseClicked
-        pB1.setVisible(false);
-        pB2.setVisible(true);
-        pB3.setVisible(false);
-        pBL1.setVisible(false);
-        pBL2.setVisible(false);
-        pBL3.setVisible(false);
-        pBL4.setVisible(false);
-        pBL5.setVisible(false);
-        pBL6.setVisible(false);
         
-        pA1.setVisible(false);
-        pA2.setVisible(true);
-        pA3.setVisible(false);
     }//GEN-LAST:event_buttonLuasMouseClicked
 
     private void buttonDiagonalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonDiagonalMouseClicked
-        pB1.setVisible(false);
-        pB2.setVisible(false);
-        pB3.setVisible(true);
-        pBL1.setVisible(false);
-        pBL2.setVisible(false);
-        pBL3.setVisible(false);
-        pBL4.setVisible(false);
-        pBL5.setVisible(false);
-        pBL6.setVisible(false);
         
-        pA1.setVisible(false);
-        pA2.setVisible(false);
-        pA3.setVisible(true);
     }//GEN-LAST:event_buttonDiagonalMouseClicked
 
     public static void main(String args[]) {

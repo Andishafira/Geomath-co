@@ -29,7 +29,7 @@ public class segitigaKeliling extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
 
-        jLabel1.setText("faza");
+        jLabel1.setText("Segitiga Keliling");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
