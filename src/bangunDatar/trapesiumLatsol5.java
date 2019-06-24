@@ -64,7 +64,7 @@ public class trapesiumLatsol5 extends javax.swing.JPanel implements interfaceBan
             }
         });
         add(cek2);
-        cek2.setBounds(760, 130, 51, 23);
+        cek2.setBounds(760, 130, 60, 23);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
