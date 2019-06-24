@@ -33,9 +33,9 @@ public class layanglayangDiagonal extends javax.swing.JPanel {
         setLayout(null);
 
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Diagonal");
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/layang/layangrumusluasdiagonal.png"))); // NOI18N
         add(jLabel1);
-        jLabel1.setBounds(10, 10, 50, 14);
+        jLabel1.setBounds(0, 0, 810, 340);
     }// </editor-fold>//GEN-END:initComponents
 
 

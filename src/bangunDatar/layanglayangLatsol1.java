@@ -98,8 +98,8 @@ public class layanglayangLatsol1 extends javax.swing.JPanel implements interface
     public void jawaban() {
         String jawaban = jTextField1.getText();
         
-        if(jawaban.equals("8")){
-            jTextField2.setText("Jawaban Benar : 8 cm");
+        if(jawaban.equals("120")){
+            jTextField2.setText("Jawaban Benar : 120");
         } else {
             JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
         }

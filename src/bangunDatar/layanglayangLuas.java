@@ -33,9 +33,9 @@ public class layanglayangLuas extends javax.swing.JPanel {
         setLayout(null);
 
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Luas");
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/layang/layangrumusluasdiagonal.png"))); // NOI18N
         add(jLabel1);
-        jLabel1.setBounds(10, 10, 40, 14);
+        jLabel1.setBounds(0, 0, 790, 340);
     }// </editor-fold>//GEN-END:initComponents
 
 

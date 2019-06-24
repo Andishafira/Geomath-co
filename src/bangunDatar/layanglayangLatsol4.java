@@ -96,8 +96,8 @@ public class layanglayangLatsol4 extends javax.swing.JPanel implements interface
     public void jawaban() {
         String jawaban = jTextField1.getText();
         
-        if(jawaban.equals("8")){
-            jTextField2.setText("Jawaban Benar : 8 cm");
+        if(jawaban.equals("16 dan 24")){
+            jTextField2.setText("Jawaban Benar : 16 dan 24");
         } else {
             JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
         }

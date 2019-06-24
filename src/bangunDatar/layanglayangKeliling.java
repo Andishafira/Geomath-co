@@ -33,9 +33,9 @@ public class layanglayangKeliling extends javax.swing.JPanel {
         setLayout(null);
 
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Keliling");
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/layang/layangrumuskelilling.png"))); // NOI18N
         add(jLabel1);
-        jLabel1.setBounds(20, 10, 40, 14);
+        jLabel1.setBounds(0, 0, 770, 340);
     }// </editor-fold>//GEN-END:initComponents
 
 
