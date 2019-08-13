@@ -83,7 +83,7 @@ public class bangunDatarClass extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(120, 200, 250, 250);
+        jLabel4.setBounds(90, 200, 250, 250);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
