@@ -27,10 +27,53 @@ public class balokDiagonal extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(24, 64, 105));
         setLayout(null);
+
+        jLabel1.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel1.setText("Bidang diagonal BDHF");
+        add(jLabel1);
+        jLabel1.setBounds(670, 110, 260, 47);
+
+        jLabel2.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 102));
+        jLabel2.setText("Diagonal Sisi BG");
+        add(jLabel2);
+        jLabel2.setBounds(90, 110, 200, 47);
+
+        jLabel4.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 0, 51));
+        jLabel4.setText("Diagonal");
+        add(jLabel4);
+        jLabel4.setBounds(380, 110, 110, 47);
+
+        jLabel5.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel5.setText("ruang CE");
+        add(jLabel5);
+        jLabel5.setBounds(500, 110, 110, 47);
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Balok/Untitled2.png"))); // NOI18N
+        add(jLabel6);
+        jLabel6.setBounds(688, 150, 230, 140);
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Balok/Untitled.png"))); // NOI18N
+        add(jLabel7);
+        jLabel7.setBounds(90, 180, 199, 89);
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Balok/Untitled1.png"))); // NOI18N
+        add(jLabel8);
+        jLabel8.setBounds(380, 190, 230, 54);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Balok/diagonal.png"))); // NOI18N
         add(jLabel3);
@@ -39,6 +82,13 @@ public class balokDiagonal extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     // End of variables declaration//GEN-END:variables
 }

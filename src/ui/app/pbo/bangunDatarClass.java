@@ -10,7 +10,7 @@ import bangunDatar.layangLayang;
 import bangunDatar.lingkaran;
 import bangunDatar.persegi;
 import bangunDatar.persegiPanjang;
-import bangunDatar.segitigaBaru;
+//import bangunDatar.segitigaBaru;
 import bangunDatar.trapesium;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -83,7 +83,7 @@ public class bangunDatarClass extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(90, 200, 250, 250);
+        jLabel4.setBounds(120, 200, 250, 250);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
@@ -246,13 +246,13 @@ public class bangunDatarClass extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel8MouseClicked
 
     private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
-        // TODO add your handling code here:
-       segitigaBaru ST = new segitigaBaru();
-       new segitigaBaru().setVisible(true);
-       ST.pack();
-       ST.setLocationRelativeTo(null);
-       ST.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-       this.dispose();
+//        // TODO add your handling code here:
+//       segitigaBaru ST = new segitigaBaru();
+//       new segitigaBaru().setVisible(true);
+//       ST.pack();
+//       ST.setLocationRelativeTo(null);
+//       ST.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//       this.dispose();
     }//GEN-LAST:event_jLabel10MouseClicked
 
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
