@@ -29,11 +29,12 @@ public class tabungDiagonalGambar extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(8, 80, 116));
         setLayout(null);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Tabung/diaggam.png"))); // NOI18N
         add(jLabel1);
-        jLabel1.setBounds(0, 0, 590, 400);
+        jLabel1.setBounds(0, 0, 560, 400);
     }// </editor-fold>//GEN-END:initComponents
 
 

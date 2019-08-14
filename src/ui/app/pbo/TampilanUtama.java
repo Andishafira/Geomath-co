@@ -20,9 +20,9 @@ public class TampilanUtama extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -54,10 +54,10 @@ public class TampilanUtama extends javax.swing.JFrame {
         jLabel5.setBounds(190, 370, 350, 350);
         getContentPane().add(jLabel3);
         jLabel3.setBounds(0, 230, 60, 0);
+
+        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 160, 1310, 60);
-        getContentPane().add(jPanel2);
-        jPanel2.setBounds(1220, 0, 30, 290);
 
         jPanel3.setBackground(new java.awt.Color(0, 153, 153));
         jPanel3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -93,6 +93,10 @@ public class TampilanUtama extends javax.swing.JFrame {
 
         getContentPane().add(jPanel3);
         jPanel3.setBounds(0, 0, 1310, 50);
+
+        jPanel2.setBackground(new java.awt.Color(51, 51, 51));
+        getContentPane().add(jPanel2);
+        jPanel2.setBounds(1220, 0, 30, 290);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/abstract-blue-geometric-shapes-background-vector.jpg"))); // NOI18N
         getContentPane().add(jLabel2);

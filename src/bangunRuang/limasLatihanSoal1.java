@@ -40,6 +40,7 @@ public class limasLatihanSoal1 extends javax.swing.JPanel implements interfaceBa
         jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(24, 64, 105));
         setLayout(null);
 
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
@@ -83,17 +84,17 @@ public class limasLatihanSoal1 extends javax.swing.JPanel implements interfaceBa
             }
         });
         add(jButton1);
-        jButton1.setBounds(90, 250, 51, 23);
+        jButton1.setBounds(90, 250, 52, 32);
 
         jLabel6.setForeground(new java.awt.Color(255, 0, 0));
         jLabel6.setText("18 cm");
         add(jLabel6);
-        jLabel6.setBounds(740, 170, 41, 14);
+        jLabel6.setBounds(740, 170, 41, 16);
 
         jLabel7.setForeground(new java.awt.Color(255, 0, 0));
         jLabel7.setText("10 cm");
         add(jLabel7);
-        jLabel7.setBounds(720, 270, 41, 14);
+        jLabel7.setBounds(720, 270, 41, 16);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Limas/soal gambar lim3.png"))); // NOI18N
         add(jLabel3);
@@ -101,7 +102,7 @@ public class limasLatihanSoal1 extends javax.swing.JPanel implements interfaceBa
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Limas/soal.png"))); // NOI18N
         add(jLabel1);
-        jLabel1.setBounds(0, 0, 1070, 320);
+        jLabel1.setBounds(0, 0, 1070, 330);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed

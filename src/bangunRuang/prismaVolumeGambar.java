@@ -34,7 +34,7 @@ public class prismaVolumeGambar extends javax.swing.JPanel {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Prisma/! (16).png"))); // NOI18N
         add(jLabel1);
-        jLabel1.setBounds(0, 0, 590, 480);
+        jLabel1.setBounds(210, 0, 590, 480);
     }// </editor-fold>//GEN-END:initComponents
 
 
