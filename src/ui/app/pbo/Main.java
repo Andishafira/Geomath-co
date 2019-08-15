@@ -61,7 +61,7 @@ public class Main extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(0, 51, 51));
         jLabel4.setText("GEOMETRY");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(220, 80, 1100, 210);
+        jLabel4.setBounds(220, 80, 1100, 220);
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/startIcon.png"))); // NOI18N
         jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -74,9 +74,9 @@ public class Main extends javax.swing.JFrame {
 
         jLabel7.setFont(new java.awt.Font("FREEDOM", 1, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(0, 51, 51));
-        jLabel7.setText("Develop by : Faza A. , Annisa F.N. , Andi Shafira D.K.");
+        jLabel7.setText("Develop by :: Andi Shafira D.K. , Annisa F.N. ,.Faza A");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(580, 230, 760, 60);
+        jLabel7.setBounds(580, 230, 760, 70);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/abstract-blue-geometric-shapes-background-vector.jpg"))); // NOI18N
         getContentPane().add(jLabel2);

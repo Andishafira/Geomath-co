@@ -64,7 +64,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="220" y="80" width="1100" height="210"/>
+          <AbsoluteConstraints x="220" y="80" width="1100" height="220"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -91,11 +91,11 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="33" green="33" red="0" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Develop by : Faza A. , Annisa F.N. , Andi Shafira D.K."/>
+        <Property name="text" type="java.lang.String" value="Develop by :: Andi Shafira D.K. , Annisa F.N. ,.Faza A"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="580" y="230" width="760" height="60"/>
+          <AbsoluteConstraints x="580" y="230" width="760" height="70"/>
         </Constraint>
       </Constraints>
     </Component>
