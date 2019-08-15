@@ -1,6 +1,8 @@
 
 package ui.app.pbo;
 
+import java.awt.Dimension;
+import java.awt.Toolkit;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
@@ -9,6 +11,12 @@ public class TampilanUtama extends javax.swing.JFrame {
 
     public TampilanUtama() {
         initComponents();
+        
+        Dimension layar = Toolkit.getDefaultToolkit().getScreenSize();
+        int x = layar.width / 2  - this.getSize().width / 2;
+        int y = layar.height / 2 - this.getSize().height / 2;
+
+        this.setLocation(x, y);
     }
 
     @SuppressWarnings("unchecked")
@@ -27,6 +35,7 @@ public class TampilanUtama extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1304, 816));
+        setUndecorated(true);
         getContentPane().setLayout(null);
 
         jLabel4.setFont(new java.awt.Font("Android Nation", 1, 60)); // NOI18N

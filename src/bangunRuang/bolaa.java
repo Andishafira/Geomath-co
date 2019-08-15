@@ -5,6 +5,8 @@
  */
 package bangunRuang;
 
+import java.awt.Dimension;
+import java.awt.Toolkit;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import ui.app.pbo.TampilanUtama;
@@ -34,6 +36,11 @@ public class bolaa extends javax.swing.JFrame {
     
     public bolaa() {
         initComponents();
+        Dimension layar = Toolkit.getDefaultToolkit().getScreenSize();
+        int x = layar.width / 2  - this.getSize().width / 2;
+        int y = layar.height / 2 - this.getSize().height / 2;
+
+        this.setLocation(x, y);
         bDiamet = new bolaDiameter();
         bLuas = new bolaLuasPermukaan();
         bVolume = new bolaVolume();
@@ -90,6 +97,7 @@ public class bolaa extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1304, 816));
+        setUndecorated(true);
         getContentPane().setLayout(null);
 
         panelGambar.setBackground(new java.awt.Color(8, 80, 116));

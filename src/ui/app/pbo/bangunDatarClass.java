@@ -12,6 +12,8 @@ import bangunDatar.persegi;
 import bangunDatar.persegiPanjang;
 //import bangunDatar.segitigaBaru;
 import bangunDatar.trapesium;
+import java.awt.Dimension;
+import java.awt.Toolkit;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
@@ -28,6 +30,11 @@ public class bangunDatarClass extends javax.swing.JFrame {
     
     public bangunDatarClass() {
         initComponents();
+        Dimension layar = Toolkit.getDefaultToolkit().getScreenSize();
+        int x = layar.width / 2  - this.getSize().width / 2;
+        int y = layar.height / 2 - this.getSize().height / 2;
+
+        this.setLocation(x, y);
         
     }
 
@@ -55,6 +62,7 @@ public class bangunDatarClass extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1304, 816));
+        setUndecorated(true);
         getContentPane().setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N

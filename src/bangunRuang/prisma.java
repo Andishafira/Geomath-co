@@ -1,5 +1,7 @@
 package bangunRuang;
 
+import java.awt.Dimension;
+import java.awt.Toolkit;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import ui.app.pbo.TampilanUtama;
@@ -17,6 +19,11 @@ public class prisma extends javax.swing.JFrame {
     
     public prisma() {
         initComponents();
+        Dimension layar = Toolkit.getDefaultToolkit().getScreenSize();
+        int x = layar.width / 2  - this.getSize().width / 2;
+        int y = layar.height / 2 - this.getSize().height / 2;
+
+        this.setLocation(x, y);
         pB1 = new prismaLuasPermukaan();
         pA1 = new prismaLuasPermukaanGambar();
         pB2 = new prismaVolume();
@@ -55,6 +62,7 @@ public class prisma extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1304, 816));
+        setUndecorated(true);
         getContentPane().setLayout(null);
 
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
@@ -149,7 +157,7 @@ public class prisma extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel2)
                         .addComponent(jLabel6)))
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 3, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel1);

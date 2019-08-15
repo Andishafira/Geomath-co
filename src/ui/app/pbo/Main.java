@@ -6,6 +6,8 @@
 package ui.app.pbo;
 
 import javax.swing.JFrame;
+import java.awt.Dimension;
+import java.awt.Toolkit;
 
 /**
  *
@@ -19,6 +21,11 @@ public class Main extends javax.swing.JFrame {
     
     public Main() {
         initComponents();
+        Dimension layar = Toolkit.getDefaultToolkit().getScreenSize();
+        int x = layar.width / 2  - this.getSize().width / 2;
+        int y = layar.height / 2 - this.getSize().height / 2;
+
+        this.setLocation(x, y);
     }
 
     /**
@@ -39,6 +46,7 @@ public class Main extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1304, 816));
+        setUndecorated(true);
         getContentPane().setLayout(null);
         getContentPane().add(jLabel1);
         jLabel1.setBounds(290, 250, 30, 0);

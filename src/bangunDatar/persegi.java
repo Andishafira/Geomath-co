@@ -1,5 +1,7 @@
 package bangunDatar;
 
+import java.awt.Dimension;
+import java.awt.Toolkit;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import ui.app.pbo.TampilanUtama;
@@ -22,6 +24,7 @@ public class persegi extends javax.swing.JFrame {
     
     public persegi() {
         initComponents();
+        
         pB1 = new persegiKeliling();
         pA1 = new persegiKelilingGambar();
         pB2 = new persegiLuas();
@@ -74,6 +77,7 @@ public class persegi extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1304, 816));
+        setUndecorated(true);
         getContentPane().setLayout(null);
 
         panelGambar.setBackground(new java.awt.Color(8, 80, 116));
