@@ -104,12 +104,34 @@ public class limas extends javax.swing.JFrame {
         jLabel3.setBounds(10, 560, 240, 230);
 
         panelGambar1.setBackground(new java.awt.Color(8, 80, 116));
-        panelGambar1.setLayout(new java.awt.CardLayout());
+
+        javax.swing.GroupLayout panelGambar1Layout = new javax.swing.GroupLayout(panelGambar1);
+        panelGambar1.setLayout(panelGambar1Layout);
+        panelGambar1Layout.setHorizontalGroup(
+            panelGambar1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 990, Short.MAX_VALUE)
+        );
+        panelGambar1Layout.setVerticalGroup(
+            panelGambar1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 380, Short.MAX_VALUE)
+        );
+
         getContentPane().add(panelGambar1);
         panelGambar1.setBounds(300, 60, 990, 380);
 
         panelUtama1.setBackground(new java.awt.Color(24, 64, 105));
-        panelUtama1.setLayout(new java.awt.CardLayout());
+
+        javax.swing.GroupLayout panelUtama1Layout = new javax.swing.GroupLayout(panelUtama1);
+        panelUtama1.setLayout(panelUtama1Layout);
+        panelUtama1Layout.setHorizontalGroup(
+            panelUtama1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 990, Short.MAX_VALUE)
+        );
+        panelUtama1Layout.setVerticalGroup(
+            panelUtama1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 340, Short.MAX_VALUE)
+        );
+
         getContentPane().add(panelUtama1);
         panelUtama1.setBounds(300, 450, 990, 340);
 

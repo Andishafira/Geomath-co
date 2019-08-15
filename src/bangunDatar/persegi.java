@@ -65,7 +65,7 @@ public class persegi extends javax.swing.JFrame {
         ButtonLatSoal6 = new javax.swing.JLabel();
         buttonKeliling = new javax.swing.JLabel();
         buttonDiagonal = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        buttonLuas = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -77,18 +77,8 @@ public class persegi extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         panelGambar.setBackground(new java.awt.Color(8, 80, 116));
-
-        javax.swing.GroupLayout panelGambarLayout = new javax.swing.GroupLayout(panelGambar);
-        panelGambar.setLayout(panelGambarLayout);
-        panelGambarLayout.setHorizontalGroup(
-            panelGambarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 570, Short.MAX_VALUE)
-        );
-        panelGambarLayout.setVerticalGroup(
-            panelGambarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 380, Short.MAX_VALUE)
-        );
-
+        panelGambar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        panelGambar.setLayout(new java.awt.CardLayout());
         getContentPane().add(panelGambar);
         panelGambar.setBounds(300, 60, 570, 380);
 
@@ -115,18 +105,7 @@ public class persegi extends javax.swing.JFrame {
         ButtonLatSoal2.setBounds(1020, 220, 130, 120);
 
         panelUtama.setBackground(new java.awt.Color(24, 64, 105));
-
-        javax.swing.GroupLayout panelUtamaLayout = new javax.swing.GroupLayout(panelUtama);
-        panelUtama.setLayout(panelUtamaLayout);
-        panelUtamaLayout.setHorizontalGroup(
-            panelUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 990, Short.MAX_VALUE)
-        );
-        panelUtamaLayout.setVerticalGroup(
-            panelUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 340, Short.MAX_VALUE)
-        );
-
+        panelUtama.setLayout(new java.awt.CardLayout());
         getContentPane().add(panelUtama);
         panelUtama.setBounds(300, 450, 990, 340);
 
@@ -184,9 +163,14 @@ public class persegi extends javax.swing.JFrame {
         getContentPane().add(buttonDiagonal);
         buttonDiagonal.setBounds(10, 550, 250, 240);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/ls persegi.png"))); // NOI18N
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(10, 310, 250, 230);
+        buttonLuas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/ls persegi.png"))); // NOI18N
+        buttonLuas.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                buttonLuasMouseClicked(evt);
+            }
+        });
+        getContentPane().add(buttonLuas);
+        buttonLuas.setBounds(10, 310, 250, 230);
 
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
         jPanel1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -388,6 +372,22 @@ public class persegi extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jPanel1MouseClicked
 
+    private void buttonLuasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLuasMouseClicked
+        pB1.setVisible(false);
+        pB2.setVisible(true);
+        pB3.setVisible(false);
+        pBL1.setVisible(false);
+        pBL2.setVisible(false);
+        pBL3.setVisible(false);
+        pBL4.setVisible(false);
+        pBL5.setVisible(false);
+        pBL6.setVisible(false);
+        
+        pA1.setVisible(false);
+        pA2.setVisible(true);
+        pA3.setVisible(false);
+    }//GEN-LAST:event_buttonLuasMouseClicked
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -429,8 +429,8 @@ public class persegi extends javax.swing.JFrame {
     private javax.swing.JLabel ButtonLatSoal6;
     private javax.swing.JLabel buttonDiagonal;
     private javax.swing.JLabel buttonKeliling;
+    private javax.swing.JLabel buttonLuas;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
