@@ -30,29 +30,39 @@ public class persegiDiagonalGambar extends javax.swing.JPanel {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(8, 80, 116));
         setLayout(null);
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("sama panjang");
         add(jLabel2);
-        jLabel2.setBounds(380, 220, 160, 30);
+        jLabel2.setBounds(380, 240, 160, 30);
 
         jLabel3.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel3.setText("Persegi hanya");
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("memiliki");
         add(jLabel3);
-        jLabel3.setBounds(380, 160, 130, 30);
+        jLabel3.setBounds(380, 180, 180, 30);
 
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("2 diagonal yang");
         add(jLabel4);
-        jLabel4.setBounds(380, 190, 160, 30);
+        jLabel4.setBounds(380, 210, 180, 30);
+
+        jLabel5.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("Persegi hanya");
+        add(jLabel5);
+        jLabel5.setBounds(380, 150, 180, 30);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/persegi/diagam.png"))); // NOI18N
         add(jLabel1);
-        jLabel1.setBounds(-50, 0, 570, 470);
+        jLabel1.setBounds(-50, 0, 610, 470);
     }// </editor-fold>//GEN-END:initComponents
 
 
@@ -61,5 +71,6 @@ public class persegiDiagonalGambar extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     // End of variables declaration//GEN-END:variables
 }

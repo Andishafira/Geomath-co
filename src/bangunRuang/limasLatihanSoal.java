@@ -5,6 +5,8 @@
  */
 package bangunRuang;
 
+import java.awt.Dimension;
+import java.awt.Toolkit;
 import javax.swing.JFrame;
 import ui.app.pbo.TampilanUtama;
 import ui.app.pbo.bangunRuangClass;
@@ -26,6 +28,11 @@ public class limasLatihanSoal extends javax.swing.JFrame {
      */
     public limasLatihanSoal() {
         initComponents();
+        Dimension layar = Toolkit.getDefaultToolkit().getScreenSize();
+        int x = layar.width / 2  - this.getSize().width / 2;
+        int y = layar.height / 2 - this.getSize().height / 2;
+
+        this.setLocation(x, y);
         pBL1 = new limasLatihanSoal1();
         pBL2 = new limasLatihanSoal2();
         pBL3 = new limasLatihanSoal3();
@@ -55,8 +62,8 @@ public class limasLatihanSoal extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         ButtonLatSoal1 = new javax.swing.JLabel();
         ButtonLatSoal2 = new javax.swing.JLabel();
-        ButtonLatSoal3 = new javax.swing.JLabel();
         panelUtama2 = new javax.swing.JPanel();
+        ButtonLatSoal3 = new javax.swing.JLabel();
         ButtonLatSoal4 = new javax.swing.JLabel();
         ButtonLatSoal5 = new javax.swing.JLabel();
         ButtonLatSoal6 = new javax.swing.JLabel();
@@ -69,6 +76,7 @@ public class limasLatihanSoal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1304, 816));
+        setUndecorated(true);
         getContentPane().setLayout(null);
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal.png"))); // NOI18N
@@ -98,6 +106,11 @@ public class limasLatihanSoal extends javax.swing.JFrame {
         getContentPane().add(ButtonLatSoal2);
         ButtonLatSoal2.setBounds(600, 210, 130, 120);
 
+        panelUtama2.setBackground(new java.awt.Color(24, 64, 105));
+        panelUtama2.setLayout(new java.awt.CardLayout());
+        getContentPane().add(panelUtama2);
+        panelUtama2.setBounds(160, 440, 990, 340);
+
         ButtonLatSoal3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal (9).png"))); // NOI18N
         ButtonLatSoal3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -106,11 +119,6 @@ public class limasLatihanSoal extends javax.swing.JFrame {
         });
         getContentPane().add(ButtonLatSoal3);
         ButtonLatSoal3.setBounds(740, 210, 130, 120);
-
-        panelUtama2.setBackground(new java.awt.Color(24, 64, 105));
-        panelUtama2.setLayout(new java.awt.CardLayout());
-        getContentPane().add(panelUtama2);
-        panelUtama2.setBounds(160, 440, 990, 340);
 
         ButtonLatSoal4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/soal/latihan soal (10).png"))); // NOI18N
         ButtonLatSoal4.addMouseListener(new java.awt.event.MouseAdapter() {

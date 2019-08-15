@@ -5,6 +5,8 @@
  */
 package bangunRuang;
 
+import java.awt.Dimension;
+import java.awt.Toolkit;
 import javax.swing.JFrame;
 import ui.app.pbo.TampilanUtama;
 import ui.app.pbo.bangunRuangClass;
@@ -27,6 +29,11 @@ public class prismaLatihanSoal extends javax.swing.JFrame {
      */
     public prismaLatihanSoal() {
         initComponents();
+        Dimension layar = Toolkit.getDefaultToolkit().getScreenSize();
+        int x = layar.width / 2  - this.getSize().width / 2;
+        int y = layar.height / 2 - this.getSize().height / 2;
+
+        this.setLocation(x, y);
         pBL1 = new prismaLatihanSoal1();
         pBL2 = new prismaLatihanSoal2();
         pBL3 = new prismaLatihanSoal3();
@@ -71,6 +78,7 @@ public class prismaLatihanSoal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1304, 816));
+        setUndecorated(true);
         getContentPane().setLayout(null);
 
         panelUtama2.setBackground(new java.awt.Color(24, 64, 105));
