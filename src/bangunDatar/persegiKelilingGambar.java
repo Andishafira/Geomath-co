@@ -34,7 +34,7 @@ public class persegiKelilingGambar extends javax.swing.JPanel {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/persegi/kelilinggam.png"))); // NOI18N
         add(jLabel1);
-        jLabel1.setBounds(0, 0, 570, 470);
+        jLabel1.setBounds(0, 0, 590, 470);
     }// </editor-fold>//GEN-END:initComponents
 
 

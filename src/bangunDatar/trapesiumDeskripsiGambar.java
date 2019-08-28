@@ -7,14 +7,14 @@ package bangunDatar;
 
 /**
  *
- * @author FAZA
+ * @author Asus
  */
-public class trapesiumLuasGambar extends javax.swing.JPanel {
+public class trapesiumDeskripsiGambar extends javax.swing.JPanel {
 
     /**
-     * Creates new form trapesiumLuasGambar
+     * Creates new form trapesiumDeskripsiGambar
      */
-    public trapesiumLuasGambar() {
+    public trapesiumDeskripsiGambar() {
         initComponents();
     }
 
@@ -32,9 +32,9 @@ public class trapesiumLuasGambar extends javax.swing.JPanel {
         setBackground(new java.awt.Color(8, 80, 116));
         setLayout(null);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambarTrapesium/luastra.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambarTrapesium/destra.png"))); // NOI18N
         add(jLabel1);
-        jLabel1.setBounds(0, 0, 580, 450);
+        jLabel1.setBounds(40, 0, 490, 410);
     }// </editor-fold>//GEN-END:initComponents
 
 

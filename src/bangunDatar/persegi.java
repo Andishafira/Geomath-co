@@ -6,7 +6,6 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import ui.app.pbo.TampilanUtama;
 import ui.app.pbo.bangunDatarClass;
-import ui.app.pbo.bangunRuangClass;
 
 public class persegi extends javax.swing.JFrame {
     persegiKeliling pB1;
@@ -21,6 +20,8 @@ public class persegi extends javax.swing.JFrame {
     persegiLatihanSoal4 pBL4;
     persegiLatihanSoal5 pBL5;
     persegiLatihanSoal6 pBL6;
+    persegiDeskripsi pB0;
+    persegiGambar pA0;
     
     public persegi() {
         initComponents();
@@ -42,7 +43,10 @@ public class persegi extends javax.swing.JFrame {
         pBL4 = new persegiLatihanSoal4();
         pBL5 = new persegiLatihanSoal5();
         pBL6 = new persegiLatihanSoal6();
+        pB0 = new persegiDeskripsi();
+        pA0 = new persegiGambar();
         
+        panelUtama.add(pB0);
         panelUtama.add(pB1);
         panelUtama.add(pB2);
         panelUtama.add(pB3);
@@ -53,6 +57,7 @@ public class persegi extends javax.swing.JFrame {
         panelUtama.add(pBL5);
         panelUtama.add(pBL6);
         
+        panelUtama.add(pA0);
         panelGambar.add(pA1);
         panelGambar.add(pA2);
         panelGambar.add(pA3);
@@ -248,6 +253,7 @@ public class persegi extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void buttonKelilingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonKelilingMouseClicked
+        pB0.setVisible(false);
         pB1.setVisible(true);
         pB2.setVisible(false);
         pB3.setVisible(false);
@@ -258,12 +264,14 @@ public class persegi extends javax.swing.JFrame {
         pBL5.setVisible(false);
         pBL6.setVisible(false);
         
+        pA0.setVisible(false);
         pA1.setVisible(true);
         pA2.setVisible(false);
         pA3.setVisible(false);
     }//GEN-LAST:event_buttonKelilingMouseClicked
 
     private void buttonDiagonalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonDiagonalMouseClicked
+        pB0.setVisible(false);
         pB1.setVisible(false);
         pB2.setVisible(false);
         pB3.setVisible(true);
@@ -274,12 +282,14 @@ public class persegi extends javax.swing.JFrame {
         pBL5.setVisible(false);
         pBL6.setVisible(false);
         
+        pA0.setVisible(false);
         pA1.setVisible(false);
         pA2.setVisible(false);
         pA3.setVisible(true);
     }//GEN-LAST:event_buttonDiagonalMouseClicked
 
     private void ButtonLatSoal1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal1MouseClicked
+        pB0.setVisible(false);
         pB1.setVisible(false);
         pB2.setVisible(false);
         pB3.setVisible(false);
@@ -289,9 +299,15 @@ public class persegi extends javax.swing.JFrame {
         pBL4.setVisible(false);
         pBL5.setVisible(false);
         pBL6.setVisible(false);
+        
+        pA0.setVisible(false);
+        pA1.setVisible(false);
+        pA2.setVisible(false);
+        pA3.setVisible(true);
     }//GEN-LAST:event_ButtonLatSoal1MouseClicked
 
     private void ButtonLatSoal2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal2MouseClicked
+        pB0.setVisible(false);
         pB1.setVisible(false);
         pB2.setVisible(false);
         pB3.setVisible(false);
@@ -301,9 +317,15 @@ public class persegi extends javax.swing.JFrame {
         pBL4.setVisible(false);
         pBL5.setVisible(false);
         pBL6.setVisible(false);
+        
+        pA0.setVisible(false);
+        pA1.setVisible(false);
+        pA2.setVisible(false);
+        pA3.setVisible(true);
     }//GEN-LAST:event_ButtonLatSoal2MouseClicked
 
     private void ButtonLatSoal3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal3MouseClicked
+        pB0.setVisible(false);
         pB1.setVisible(false);
         pB2.setVisible(false);
         pB3.setVisible(false);
@@ -313,9 +335,15 @@ public class persegi extends javax.swing.JFrame {
         pBL4.setVisible(false);
         pBL5.setVisible(false);
         pBL6.setVisible(false);
+        
+        pA0.setVisible(false);
+        pA1.setVisible(true);
+        pA2.setVisible(false);
+        pA3.setVisible(false);
     }//GEN-LAST:event_ButtonLatSoal3MouseClicked
 
     private void ButtonLatSoal4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal4MouseClicked
+        pB0.setVisible(false);
         pB1.setVisible(false);
         pB2.setVisible(false);
         pB3.setVisible(false);
@@ -325,9 +353,15 @@ public class persegi extends javax.swing.JFrame {
         pBL4.setVisible(true);
         pBL5.setVisible(false);
         pBL6.setVisible(false);
+        
+        pA0.setVisible(false);
+        pA1.setVisible(false);
+        pA2.setVisible(false);
+        pA3.setVisible(true);
     }//GEN-LAST:event_ButtonLatSoal4MouseClicked
 
     private void ButtonLatSoal5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal5MouseClicked
+        pB0.setVisible(false);
         pB1.setVisible(false);
         pB2.setVisible(false);
         pB3.setVisible(false);
@@ -337,9 +371,15 @@ public class persegi extends javax.swing.JFrame {
         pBL4.setVisible(false);
         pBL5.setVisible(true);
         pBL6.setVisible(false);
+        
+        pA0.setVisible(false);
+        pA1.setVisible(false);
+        pA2.setVisible(true);
+        pA3.setVisible(false);
     }//GEN-LAST:event_ButtonLatSoal5MouseClicked
 
     private void ButtonLatSoal6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal6MouseClicked
+        pB0.setVisible(false);
         pB1.setVisible(false);
         pB2.setVisible(false);
         pB3.setVisible(false);
@@ -349,6 +389,11 @@ public class persegi extends javax.swing.JFrame {
         pBL4.setVisible(false);
         pBL5.setVisible(false);
         pBL6.setVisible(true);
+        
+        pA0.setVisible(false);
+        pA1.setVisible(false);
+        pA2.setVisible(true);
+        pA3.setVisible(false);
     }//GEN-LAST:event_ButtonLatSoal6MouseClicked
 
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
@@ -382,6 +427,7 @@ public class persegi extends javax.swing.JFrame {
     }//GEN-LAST:event_jPanel1MouseClicked
 
     private void buttonLuasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLuasMouseClicked
+        pB0.setVisible(false);
         pB1.setVisible(false);
         pB2.setVisible(true);
         pB3.setVisible(false);

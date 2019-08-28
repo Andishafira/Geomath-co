@@ -35,6 +35,8 @@ public class persegiPanjang extends javax.swing.JFrame {
     psgPanjangLatsol4 pL4;
     psgPanjangLatsol5 pL5;
     psgPanjangLatsol6 pL6;
+    persegipanjangDeskripsi pB0;
+    persegipanjangGambar pA0;
     
     public persegiPanjang() {
         initComponents();
@@ -43,6 +45,8 @@ public class persegiPanjang extends javax.swing.JFrame {
         int y = layar.height / 2 - this.getSize().height / 2;
 
         this.setLocation(x, y);
+        pB0 = new persegipanjangDeskripsi();
+        pA0 = new persegipanjangGambar();
         pKel = new psgPanjangKeliling();
         gbr1 = new psgPanjangKelilingGambar();
         pLuas = new psgPanjangLuas();
@@ -56,6 +60,8 @@ public class persegiPanjang extends javax.swing.JFrame {
         pL5 = new psgPanjangLatsol5();
         pL6 = new psgPanjangLatsol6();
 
+        panelUtama.add(pB0);
+        panelUtama.add(pA0);
         panelGambar.add(gbr1);
         panelUtama.add(pKel);
         panelGambar.add(gbr2);
@@ -266,6 +272,8 @@ public class persegiPanjang extends javax.swing.JFrame {
 
     private void pKelilingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pKelilingMouseClicked
         // TODO add your handling code here:
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         pKel.setVisible(true);
         gbr1.setVisible(true);
         pLuas.setVisible(false);
@@ -282,6 +290,8 @@ public class persegiPanjang extends javax.swing.JFrame {
 
     private void lsPersMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lsPersMouseClicked
         // TODO add your handling code here:
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         pKel.setVisible(false);
         gbr1.setVisible(false);
         pLuas.setVisible(true);
@@ -298,6 +308,8 @@ public class persegiPanjang extends javax.swing.JFrame {
 
     private void diagonPersMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_diagonPersMouseClicked
         // TODO add your handling code here:
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         pKel.setVisible(false);
         gbr1.setVisible(false);
         pLuas.setVisible(false);
@@ -314,6 +326,8 @@ public class persegiPanjang extends javax.swing.JFrame {
 
     private void Latsol1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Latsol1MouseClicked
         // TODO add your handling code here:
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         pKel.setVisible(false);
         gbr1.setVisible(false);
         pLuas.setVisible(false);
@@ -330,6 +344,8 @@ public class persegiPanjang extends javax.swing.JFrame {
 
     private void Latsol2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Latsol2MouseClicked
         // TODO add your handling code here:
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         pKel.setVisible(false);
         gbr1.setVisible(false);
         pLuas.setVisible(false);
@@ -346,6 +362,8 @@ public class persegiPanjang extends javax.swing.JFrame {
 
     private void Latsol3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Latsol3MouseClicked
         // TODO add your handling code here:
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         pKel.setVisible(false);
         gbr1.setVisible(false);
         pLuas.setVisible(false);
@@ -362,6 +380,8 @@ public class persegiPanjang extends javax.swing.JFrame {
 
     private void Latsol4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Latsol4MouseClicked
         // TODO add your handling code here:
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         pKel.setVisible(false);
         gbr1.setVisible(false);
         pLuas.setVisible(false);
@@ -378,6 +398,8 @@ public class persegiPanjang extends javax.swing.JFrame {
 
     private void Latsol5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Latsol5MouseClicked
         // TODO add your handling code here:
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         pKel.setVisible(false);
         gbr1.setVisible(false);
         pLuas.setVisible(false);
@@ -394,6 +416,8 @@ public class persegiPanjang extends javax.swing.JFrame {
 
     private void Latsol6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Latsol6MouseClicked
         // TODO add your handling code here:
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         pKel.setVisible(false);
         gbr1.setVisible(false);
         pLuas.setVisible(false);

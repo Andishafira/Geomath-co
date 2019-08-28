@@ -57,9 +57,9 @@ public class Main extends javax.swing.JFrame {
         getContentPane().add(jLabel3);
         jLabel3.setBounds(220, 50, 210, 110);
 
-        jLabel4.setFont(new java.awt.Font("Android Nation", 1, 100)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Android Nation", 1, 90)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 51, 51));
-        jLabel4.setText("GEOMETRY");
+        jLabel4.setText("GEOMath.co");
         getContentPane().add(jLabel4);
         jLabel4.setBounds(220, 80, 1100, 220);
 

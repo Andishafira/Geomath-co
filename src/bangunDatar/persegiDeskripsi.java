@@ -7,14 +7,14 @@ package bangunDatar;
 
 /**
  *
- * @author FAZA
+ * @author Asus
  */
-public class trapesiumLuasGambar extends javax.swing.JPanel {
+public class persegiDeskripsi extends javax.swing.JPanel {
 
     /**
-     * Creates new form trapesiumLuasGambar
+     * Creates new form persegiDeskripsi
      */
-    public trapesiumLuasGambar() {
+    public persegiDeskripsi() {
         initComponents();
     }
 
@@ -27,18 +27,26 @@ public class trapesiumLuasGambar extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        buttonKeliling = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(8, 80, 116));
         setLayout(null);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambarTrapesium/luastra.png"))); // NOI18N
-        add(jLabel1);
-        jLabel1.setBounds(0, 0, 580, 450);
+        buttonKeliling.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/persegi/perdes.png"))); // NOI18N
+        buttonKeliling.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                buttonKelilingMouseClicked(evt);
+            }
+        });
+        add(buttonKeliling);
+        buttonKeliling.setBounds(0, 0, 990, 550);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void buttonKelilingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonKelilingMouseClicked
+
+    }//GEN-LAST:event_buttonKelilingMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel buttonKeliling;
     // End of variables declaration//GEN-END:variables
 }

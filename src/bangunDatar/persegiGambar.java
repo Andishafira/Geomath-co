@@ -7,14 +7,14 @@ package bangunDatar;
 
 /**
  *
- * @author FAZA
+ * @author Asus
  */
-public class trapesiumDiagonalGambar extends javax.swing.JPanel {
+public class persegiGambar extends javax.swing.JPanel {
 
     /**
-     * Creates new form trapesiumDiagonalGambar
+     * Creates new form persegiGambar
      */
-    public trapesiumDiagonalGambar() {
+    public persegiGambar() {
         initComponents();
     }
 
@@ -27,27 +27,33 @@ public class trapesiumDiagonalGambar extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        buttonKeliling = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(8, 80, 116));
         setLayout(null);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambarTrapesium/diagtra.png"))); // NOI18N
-        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+        jPanel1.setLayout(null);
+        add(jPanel1);
+        jPanel1.setBounds(0, 0, 0, 0);
+
+        buttonKeliling.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/persegi/pergam.png"))); // NOI18N
+        buttonKeliling.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel1MouseClicked(evt);
+                buttonKelilingMouseClicked(evt);
             }
         });
-        add(jLabel1);
-        jLabel1.setBounds(0, 0, 580, 470);
+        add(buttonKeliling);
+        buttonKeliling.setBounds(20, 0, 530, 400);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+    private void buttonKelilingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonKelilingMouseClicked
 
-    }//GEN-LAST:event_jLabel1MouseClicked
+    }//GEN-LAST:event_buttonKelilingMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel buttonKeliling;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

@@ -21,6 +21,8 @@ public class trapesium extends javax.swing.JFrame {
     trapesiumLatsol4 tLS4;
     trapesiumLatsol5 tLS5;
     trapesiumLatsol6 tLS6;
+    trapesiumDeskripsi pB0;
+    trapesiumDeskripsiGambar pA0;
     
     
     public trapesium() {
@@ -42,7 +44,10 @@ public class trapesium extends javax.swing.JFrame {
         tLS4 = new trapesiumLatsol4();
         tLS5 = new trapesiumLatsol5();
         tLS6 = new trapesiumLatsol6();
+        pB0 = new trapesiumDeskripsi();
+        pA0 = new trapesiumDeskripsiGambar();
         
+        panelUtama.add(pB0);
         panelUtama.add(tKel);
         panelUtama.add(tLuas);
         panelUtama.add(tDi);
@@ -53,6 +58,7 @@ public class trapesium extends javax.swing.JFrame {
         panelUtama.add(tLS5);
         panelUtama.add(tLS6);
         
+        panelGambar.add(pA0);
         panelGambar.add(tKelGa);
         panelGambar.add(tLuasGa);
         panelGambar.add(tDiGa);
@@ -248,12 +254,15 @@ public class trapesium extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void buttonLatSoal1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSoal1MouseClicked
+        pB0.setVisible(false);
         tKel.setVisible(false);
         tKelGa.setVisible(true);
         tLuas.setVisible(false);
         tLuasGa.setVisible(false);
         tDi.setVisible(false);
         tDiGa.setVisible(false);
+        
+        pA0.setVisible(false);
         tLS1.setVisible(true);
         tLS2.setVisible(false);
         tLS3.setVisible(false);
@@ -263,12 +272,15 @@ public class trapesium extends javax.swing.JFrame {
     }//GEN-LAST:event_buttonLatSoal1MouseClicked
 
     private void buttonLatSoal2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSoal2MouseClicked
+        pB0.setVisible(false);
         tKel.setVisible(false);
         tKelGa.setVisible(true);
         tLuas.setVisible(false);
         tLuasGa.setVisible(false);
         tDi.setVisible(false);
         tDiGa.setVisible(false);
+        
+        pA0.setVisible(false);
         tLS1.setVisible(false);
         tLS2.setVisible(true);
         tLS3.setVisible(false);
@@ -278,12 +290,15 @@ public class trapesium extends javax.swing.JFrame {
     }//GEN-LAST:event_buttonLatSoal2MouseClicked
 
     private void buttonLatSoal3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSoal3MouseClicked
+        pB0.setVisible(false);
         tKel.setVisible(false);
         tKelGa.setVisible(false);
         tLuas.setVisible(false);
         tLuasGa.setVisible(true);
         tDi.setVisible(false);
         tDiGa.setVisible(false);
+        
+        pA0.setVisible(false);
         tLS1.setVisible(false);
         tLS2.setVisible(false);
         tLS3.setVisible(true);
@@ -293,12 +308,15 @@ public class trapesium extends javax.swing.JFrame {
     }//GEN-LAST:event_buttonLatSoal3MouseClicked
 
     private void buttonLatSoal4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSoal4MouseClicked
+        pB0.setVisible(false);
         tKel.setVisible(false);
         tKelGa.setVisible(true);
         tLuas.setVisible(false);
         tLuasGa.setVisible(false);
         tDi.setVisible(false);
         tDiGa.setVisible(false);
+        
+        pA0.setVisible(false);
         tLS1.setVisible(false);
         tLS2.setVisible(false);
         tLS3.setVisible(false);
@@ -308,12 +326,15 @@ public class trapesium extends javax.swing.JFrame {
     }//GEN-LAST:event_buttonLatSoal4MouseClicked
 
     private void buttonLatSoal5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSoal5MouseClicked
+        pB0.setVisible(false);
         tKel.setVisible(false);
         tKelGa.setVisible(true);
         tLuas.setVisible(false);
         tLuasGa.setVisible(false);
         tDi.setVisible(false);
         tDiGa.setVisible(false);
+        
+        pA0.setVisible(false);
         tLS1.setVisible(false);
         tLS2.setVisible(false);
         tLS3.setVisible(false);
@@ -323,12 +344,15 @@ public class trapesium extends javax.swing.JFrame {
     }//GEN-LAST:event_buttonLatSoal5MouseClicked
 
     private void buttonLatSoal6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatSoal6MouseClicked
+        pB0.setVisible(false);
         tKel.setVisible(false);
         tKelGa.setVisible(false);
         tLuas.setVisible(false);
         tLuasGa.setVisible(true);
         tDi.setVisible(false);
         tDiGa.setVisible(false);
+        
+        pA0.setVisible(false);
         tLS1.setVisible(false);
         tLS2.setVisible(false);
         tLS3.setVisible(false);
@@ -368,12 +392,17 @@ public class trapesium extends javax.swing.JFrame {
     }//GEN-LAST:event_jPanel1MouseClicked
 
     private void buttonKelilingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonKelilingMouseClicked
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         tKel.setVisible(true);
+        
         tKelGa.setVisible(true);
         tLuas.setVisible(false);
         tLuasGa.setVisible(false);
         tDi.setVisible(false);
         tDiGa.setVisible(false);
+        
+        
         tLS1.setVisible(false);
         tLS2.setVisible(false);
         tLS3.setVisible(false);
@@ -383,12 +412,15 @@ public class trapesium extends javax.swing.JFrame {
     }//GEN-LAST:event_buttonKelilingMouseClicked
 
     private void buttonLuasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLuasMouseClicked
+        pB0.setVisible(false);
         tKel.setVisible(false);
         tKelGa.setVisible(false);
         tLuas.setVisible(true);
         tLuasGa.setVisible(true);
         tDi.setVisible(false);
         tDiGa.setVisible(false);
+        
+        pA0.setVisible(false);
         tLS1.setVisible(false);
         tLS2.setVisible(false);
         tLS3.setVisible(false);
@@ -398,12 +430,15 @@ public class trapesium extends javax.swing.JFrame {
     }//GEN-LAST:event_buttonLuasMouseClicked
 
     private void buttonDiagonalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonDiagonalMouseClicked
+        pB0.setVisible(false);
         tKel.setVisible(false);
         tKelGa.setVisible(false);
         tLuas.setVisible(false);
         tLuasGa.setVisible(false);
         tDi.setVisible(true);
         tDiGa.setVisible(true);
+        
+        pA0.setVisible(false);
         tLS1.setVisible(false);
         tLS2.setVisible(false);
         tLS3.setVisible(false);
