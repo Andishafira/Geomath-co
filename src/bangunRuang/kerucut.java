@@ -33,6 +33,8 @@ public class kerucut extends javax.swing.JFrame {
     kerucutLatihanSoal4 kL4;
     kerucutLatihanSoal5 kL5;
     kerucutLatihanSoal6 kL6;
+    kerucutDeskripsi pB0;
+    kerucutGambar pA0;
     
     public kerucut() {
         initComponents();
@@ -53,7 +55,11 @@ public class kerucut extends javax.swing.JFrame {
         kL4 = new kerucutLatihanSoal4();
         kL5 = new kerucutLatihanSoal5();
         kL6 = new kerucutLatihanSoal6();
+        pB0 = new kerucutDeskripsi();
+        pA0 = new kerucutGambar();
         
+        panelUtama.add(pB0);
+        panelGambar.add(pA0);
         panelGambar.add(gbr1);
         panelUtama.add(kSel);
         panelGambar.add(gbr2);
@@ -271,6 +277,8 @@ public class kerucut extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel7MouseClicked
 
     private void ButtonLatSoal1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal1MouseClicked
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         kSel.setVisible(false);
         gbr1.setVisible(false);
         kLuas.setVisible(false);
@@ -286,6 +294,8 @@ public class kerucut extends javax.swing.JFrame {
     }//GEN-LAST:event_ButtonLatSoal1MouseClicked
 
     private void ButtonLatSoal2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal2MouseClicked
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         kSel.setVisible(false);
         gbr1.setVisible(true);
         kLuas.setVisible(false);
@@ -301,6 +311,9 @@ public class kerucut extends javax.swing.JFrame {
     }//GEN-LAST:event_ButtonLatSoal2MouseClicked
 
     private void ButtonLatSoal3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal3MouseClicked
+        
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         kSel.setVisible(false);
         gbr1.setVisible(true);
         kLuas.setVisible(false);
@@ -316,6 +329,9 @@ public class kerucut extends javax.swing.JFrame {
     }//GEN-LAST:event_ButtonLatSoal3MouseClicked
 
     private void ButtonLatSoal4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal4MouseClicked
+        pB0.setVisible(false);
+        pA0.setVisible(false);
+        
         kSel.setVisible(false);
         gbr1.setVisible(false);
         kLuas.setVisible(false);
@@ -331,6 +347,8 @@ public class kerucut extends javax.swing.JFrame {
     }//GEN-LAST:event_ButtonLatSoal4MouseClicked
 
     private void ButtonLatSoal5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal5MouseClicked
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         kSel.setVisible(false);
         gbr1.setVisible(true);
         kLuas.setVisible(false);
@@ -346,6 +364,8 @@ public class kerucut extends javax.swing.JFrame {
     }//GEN-LAST:event_ButtonLatSoal5MouseClicked
 
     private void ButtonLatSoal6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal6MouseClicked
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         kSel.setVisible(false);
         gbr1.setVisible(false);
         kLuas.setVisible(false);
@@ -362,6 +382,8 @@ public class kerucut extends javax.swing.JFrame {
 
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
         // TODO add your handling code here:
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         kSel.setVisible(true);
         gbr1.setVisible(true);
         kLuas.setVisible(false);
@@ -378,6 +400,8 @@ public class kerucut extends javax.swing.JFrame {
 
     private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
         // TODO add your handling code here:
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         kSel.setVisible(false);
         gbr1.setVisible(false);
         kLuas.setVisible(true);
@@ -394,6 +418,8 @@ public class kerucut extends javax.swing.JFrame {
 
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
         // TODO add your handling code here:
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         kSel.setVisible(false);
         gbr1.setVisible(false);
         kLuas.setVisible(false);

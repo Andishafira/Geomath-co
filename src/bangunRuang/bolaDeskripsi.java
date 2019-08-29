@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package bangunDatar;
+package bangunRuang;
 
 /**
  *
  * @author Asus
  */
-public class layanglayangGambar extends javax.swing.JPanel {
+public class bolaDeskripsi extends javax.swing.JPanel {
 
     /**
-     * Creates new form layanglayangGambar
+     * Creates new form bolaDeskripsi
      */
-    public layanglayangGambar() {
+    public bolaDeskripsi() {
         initComponents();
     }
 
@@ -27,17 +27,26 @@ public class layanglayangGambar extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setLayout(null);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/layang/laygam.png"))); // NOI18N
-        add(jLabel1);
-        jLabel1.setBounds(0, 0, 590, 510);
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/Bola/boldes.png"))); // NOI18N
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel3MouseClicked(evt);
+            }
+        });
+        add(jLabel3);
+        jLabel3.setBounds(0, 0, 1000, 510);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+
+    }//GEN-LAST:event_jLabel3MouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }

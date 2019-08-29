@@ -57,7 +57,7 @@ public class persegi extends javax.swing.JFrame {
         panelUtama.add(pBL5);
         panelUtama.add(pBL6);
         
-        panelUtama.add(pA0);
+        panelGambar.add(pA0);
         panelGambar.add(pA1);
         panelGambar.add(pA2);
         panelGambar.add(pA3);

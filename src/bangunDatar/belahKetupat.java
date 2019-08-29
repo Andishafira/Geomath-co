@@ -6,7 +6,6 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import ui.app.pbo.TampilanUtama;
 import ui.app.pbo.bangunDatarClass;
-import ui.app.pbo.bangunRuangClass;
 
 public class belahKetupat extends javax.swing.JFrame {
     belahKetupatKeliling pB1;
@@ -57,8 +56,8 @@ public class belahKetupat extends javax.swing.JFrame {
         panelUtama.add(pBL5);
         panelUtama.add(pBL6);
         
+        panelGambar.add(pA0);
         panelGambar.add(pA1);
-        panelUtama.add(pA0);
         panelGambar.add(pA2);
         panelGambar.add(pA3);
     }

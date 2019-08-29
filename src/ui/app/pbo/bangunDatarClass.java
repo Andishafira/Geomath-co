@@ -10,7 +10,7 @@ import bangunDatar.layangLayang;
 import bangunDatar.lingkaran;
 import bangunDatar.persegi;
 import bangunDatar.persegiPanjang;
-//import bangunDatar.segitigaBaru;
+import bangunDatar.segitiga;
 import bangunDatar.trapesium;
 import java.awt.Dimension;
 import java.awt.Toolkit;
@@ -254,13 +254,13 @@ public class bangunDatarClass extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel8MouseClicked
 
     private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
-//        // TODO add your handling code here:
-//       segitigaBaru ST = new segitigaBaru();
-//       new segitigaBaru().setVisible(true);
-//       ST.pack();
-//       ST.setLocationRelativeTo(null);
-//       ST.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//       this.dispose();
+        // TODO add your handling code here:
+       segitiga ST = new segitiga();
+       new segitiga().setVisible(true);
+       ST.pack();
+       ST.setLocationRelativeTo(null);
+       ST.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+       this.dispose();
     }//GEN-LAST:event_jLabel10MouseClicked
 
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked

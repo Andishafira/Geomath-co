@@ -34,6 +34,8 @@ public class layangLayang extends javax.swing.JFrame {
     layanglayangLatsol4 lat4;
     layanglayangLatsol5 lat5;
     layanglayangLatsol6 lat6;
+    layanglayangDeskripsi pB0;
+    layanglayangGambar pA0;
     
     public layangLayang() {
         initComponents();
@@ -42,6 +44,8 @@ public class layangLayang extends javax.swing.JFrame {
         int y = layar.height / 2 - this.getSize().height / 2;
 
         this.setLocation(x, y);
+        pB0 = new layanglayangDeskripsi();
+        pA0 = new layanglayangGambar();
         kel = new layanglayangKeliling();
         gbr1 = new layanglayangKelilingGambar();
         luas = new layanglayangLuas();
@@ -55,10 +59,12 @@ public class layangLayang extends javax.swing.JFrame {
         lat5 = new layanglayangLatsol5();
         lat6 = new layanglayangLatsol6();
         
+        panelGambar.add(pA0);
         panelGambar.add(gbr1);
         panelGambar.add(gbr2);
         panelGambar.add(gbr3);
         
+        panelUtama.add(pB0);
         panelUtama.add(kel);
         panelUtama.add(luas);
         panelUtama.add(diagon);
@@ -295,6 +301,9 @@ public class layangLayang extends javax.swing.JFrame {
 
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
         // TODO add your handling code here:
+        
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         kel.setVisible(true);
         gbr1.setVisible(true);
         luas.setVisible(false);
@@ -311,6 +320,8 @@ public class layangLayang extends javax.swing.JFrame {
 
     private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
         // TODO add your handling code here:
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         kel.setVisible(false);
         gbr1.setVisible(false);
         luas.setVisible(true);
@@ -327,6 +338,8 @@ public class layangLayang extends javax.swing.JFrame {
 
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
         // TODO add your handling code here:
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         kel.setVisible(false);
         gbr1.setVisible(false);
         luas.setVisible(false);
@@ -343,6 +356,8 @@ public class layangLayang extends javax.swing.JFrame {
 
     private void buttonLatsol1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatsol1MouseClicked
         // TODO add your handling code here:
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         kel.setVisible(false);
         gbr1.setVisible(false);
         luas.setVisible(false);
@@ -359,6 +374,8 @@ public class layangLayang extends javax.swing.JFrame {
 
     private void buttonLatsol2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatsol2MouseClicked
         // TODO add your handling code here:
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         kel.setVisible(false);
         gbr1.setVisible(true);
         luas.setVisible(false);
@@ -375,6 +392,8 @@ public class layangLayang extends javax.swing.JFrame {
 
     private void buttonLatsol3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatsol3MouseClicked
         // TODO add your handling code here:
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         kel.setVisible(false);
         gbr1.setVisible(false);
         luas.setVisible(false);
@@ -391,6 +410,8 @@ public class layangLayang extends javax.swing.JFrame {
 
     private void buttonLatsol4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatsol4MouseClicked
         // TODO add your handling code here:
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         kel.setVisible(false);
         gbr1.setVisible(false);
         luas.setVisible(false);
@@ -407,6 +428,8 @@ public class layangLayang extends javax.swing.JFrame {
 
     private void buttonLatsol5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatsol5MouseClicked
         // TODO add your handling code here:
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         kel.setVisible(false);
         gbr1.setVisible(false);
         luas.setVisible(false);
@@ -423,6 +446,8 @@ public class layangLayang extends javax.swing.JFrame {
 
     private void buttonLatsol6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonLatsol6MouseClicked
         // TODO add your handling code here:
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         kel.setVisible(false);
         gbr1.setVisible(false);
         luas.setVisible(false);

@@ -33,6 +33,8 @@ public class bolaa extends javax.swing.JFrame {
     bolaLatihanSoal4 bLatsol4;
     bolaLatihanSoal5 bLatsol5;
     bolaLatihanSoal6 bLatsol6;
+    bolaDeskripsi pB0;
+    bolaGambar pA0;
     
     public bolaa() {
         initComponents();
@@ -53,7 +55,11 @@ public class bolaa extends javax.swing.JFrame {
         gbr1 = new bolaDiameterGambar();
         gbr2 = new bolaLuasPermukaanGambar();
         gbr3 = new bolaVolumeGambar();
+        pB0 = new bolaDeskripsi();
+        pA0 = new bolaGambar();
         
+        panelUtama.add(pB0);
+        panelGambar.add(pA0);
         panelGambar.add(gbr1);
         panelGambar.add(gbr2);
         panelGambar.add(gbr3);
@@ -271,6 +277,8 @@ public class bolaa extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel7MouseClicked
 
     private void ButtonLatSoal1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal1MouseClicked
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         gbr1.setVisible(false);
         bDiamet.setVisible(false);
         gbr2.setVisible(true);
@@ -286,6 +294,8 @@ public class bolaa extends javax.swing.JFrame {
     }//GEN-LAST:event_ButtonLatSoal1MouseClicked
 
     private void ButtonLatSoal2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal2MouseClicked
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         gbr1.setVisible(false);
         bDiamet.setVisible(false);
         gbr2.setVisible(false);
@@ -302,6 +312,8 @@ public class bolaa extends javax.swing.JFrame {
 
     private void ButtonLatSoal3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal3MouseClicked
         //luas
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         gbr1.setVisible(false);
         bDiamet.setVisible(false);
         gbr2.setVisible(true);
@@ -318,6 +330,8 @@ public class bolaa extends javax.swing.JFrame {
 
     private void ButtonLatSoal4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal4MouseClicked
         //diameter
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         gbr1.setVisible(true);
         bDiamet.setVisible(false);
         gbr2.setVisible(false);
@@ -334,6 +348,8 @@ public class bolaa extends javax.swing.JFrame {
 
     private void ButtonLatSoal5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal5MouseClicked
         //jari
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         gbr1.setVisible(true);
         bDiamet.setVisible(false);
         gbr2.setVisible(false);
@@ -350,6 +366,8 @@ public class bolaa extends javax.swing.JFrame {
 
     private void ButtonLatSoal6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonLatSoal6MouseClicked
         //volLuas
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         gbr1.setVisible(false);
         bDiamet.setVisible(false);
         gbr2.setVisible(true);
@@ -366,6 +384,8 @@ public class bolaa extends javax.swing.JFrame {
 
     private void diameterJariMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_diameterJariMouseClicked
         // TODO add your handling code here:
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         gbr1.setVisible(true);
         bDiamet.setVisible(true);
         gbr2.setVisible(false);
@@ -378,6 +398,8 @@ public class bolaa extends javax.swing.JFrame {
 
     private void lsPermukaanMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lsPermukaanMouseClicked
         // TODO add your handling code here:
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         gbr1.setVisible(false);
         bDiamet.setVisible(false);
         gbr2.setVisible(true);
@@ -390,6 +412,8 @@ public class bolaa extends javax.swing.JFrame {
 
     private void volumeBolaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volumeBolaMouseClicked
         // TODO add your handling code here:
+        pB0.setVisible(false);
+        pA0.setVisible(false);
         gbr1.setVisible(false);
         bDiamet.setVisible(false);
         gbr2.setVisible(false);

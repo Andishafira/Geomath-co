@@ -61,7 +61,7 @@ public class persegiPanjang extends javax.swing.JFrame {
         pL6 = new psgPanjangLatsol6();
 
         panelUtama.add(pB0);
-        panelUtama.add(pA0);
+        panelGambar.add(pA0);
         panelGambar.add(gbr1);
         panelUtama.add(pKel);
         panelGambar.add(gbr2);
