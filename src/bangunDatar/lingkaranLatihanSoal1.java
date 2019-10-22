@@ -134,12 +134,12 @@ public class lingkaranLatihanSoal1 extends javax.swing.JPanel implements interfa
     public void jawaban() {
         String jawaban = jTextField1.getText();
         
-        if(jawaban.equals("44")){
-            jTextField2.setText("Jawaban Benar : 44 cm2");}
-        else if(jawaban.equals("44 cm2")){
-            jTextField2.setText("Jawaban Benar : 44 cm2");}
+        if(jawaban.equals("616")){
+            jTextField2.setText("Jawaban Benar : 616 cm2");}
+        else if(jawaban.equals("616 cm2")){
+            jTextField2.setText("Jawaban Benar : 616 cm2");}
         else {
-            JOptionPane.showMessageDialog(this, "Jawabanmu belum tepat!");
+            jTextField2.setText("Jawabanmu belum tepat");
         }
     }
 }
